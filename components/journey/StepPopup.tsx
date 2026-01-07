@@ -110,37 +110,37 @@ export default function StepPopup({
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
             >
-              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col h-full">
+              <div className="bg-cream rounded-2xl shadow-2xl overflow-hidden flex flex-col h-full border border-gold/20">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-primary to-primary-dark text-white p-6 flex-shrink-0">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-4">
-                      <span className="text-4xl bg-white/20 rounded-full w-16 h-16 flex items-center justify-center">
+                <div className="bg-gradient-to-r from-primary to-primary-dark text-white p-5 flex-shrink-0">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex items-center gap-4 flex-1 min-w-0">
+                      <span className="text-3xl bg-gold/30 rounded-xl w-14 h-14 flex items-center justify-center flex-shrink-0 border border-gold/40">
                         {step.icon}
                       </span>
-                      <div>
-                        <p className="text-gold text-sm mb-1">
+                      <div className="min-w-0">
+                        <p className="text-gold-light text-xs font-medium mb-1">
                           {t.step} {currentIndex + 1} / {totalSteps}
                         </p>
-                        <h2 className="text-2xl font-bold">{step.title}</h2>
-                        <p className="text-xl font-arabic text-gold/90 mt-1">
+                        <h2 className="text-xl font-bold leading-tight">{step.title}</h2>
+                        <p className="text-lg font-arabic text-gold-light mt-0.5 truncate">
                           {step.titleArabic}
                         </p>
                       </div>
                     </div>
                     <button
                       onClick={onClose}
-                      className="text-white/80 hover:text-white text-2xl w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors"
+                      className="text-white/80 hover:text-white text-xl w-9 h-9 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors flex-shrink-0"
                     >
                       ×
                     </button>
                   </div>
-                  
+
                   {/* Export Button */}
                   <button
                     onClick={() => setIsPostcardOpen(true)}
-                    className="mt-4 flex items-center gap-2 px-4 py-2 bg-white/20 rounded-full 
-                             hover:bg-white/30 transition-colors text-sm font-medium"
+                    className="mt-3 flex items-center gap-2 px-4 py-2 bg-gold/20 rounded-full
+                             hover:bg-gold/30 transition-colors text-sm font-medium border border-gold/30"
                   >
                     <span>🎴</span>
                     <span>{t.createPostcard}</span>
@@ -148,21 +148,21 @@ export default function StepPopup({
                 </div>
 
                 {/* Body */}
-                <div className="flex-1 overflow-y-auto p-6">
+                <div className="flex-1 overflow-y-auto p-5">
                   {/* Description */}
-                  <p className="text-gray-700 text-lg mb-6">
+                  <p className="text-dark/80 text-base mb-5 leading-relaxed">
                     {step.description}
                   </p>
 
                   {/* Details */}
-                  <div className="mb-6">
-                    <ul className="space-y-3">
+                  <div className="mb-5">
+                    <ul className="space-y-2.5">
                       {step.details.map((detail, index) => (
                         <li key={index} className="flex items-start gap-3">
-                          <span className="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                          <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
                             {index + 1}
                           </span>
-                          <span className="text-gray-700">{detail}</span>
+                          <span className="text-dark/80 text-sm leading-relaxed">{detail}</span>
                         </li>
                       ))}
                     </ul>
@@ -170,31 +170,31 @@ export default function StepPopup({
 
                   {/* Dua Section */}
                   {step.dua && (
-                    <div className="bg-gradient-to-br from-gold/10 to-gold/5 rounded-xl p-5 mb-6 border border-gold/20">
-                      <h3 className="font-bold text-primary mb-4 flex items-center gap-2">
-                        <span>📖</span>
+                    <div className="bg-gradient-to-br from-primary/5 to-gold/10 rounded-xl p-4 mb-5 border border-gold/30">
+                      <h3 className="font-bold text-primary mb-3 flex items-center gap-2 text-sm">
+                        <span className="w-7 h-7 bg-gold/20 rounded-full flex items-center justify-center">📖</span>
                         <span>{t.dua}</span>
                       </h3>
-                      
+
                       {/* Arabic */}
-                      <div className="bg-white rounded-lg p-4 mb-3">
-                        <p className="text-2xl font-arabic text-right leading-loose text-gray-800">
+                      <div className="bg-white/80 rounded-lg p-4 mb-3 border border-gold/20">
+                        <p className="text-xl font-arabic text-right leading-loose text-dark">
                           {step.dua.arabic}
                         </p>
                       </div>
 
                       {/* Transliteration */}
-                      <div className="mb-3">
-                        <p className="text-xs text-gray-500 mb-1">{t.transliteration}:</p>
-                        <p className="text-gray-700 italic">
+                      <div className="mb-2.5">
+                        <p className="text-xs text-primary/70 font-medium mb-1">{t.transliteration}:</p>
+                        <p className="text-dark/70 italic text-sm">
                           {step.dua.transliteration}
                         </p>
                       </div>
 
                       {/* Meaning */}
                       <div>
-                        <p className="text-xs text-gray-500 mb-1">{t.meaning}:</p>
-                        <p className="text-gray-700">
+                        <p className="text-xs text-primary/70 font-medium mb-1">{t.meaning}:</p>
+                        <p className="text-dark/70 text-sm">
                           {step.dua.meaning}
                         </p>
                       </div>
@@ -203,12 +203,12 @@ export default function StepPopup({
 
                   {/* Tips */}
                   {step.tips && (
-                    <div className="bg-blue-50 rounded-xl p-5 border border-blue-100">
-                      <h3 className="font-bold text-blue-700 mb-2 flex items-center gap-2">
-                        <span>💡</span>
+                    <div className="bg-gold/10 rounded-xl p-4 border border-gold/30">
+                      <h3 className="font-bold text-primary mb-2 flex items-center gap-2 text-sm">
+                        <span className="w-7 h-7 bg-gold/30 rounded-full flex items-center justify-center">💡</span>
                         <span>{t.tips}</span>
                       </h3>
-                      <p className="text-blue-700">
+                      <p className="text-dark/70 text-sm leading-relaxed">
                         {step.tips}
                       </p>
                     </div>
@@ -216,15 +216,15 @@ export default function StepPopup({
                 </div>
 
                 {/* Footer Navigation */}
-                <div className="border-t border-gray-100 p-4 flex items-center justify-between gap-4 flex-shrink-0 bg-gray-50">
+                <div className="border-t border-gold/20 p-4 flex items-center justify-between gap-3 flex-shrink-0 bg-cream">
                   <button
                     onClick={onPrevious}
                     disabled={!canGoPrevious}
                     className={`
-                      flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium transition-all
+                      flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium transition-all text-sm
                       ${!canGoPrevious
-                        ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}
+                        ? 'bg-dark/5 text-dark/30 cursor-not-allowed'
+                        : 'bg-primary/10 text-primary hover:bg-primary/20 border border-primary/20'}
                     `}
                   >
                     <span>←</span>
@@ -235,10 +235,10 @@ export default function StepPopup({
                     onClick={onNext}
                     disabled={!canGoNext}
                     className={`
-                      flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium transition-all
+                      flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium transition-all text-sm
                       ${!canGoNext
-                        ? 'bg-gold/50 text-dark/50 cursor-not-allowed'
-                        : 'bg-gold text-dark hover:bg-gold-dark'}
+                        ? 'bg-gold/30 text-dark/40 cursor-not-allowed'
+                        : 'bg-gold text-dark hover:bg-gold-dark shadow-sm'}
                     `}
                   >
                     <span>{t.next}</span>

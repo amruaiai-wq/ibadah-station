@@ -106,27 +106,27 @@ export default function PostcardModal({
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 
-                       md:w-full md:max-w-4xl bg-white rounded-2xl shadow-2xl z-50 
-                       overflow-hidden flex flex-col max-h-[90vh]"
+            className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2
+                       md:w-full md:max-w-4xl bg-cream rounded-2xl shadow-2xl z-50
+                       overflow-hidden flex flex-col max-h-[90vh] border border-gold/20"
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b">
-              <h2 className="text-xl font-bold text-gray-800">{t.title}</h2>
+            <div className="flex items-center justify-between p-4 border-b border-gold/20 bg-gradient-to-r from-primary to-primary-dark">
+              <h2 className="text-lg font-bold text-white">{t.title}</h2>
               <button
                 onClick={onClose}
-                className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-500"
+                className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-white/10 text-white/80 hover:text-white transition-colors"
               >
                 ✕
               </button>
             </div>
 
             {/* Preview */}
-            <div className="flex-1 overflow-auto p-4 bg-gray-100">
-              <p className="text-sm text-gray-500 mb-3 text-center">{t.preview}</p>
+            <div className="flex-1 overflow-auto p-4 bg-gradient-to-b from-cream to-gold/5">
+              <p className="text-sm text-primary/60 mb-3 text-center font-medium">{t.preview}</p>
               <div className="flex justify-center">
-                <div 
-                  className="shadow-2xl rounded-lg overflow-hidden"
+                <div
+                  className="shadow-2xl rounded-lg overflow-hidden ring-1 ring-gold/20"
                   style={{ transform: 'scale(0.65)', transformOrigin: 'top center' }}
                   dangerouslySetInnerHTML={{ __html: postcardHTML }}
                 />
@@ -134,15 +134,15 @@ export default function PostcardModal({
             </div>
 
             {/* Actions */}
-            <div className="p-4 border-t bg-white">
-              <p className="text-xs text-gray-500 text-center mb-3">{t.tip}</p>
+            <div className="p-4 border-t border-gold/20 bg-cream">
+              <p className="text-xs text-dark/50 text-center mb-3">{t.tip}</p>
               <div className="flex gap-3">
                 <button
                   onClick={handleExportImage}
                   disabled={isExporting}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 
-                           text-gray-700 rounded-xl hover:bg-gray-200 transition-colors font-medium
-                           disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-primary/10
+                           text-primary rounded-xl hover:bg-primary/20 transition-colors font-medium
+                           disabled:opacity-50 disabled:cursor-not-allowed border border-primary/20"
                 >
                   {isExporting ? (
                     <span className="animate-spin">⏳</span>
@@ -154,9 +154,9 @@ export default function PostcardModal({
                 <button
                   onClick={handleExportPDF}
                   disabled={isExporting}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-primary 
-                           text-white rounded-xl hover:bg-primary-dark transition-colors font-medium
-                           disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gold
+                           text-dark rounded-xl hover:bg-gold-dark transition-colors font-medium
+                           disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
                 >
                   {isExporting ? (
                     <span className="animate-spin">⏳</span>
