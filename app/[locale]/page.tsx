@@ -1,4 +1,5 @@
 import HeroSection from '@/components/home/HeroSection';
+import PrayerTimes from '@/components/home/PrayerTimes';
 import DailyWisdomNew from '@/components/home/DailyWisdomNew';
 import JourneySection from '@/components/home/JourneySection';
 import FivePillars from '@/components/home/FivePillars';
@@ -12,6 +13,9 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
     <div className="min-h-screen">
       {/* Hero Section - Full Screen */}
       <HeroSection locale={locale} />
+
+      {/* Prayer Times */}
+      <PrayerTimes locale={locale} />
 
       {/* Daily Wisdom - 3D Flip Card */}
       <DailyWisdomNew locale={locale} />
