@@ -1,0 +1,516 @@
+{
+  "common": {
+    "siteName": "Ibadah Station",
+    "siteDescription": "Learn Islamic worship practices step by step",
+    "nav": {
+      "home": "Home",
+      "journeys": "Journeys",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "next": "Next",
+      "previous": "Previous",
+      "start": "Start Journey",
+      "close": "Close",
+      "backToHome": "Back to Home",
+      "learnMore": "Learn More"
+    },
+    "language": {
+      "th": "ไทย",
+      "en": "English",
+      "select": "Select Language"
+    },
+    "footer": {
+      "description": "Learn Islamic worship practices step by step",
+      "links": "Links",
+      "references": "References",
+      "privacy": "Privacy Policy",
+      "copyright": "All Rights Reserved"
+    }
+  },
+  "home": {
+    "hero": {
+      "bismillah": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "title": "Journey of Ibadah",
+      "subtitle": "Learn Islamic worship practices correctly, from daily prayers to performing Hajj in Makkah"
+    },
+    "journeys": {
+      "title": "Paths of Ibadah",
+      "subtitle": "Choose the journey you want to learn"
+    },
+    "pillars": {
+      "title": "Five Pillars of Islam",
+      "titleArabic": "أَرْكَانُ الإِسْلَامِ الخَمْسَة",
+      "subtitle": "The fundamental pillars that every Muslim must practice",
+      "items": {
+        "shahada": { "name": "Shahada", "arabic": "الشَّهَادَة" },
+        "salah": { "name": "Salah", "arabic": "الصَّلَاة" },
+        "zakat": { "name": "Zakat", "arabic": "الزَّكَاة" },
+        "sawm": { "name": "Sawm", "arabic": "الصَّوْم" },
+        "hajj": { "name": "Hajj", "arabic": "الحَجّ" }
+      }
+    }
+  },
+  "cards": {
+    "salah": {
+      "title": "Salah (Prayer)",
+      "arabic": "الصَّلَاة",
+      "description": "The second pillar of Islam. Learn the 5 daily prayers from preparation, ablution, to the correct way of performing prayer",
+      "steps": ["Wudu", "Niyyah", "Takbir", "Ruku", "Sujud", "Salam"]
+    },
+    "zakat": {
+      "title": "Zakat",
+      "arabic": "الزَّكَاة",
+      "description": "Obligatory charity for Muslims who possess wealth above the nisab. Learn how to calculate, types of wealth, and eligible recipients",
+      "steps": ["Calculate Nisab", "Complete Year", "Deduct 2.5%", "Give to Recipients"]
+    },
+    "sawm": {
+      "title": "Sawm (Fasting)",
+      "arabic": "الصَّوْم",
+      "description": "Fasting during Ramadan. Learn from preparation, what breaks the fast, and worship during the blessed month",
+      "steps": ["Niyyah", "Suhoor", "Abstain Food/Drink", "Iftar", "Taraweeh"]
+    },
+    "hajj": {
+      "title": "Hajj",
+      "arabic": "الحَجّ",
+      "description": "Pilgrimage to Makkah. Learn every step from preparation, wearing Ihram, to circumambulating the Kaaba",
+      "steps": ["Ihram", "Tawaf", "Sa'i", "Arafah", "Muzdalifah", "Stoning"]
+    },
+    "umrah": {
+      "title": "Umrah",
+      "arabic": "العُمْرَة",
+      "description": "The minor pilgrimage that can be performed year-round. Learn the correct steps according to the Sunnah of Prophet ﷺ",
+      "steps": ["Ihram", "Tawaf", "Sa'i", "Shave/Trim Hair"]
+    },
+    "adhkar": {
+      "title": "Daily Adhkar",
+      "arabic": "الأَذْكَار",
+      "description": "Duas and dhikr to recite in daily life, from waking up, leaving home, eating, to before sleeping",
+      "steps": ["Morning Dua", "Leaving Home", "Eating Dua", "Sleeping Dua"]
+    }
+  },
+  "umrah": {
+    "title": "Umrah Journey",
+    "arabic": "رِحْلَةُ العُمْرَة",
+    "intro": {
+      "title": "Welcome to the Umrah Journey",
+      "description": "Umrah is a journey to Baytullah (House of Allah) in Makkah to perform worship according to the example of Prophet Muhammad ﷺ. It can be performed throughout the year, unlike Hajj which has a specific time.",
+      "hadith": "Umrah to Umrah is an expiation for sins committed between them",
+      "hadithSource": "Narrated by Bukhari and Muslim"
+    },
+    "steps": [
+      {
+        "id": 1,
+        "title": "Preparation",
+        "titleArabic": "التَّحْضِير",
+        "description": "Prepare yourself before departure, both physically and spiritually",
+        "details": [
+          "Trim fingernails and toenails",
+          "Remove armpit and pubic hair",
+          "Take a thorough bath (ghusl)",
+          "Apply perfume (for men only, before wearing Ihram)",
+          "Make sincere intention for Allah"
+        ],
+        "tips": "Prepare before leaving home or before reaching the Miqat",
+        "icon": "🏠"
+      },
+      {
+        "id": 2,
+        "title": "Wearing Ihram",
+        "titleArabic": "الإِحْرَام",
+        "description": "Wear Ihram garments and make intention at the Miqat",
+        "details": [
+          "Men: Wear two white unsewn cloths, one wrapped around the upper body, one around the waist",
+          "Women: Wear normal modest clothing, doesn't have to be white",
+          "Pray 2 rakaat Sunnah prayer",
+          "Make intention: لَبَّيْكَ اللَّهُمَّ عُمْرَة (Labbayk Allahumma Umrah)"
+        ],
+        "dua": {
+          "arabic": "لَبَّيْكَ اللَّهُمَّ عُمْرَة",
+          "transliteration": "Labbayk Allahumma Umrah",
+          "meaning": "Here I am O Allah, for Umrah"
+        },
+        "tips": "After making intention, cutting nails, removing hair, using perfume, and sexual relations are prohibited",
+        "icon": "👔"
+      },
+      {
+        "id": 3,
+        "title": "Reciting Talbiyah",
+        "titleArabic": "التَّلْبِيَة",
+        "description": "Recite Talbiyah throughout the journey until reaching Masjid al-Haram",
+        "details": [
+          "Recite loudly (for men)",
+          "Recite softly (for women)",
+          "Repeat continuously throughout the journey",
+          "Stop reciting when beginning Tawaf"
+        ],
+        "dua": {
+          "arabic": "لَبَّيْكَ اللَّهُمَّ لَبَّيْك، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْك، إِنَّ الحَمْدَ وَالنِّعْمَةَ لَكَ وَالمُلْك، لَا شَرِيكَ لَك",
+          "transliteration": "Labbayk Allahumma labbayk, labbayka la sharika laka labbayk, innal-hamda wan-ni'mata laka wal-mulk, la sharika lak",
+          "meaning": "Here I am O Allah, here I am. Here I am, You have no partner, here I am. Verily all praise, grace and sovereignty belong to You. You have no partner"
+        },
+        "tips": "Talbiyah is responding to Allah's invitation. Recite with awareness of His greatness",
+        "icon": "🗣️"
+      },
+      {
+        "id": 4,
+        "title": "Entering Masjid al-Haram",
+        "titleArabic": "دُخُولُ المَسْجِدِ الحَرَام",
+        "description": "Enter Masjid al-Haram with respect",
+        "details": [
+          "Enter with right foot first",
+          "Recite dua for entering the mosque",
+          "When seeing the Kaaba, stop and make dua",
+          "Duas at this moment are accepted"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِك",
+          "transliteration": "Allahumma-ftah li abwaba rahmatik",
+          "meaning": "O Allah, open for me the doors of Your mercy"
+        },
+        "tips": "When seeing the Kaaba for the first time, make your most important dua",
+        "icon": "🕌"
+      },
+      {
+        "id": 5,
+        "title": "Tawaf",
+        "titleArabic": "الطَّوَاف",
+        "description": "Circumambulate the Kaaba 7 times",
+        "details": [
+          "Start from the Black Stone (Hajar al-Aswad) or the black line on the floor",
+          "Go counter-clockwise",
+          "Men: Walk briskly in the first 3 rounds (Raml)",
+          "Men: Expose right shoulder (Idtiba')",
+          "Point towards the Black Stone each round, saying بِسْمِ اللهِ، اللهُ أَكْبَر",
+          "Make dua throughout the circumambulation"
+        ],
+        "dua": {
+          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّار",
+          "transliteration": "Rabbana atina fid-dunya hasanah wa fil-akhirati hasanah wa qina 'adhab an-nar",
+          "meaning": "Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire"
+        },
+        "tips": "The dua between Rukn Yamani and Hajar al-Aswad is especially blessed",
+        "icon": "🕋"
+      },
+      {
+        "id": 6,
+        "title": "Prayer at Maqam Ibrahim",
+        "titleArabic": "صَلَاةُ رَكْعَتَيْن",
+        "description": "Pray 2 rakaat after Tawaf",
+        "details": [
+          "Pray 2 rakaat behind Maqam Ibrahim",
+          "If the area is crowded, pray anywhere in the mosque",
+          "First rakaat: Recite Surah al-Kafirun",
+          "Second rakaat: Recite Surah al-Ikhlas"
+        ],
+        "tips": "Maqam Ibrahim is the stone where Prophet Ibrahim stood while building the Kaaba",
+        "icon": "🙏"
+      },
+      {
+        "id": 7,
+        "title": "Drinking Zamzam",
+        "titleArabic": "شُرْبُ مَاءِ زَمْزَم",
+        "description": "Drink Zamzam water and make dua",
+        "details": [
+          "Drink Zamzam water to your fill",
+          "Face the Qiblah",
+          "Say Bismillah before drinking",
+          "Make dua while drinking",
+          "Drink until satisfied"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا وَاسِعًا وَشِفَاءً مِنْ كُلِّ دَاء",
+          "transliteration": "Allahumma inni as'aluka 'ilman nafi'an wa rizqan wasi'an wa shifa'an min kulli da'",
+          "meaning": "O Allah, I ask You for beneficial knowledge, abundant provision, and healing from every disease"
+        },
+        "tips": "Zamzam is the most blessed water. Drink it for whatever you need",
+        "icon": "💧"
+      },
+      {
+        "id": 8,
+        "title": "Sa'i",
+        "titleArabic": "السَّعْي",
+        "description": "Walk/run between Safa and Marwah 7 times",
+        "details": [
+          "Start from Mount Safa",
+          "Climb Safa, face the Kaaba",
+          "Recite takbir and make dua",
+          "Walk to Mount Marwah",
+          "Men: Run between the green lights",
+          "Reaching Marwah = 1 lap",
+          "Return to Safa = 2 laps",
+          "Complete 7 laps (ending at Marwah)"
+        ],
+        "dua": {
+          "arabic": "إِنَّ الصَّفَا وَالمَرْوَةَ مِنْ شَعَائِرِ الله",
+          "transliteration": "Inna as-Safa wal-Marwata min sha'a'irillah",
+          "meaning": "Indeed, Safa and Marwah are among the symbols of Allah"
+        },
+        "tips": "Sa'i commemorates Hajar's search for water for her son Ismail",
+        "icon": "🏃"
+      },
+      {
+        "id": 9,
+        "title": "Shaving or Trimming Hair",
+        "titleArabic": "الحَلْق أَو التَّقْصِير",
+        "description": "Shave or trim hair to exit the state of Ihram",
+        "details": [
+          "Men: Shave the head completely (better) or trim hair all over the head",
+          "Women: Trim fingertip-length from the ends of hair (about 1-2 cm)",
+          "Shaving has more reward than trimming"
+        ],
+        "tips": "The Prophet ﷺ made dua for those who shave 3 times, and for those who trim once",
+        "icon": "✂️"
+      },
+      {
+        "id": 10,
+        "title": "Umrah Completed",
+        "titleArabic": "تَمَّتِ العُمْرَة",
+        "description": "Alhamdulillah, Umrah is complete!",
+        "details": [
+          "Exit the state of Ihram",
+          "Can wear normal clothes",
+          "Can do things that were prohibited during Ihram",
+          "Thank Allah for completing Umrah"
+        ],
+        "dua": {
+          "arabic": "الحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَات",
+          "transliteration": "Alhamdulillahil-ladhi bi ni'matihi tatimmus-salihat",
+          "meaning": "Praise be to Allah by Whose grace good deeds are completed"
+        },
+        "tips": "An accepted Umrah has no reward other than Paradise",
+        "icon": "🎉"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the steps of Umrah",
+      "dua": "May Allah grant you the opportunity to perform Umrah soon. Ameen"
+    }
+  },
+  "salah": {
+    "title": "Salah Journey",
+    "arabic": "رِحْلَةُ الصَّلَاة",
+    "intro": {
+      "title": "Welcome to the Salah Journey",
+      "description": "Salah is the second pillar of Islam, the connection between a servant and Allah. Every Muslim who has reached puberty must pray 5 times daily.",
+      "hadith": "The first thing a servant will be questioned about on the Day of Judgment is prayer",
+      "hadithSource": "Narrated by at-Tirmidhi"
+    },
+    "steps": [
+      {
+        "id": 1,
+        "title": "Preparation",
+        "titleArabic": "التَّحْضِير",
+        "description": "Prepare before prayer",
+        "details": [
+          "Ensure prayer time has entered",
+          "Face the Qiblah (direction of Kaaba)",
+          "Wear clean clothes covering the awrah",
+          "Stand on a clean surface"
+        ],
+        "tips": "Men's awrah: navel to knees | Women's awrah: entire body except face and hands",
+        "icon": "🧘"
+      },
+      {
+        "id": 2,
+        "title": "Wudu (Ablution)",
+        "titleArabic": "الوُضُوء",
+        "description": "Perform wudu completely",
+        "details": [
+          "1. Make intention in the heart",
+          "2. Say Bismillah",
+          "3. Wash hands 3 times",
+          "4. Rinse mouth 3 times",
+          "5. Rinse nose 3 times",
+          "6. Wash face 3 times",
+          "7. Wash arms to elbows 3 times (start right)",
+          "8. Wipe head once",
+          "9. Wipe ears once",
+          "10. Wash feet to ankles 3 times (start right)"
+        ],
+        "dua": {
+          "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُه",
+          "transliteration": "Ash-hadu an la ilaha illallahu wahdahu la sharika lah, wa ash-hadu anna Muhammadan 'abduhu wa rasuluh",
+          "meaning": "I bear witness that there is no god but Allah alone, with no partner, and I bear witness that Muhammad is His servant and messenger"
+        },
+        "tips": "Recite dua after completing wudu, all 8 gates of Paradise will open for you to choose",
+        "icon": "💧"
+      },
+      {
+        "id": 3,
+        "title": "Niyyah (Intention)",
+        "titleArabic": "النِّيَّة",
+        "description": "Make intention in the heart for prayer",
+        "details": [
+          "Intend in your heart which prayer you will perform",
+          "How many rakaat",
+          "Whether as imam, follower, or praying alone",
+          "Intention is in the heart, no need to verbalize"
+        ],
+        "tips": "Niyyah is the intention in the heart, it doesn't need to be spoken",
+        "icon": "❤️"
+      },
+      {
+        "id": 4,
+        "title": "Takbiratul Ihram",
+        "titleArabic": "تَكْبِيرَةُ الإِحْرَام",
+        "description": "Raise hands and say takbir",
+        "details": [
+          "Raise hands to ear level (or shoulder level)",
+          "Fingers together, palms facing Qiblah",
+          "Say اللهُ أَكْبَر (Allahu Akbar)",
+          "Place right hand over left on chest"
+        ],
+        "tips": "Takbiratul Ihram is a pillar (rukn). Without it, prayer is invalid",
+        "icon": "🙌"
+      },
+      {
+        "id": 5,
+        "title": "Reciting Al-Fatihah",
+        "titleArabic": "قِرَاءَةُ الفَاتِحَة",
+        "description": "Recite opening dua and Surah Al-Fatihah",
+        "details": [
+          "Recite opening dua (Sunnah)",
+          "Recite A'udhu billah",
+          "Recite Bismillah",
+          "Recite Surah Al-Fatihah (pillar)",
+          "Say آمِين (Ameen) after finishing Fatihah",
+          "Recite additional surah (in rakaat 1-2)"
+        ],
+        "dua": {
+          "arabic": "الحَمْدُ لِلَّهِ رَبِّ العَالَمِين، الرَّحْمَٰنِ الرَّحِيم، مَالِكِ يَوْمِ الدِّين، إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِين، اهْدِنَا الصِّرَاطَ المُسْتَقِيم، صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِم، غَيْرِ المَغْضُوبِ عَلَيْهِم وَلَا الضَّالِّين",
+          "transliteration": "Alhamdulillahi Rabbil 'alamin, Ar-Rahmanir-Rahim, Maliki yawmid-din, Iyyaka na'budu wa iyyaka nasta'in, Ihdinas-siratal-mustaqim, Siratal-ladhina an'amta 'alayhim, Ghayril-maghdubi 'alayhim wa lad-dallin",
+          "meaning": "All praise is due to Allah, Lord of the worlds, The Most Gracious, Most Merciful, Master of the Day of Judgment, You alone we worship, and You alone we ask for help, Guide us to the straight path, The path of those You have blessed, Not of those who earned anger, nor of those who went astray"
+        },
+        "tips": "Al-Fatihah is a pillar, must be recited in every rakaat. Without it, prayer is invalid",
+        "icon": "📖"
+      },
+      {
+        "id": 6,
+        "title": "Ruku (Bowing)",
+        "titleArabic": "الرُّكُوع",
+        "description": "Bow down",
+        "details": [
+          "Say اللهُ أَكْبَر while raising hands",
+          "Bow down, back straight and parallel to ground",
+          "Place hands on knees, fingers spread",
+          "Head level with back",
+          "Say سُبْحَانَ رَبِّيَ العَظِيم 3 times"
+        ],
+        "dua": {
+          "arabic": "سُبْحَانَ رَبِّيَ العَظِيم",
+          "transliteration": "Subhana Rabbiyal-'Adhim",
+          "meaning": "Glory be to my Lord, the Most Great"
+        },
+        "tips": "Ruku must be done with tranquility (tuma'ninah), not rushed",
+        "icon": "🙇"
+      },
+      {
+        "id": 7,
+        "title": "I'tidal (Rising from Ruku)",
+        "titleArabic": "الاِعْتِدَال",
+        "description": "Rise up straight from ruku",
+        "details": [
+          "Say سَمِعَ اللهُ لِمَنْ حَمِدَه while rising",
+          "Stand straight, raise hands (Sunnah)",
+          "Say رَبَّنَا وَلَكَ الحَمْد when standing straight",
+          "Pause briefly in stillness"
+        ],
+        "dua": {
+          "arabic": "سَمِعَ اللهُ لِمَنْ حَمِدَه، رَبَّنَا وَلَكَ الحَمْد",
+          "transliteration": "Sami'allahu liman hamidah, Rabbana wa lakal-hamd",
+          "meaning": "Allah hears whoever praises Him. Our Lord, and to You is all praise"
+        },
+        "tips": "Must stand completely straight before going to sujud",
+        "icon": "🧍"
+      },
+      {
+        "id": 8,
+        "title": "Sujud (Prostration)",
+        "titleArabic": "السُّجُود",
+        "description": "Prostrate",
+        "details": [
+          "Say اللهُ أَكْبَر while going down",
+          "7 body parts touch the ground: forehead+nose, 2 hands, 2 knees, 2 feet",
+          "Keep elbows raised off the ground",
+          "Say سُبْحَانَ رَبِّيَ الأَعْلَى 3 times",
+          "Make abundant dua (closest moment to Allah)"
+        ],
+        "dua": {
+          "arabic": "سُبْحَانَ رَبِّيَ الأَعْلَى",
+          "transliteration": "Subhana Rabbiyal-A'la",
+          "meaning": "Glory be to my Lord, the Most High"
+        },
+        "tips": "Sujud is the closest moment to Allah. Make abundant dua",
+        "icon": "🤲"
+      },
+      {
+        "id": 9,
+        "title": "Sitting Between Sujud",
+        "titleArabic": "الجُلُوس بَيْنَ السَّجْدَتَيْن",
+        "description": "Sit between two prostrations",
+        "details": [
+          "Say اللهُ أَكْبَر while rising",
+          "Sit on left foot, right foot upright",
+          "Place hands on thighs",
+          "Say رَبِّ اغْفِرْ لِي",
+          "Pause in stillness",
+          "Second sujud"
+        ],
+        "dua": {
+          "arabic": "رَبِّ اغْفِرْ لِي",
+          "transliteration": "Rabbighfir li",
+          "meaning": "My Lord, forgive me"
+        },
+        "tips": "Sitting between sujud must also be done with tranquility",
+        "icon": "🧎"
+      },
+      {
+        "id": 10,
+        "title": "Tashahhud",
+        "titleArabic": "التَّشَهُّد",
+        "description": "Sit and recite Tahiyyat and Salawat",
+        "details": [
+          "Sit after rakaat 2 and final rakaat",
+          "Recite Tahiyyat (At-Tahiyyatu)",
+          "Point index finger when saying لَا إِلَٰهَ إِلَّا الله",
+          "Final rakaat: Recite Salawat Ibrahimiyyah",
+          "Make dua before salam"
+        ],
+        "dua": {
+          "arabic": "التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَات، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكَاتُه، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللهِ الصَّالِحِين، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُه",
+          "transliteration": "At-tahiyyatu lillahi was-salawatu wat-tayyibat, as-salamu 'alayka ayyuhan-nabiyyu wa rahmatullahi wa barakatuh, as-salamu 'alayna wa 'ala 'ibadillahis-salihin, ash-hadu an la ilaha illallah wa ash-hadu anna Muhammadan 'abduhu wa rasuluh",
+          "meaning": "All greetings, prayers and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and messenger"
+        },
+        "tips": "Move index finger slightly throughout tashahhud until before salam",
+        "icon": "☝️"
+      },
+      {
+        "id": 11,
+        "title": "Salam",
+        "titleArabic": "السَّلَام",
+        "description": "Say salam to end the prayer",
+        "details": [
+          "Turn face to the right, say السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ الله",
+          "Turn face to the left, say السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ الله",
+          "Prayer is complete",
+          "Recite post-prayer dhikr (Sunnah)"
+        ],
+        "dua": {
+          "arabic": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ الله",
+          "transliteration": "As-salamu 'alaykum wa rahmatullah",
+          "meaning": "Peace and mercy of Allah be upon you"
+        },
+        "tips": "After salam, say Astaghfirullah 3 times and other dhikr",
+        "icon": "✅"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the steps of Salah",
+      "dua": "May Allah accept your prayers and help you maintain them always. Ameen"
+    }
+  }
+}
