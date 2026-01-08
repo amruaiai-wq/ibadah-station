@@ -12,7 +12,9 @@
       "Bash(npm run lint)",
       "Bash(git commit:*)",
       "Bash(tree:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(cd:*)",
+      "Bash(find:*)"
     ]
   }
 }
