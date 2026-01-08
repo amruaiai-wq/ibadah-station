@@ -512,5 +512,426 @@
       "message": "You have learned all the steps of Salah",
       "dua": "May Allah accept your prayers and help you maintain them always. Ameen"
     }
+  },
+  "hajj": {
+    "title": "Hajj Journey",
+    "titleArabic": "رِحْلَةُ الحَجّ",
+    "description": "Learn every step of performing Hajj in the holy city of Makkah",
+    "intro": {
+      "title": "Welcome to the Hajj Journey",
+      "description": "Hajj is the fifth pillar of Islam, obligatory for every Muslim who is capable, at least once in their lifetime. A sacred journey to Baytullah.",
+      "hadith": "Whoever performs Hajj for Allah and does not speak obscenely or commit sins, he will return like the day his mother gave birth to him",
+      "hadithSource": "Narrated by Bukhari and Muslim"
+    },
+    "steps": [
+      {
+        "id": 1,
+        "title": "Preparation",
+        "titleArabic": "التَّحْضِير",
+        "description": "Prepare physically and spiritually before departure",
+        "details": [
+          "Pay off debts and seek forgiveness from others",
+          "Write a will (wasiyyah)",
+          "Prepare halal funds for the journey",
+          "Study and understand the Hajj rituals",
+          "Prepare physically for the journey",
+          "Make sincere intention for Allah"
+        ],
+        "tips": "An accepted Hajj (Hajj Mabrur) has no reward other than Paradise",
+        "icon": "📋"
+      },
+      {
+        "id": 2,
+        "title": "Wearing Ihram",
+        "titleArabic": "الإِحْرَام",
+        "description": "Wear Ihram garments and make intention at the Miqat",
+        "details": [
+          "Take a bath and cleanse yourself",
+          "Men: Wear two white unsewn cloths",
+          "Women: Wear normal modest clothing",
+          "Pray 2 rakaat Sunnah prayer",
+          "Make intention for Hajj",
+          "Recite Talbiyah"
+        ],
+        "dua": {
+          "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+          "transliteration": "Labbayk Allahumma Hajjan",
+          "meaning": "Here I am O Allah, for Hajj"
+        },
+        "tips": "There are 3 types: Tamattu' (Umrah then Hajj), Qiran (Umrah and Hajj together), Ifrad (Hajj only)",
+        "icon": "👔"
+      },
+      {
+        "id": 3,
+        "title": "Tawaf al-Qudum",
+        "titleArabic": "طَوَافُ القُدُوم",
+        "description": "Arrival Tawaf around the Kaaba (for those coming from outside Makkah)",
+        "details": [
+          "Sunnah for those traveling from outside Makkah",
+          "Circumambulate the Kaaba 7 times",
+          "Start from the Black Stone",
+          "Go counter-clockwise",
+          "Pray 2 rakaat after Tawaf"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ، اللهُ أَكْبَر",
+          "transliteration": "Bismillah, Allahu Akbar",
+          "meaning": "In the name of Allah, Allah is the Greatest"
+        },
+        "tips": "Tawaf al-Qudum is Sunnah, not obligatory",
+        "icon": "🕋"
+      },
+      {
+        "id": 4,
+        "title": "8th Dhul Hijjah - Going to Mina",
+        "titleArabic": "يَوْمُ التَّرْوِيَة",
+        "description": "Depart for Mina on the Day of Tarwiyah",
+        "details": [
+          "Wear Ihram and make intention for Hajj (if doing Tamattu')",
+          "Depart for Mina after sunrise",
+          "Pray Dhuhr, Asr, Maghrib, Isha, and Fajr in Mina",
+          "Shorten 4-rakaat prayers to 2 rakaat",
+          "Stay overnight in Mina",
+          "Spend time in dhikr and dua"
+        ],
+        "tips": "This day is called 'Day of Tarwiyah' because people would prepare water",
+        "icon": "⛺"
+      },
+      {
+        "id": 5,
+        "title": "9th - Standing at Arafah",
+        "titleArabic": "الوُقُوفُ بِعَرَفَة",
+        "description": "Stand at the Plain of Arafah - The heart of Hajj",
+        "details": [
+          "Leave Mina after sunrise",
+          "Pray Dhuhr and Asr combined and shortened at Arafah",
+          "Stand making dua until sunset",
+          "Face the Qiblah",
+          "Raise hands and make abundant dua",
+          "No need to climb the mountain, anywhere in Arafah is valid"
+        ],
+        "dua": {
+          "arabic": "لَا إِلَٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَه، لَهُ المُلْكُ وَلَهُ الحَمْد، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِير",
+          "transliteration": "La ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamd, wa huwa 'ala kulli shay'in qadir",
+          "meaning": "There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He has power over all things"
+        },
+        "tips": "The Prophet ﷺ said: Hajj is Arafah - Missing this day invalidates your Hajj",
+        "icon": "🤲"
+      },
+      {
+        "id": 6,
+        "title": "Staying at Muzdalifah",
+        "titleArabic": "المَبِيتُ بِمُزْدَلِفَة",
+        "description": "Travel to Muzdalifah after sunset",
+        "details": [
+          "Leave Arafah after sunset",
+          "Pray Maghrib and Isha combined and shortened at Muzdalifah",
+          "Stay overnight until after midnight",
+          "Collect 7 or more small pebbles for stoning at Mina",
+          "Recite Talbiyah and dhikr"
+        ],
+        "tips": "Women, elderly, and weak people are allowed to leave Muzdalifah after midnight",
+        "icon": "🌙"
+      },
+      {
+        "id": 7,
+        "title": "10th - Day of Eid al-Adha",
+        "titleArabic": "يَوْمُ النَّحْر",
+        "description": "Day of Sacrifice - The busiest day",
+        "details": [
+          "Stone Jamarat al-Aqabah with 7 pebbles",
+          "Sacrifice an animal (for Tamattu' and Qiran)",
+          "Shave or trim hair",
+          "Exit partial state of Ihram (Tahallul Asghar)",
+          "Perform Tawaf al-Ifadah",
+          "Perform Sa'i (if doing Tamattu' or haven't done it yet)"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ، اللهُ أَكْبَر",
+          "transliteration": "Bismillah, Allahu Akbar",
+          "meaning": "In the name of Allah, Allah is the Greatest"
+        },
+        "tips": "Best order: Stoning > Sacrifice > Shaving > Tawaf, but order can be changed",
+        "icon": "🐑"
+      },
+      {
+        "id": 8,
+        "title": "Days of Tashreeq (11-13 Dhul Hijjah)",
+        "titleArabic": "أَيَّامُ التَّشْرِيق",
+        "description": "Stay at Mina and stone the 3 pillars",
+        "details": [
+          "Stay overnight at Mina",
+          "Stone 3 pillars daily after Dhuhr",
+          "First pillar (Sughra): 7 pebbles, then stop for dua",
+          "Second pillar (Wusta): 7 pebbles, then stop for dua",
+          "Third pillar (Aqabah): 7 pebbles, then leave",
+          "Allowed to leave on 12th before Maghrib (Ta'ajjul)"
+        ],
+        "tips": "If leaving on 12th, must leave before sunset, otherwise must stay and stone on 13th",
+        "icon": "🪨"
+      },
+      {
+        "id": 9,
+        "title": "Farewell Tawaf",
+        "titleArabic": "طَوَافُ الوَدَاع",
+        "description": "Circumambulate the Kaaba as farewell before leaving Makkah",
+        "details": [
+          "Bidding farewell to Baytullah",
+          "Circumambulate the Kaaba 7 times",
+          "Pray 2 rakaat after Tawaf",
+          "Drink Zamzam water",
+          "Make dua before leaving the mosque",
+          "Should be the last thing done in Makkah"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنَّ البَيْتَ بَيْتُك، وَالحَرَمَ حَرَمُك، وَالأَمْنَ أَمْنُك، وَهَذَا مَقَامُ العَائِذِ بِكَ مِنَ النَّار",
+          "transliteration": "Allahumma innal-bayta baytuk, wal-harama haramuk, wal-amna amnuk, wa hadha maqamul-'a'idhi bika minan-nar",
+          "meaning": "O Allah, this House is Your House, the Sacred Precinct is Your Sacred Precinct, the security is Your security, and this is the place of the one seeking Your protection from the Fire"
+        },
+        "tips": "Women in menstruation are exempted from Farewell Tawaf",
+        "icon": "👋"
+      },
+      {
+        "id": 10,
+        "title": "Hajj Completed",
+        "titleArabic": "تَمَّ الحَجّ",
+        "description": "Alhamdulillah, Hajj is complete!",
+        "details": [
+          "Thank Allah for completing Hajj",
+          "Hope for an accepted Hajj (Hajj Mabrur)",
+          "Maintain the goodness gained from Hajj",
+          "Return home with a purified heart",
+          "Share the experience with family"
+        ],
+        "dua": {
+          "arabic": "الحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَات",
+          "transliteration": "Alhamdulillahil-ladhi bi ni'matihi tatimmus-salihat",
+          "meaning": "Praise be to Allah by Whose grace good deeds are completed"
+        },
+        "tips": "Hajj Mabrur has no reward other than Paradise",
+        "icon": "🎉"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the steps of Hajj",
+      "dua": "May Allah grant you the opportunity to perform Hajj at Baytullah. Ameen"
+    }
+  },
+  "sawm": {
+    "title": "Fasting Journey",
+    "titleArabic": "رِحْلَةُ الصِّيَام",
+    "description": "Learn how to fast correctly during Ramadan",
+    "intro": {
+      "title": "Welcome to the Fasting Journey",
+      "description": "Fasting during Ramadan is the fourth pillar of Islam. It involves abstaining from food, drink, and other invalidators from dawn until sunset.",
+      "hadith": "Whoever fasts Ramadan out of faith and seeking reward, his past sins will be forgiven",
+      "hadithSource": "Narrated by Bukhari and Muslim"
+    },
+    "steps": [
+      {
+        "id": 1,
+        "title": "Preparing for Ramadan",
+        "titleArabic": "الاِسْتِعْدَاد لِرَمَضَان",
+        "description": "Prepare physically and spiritually to welcome Ramadan",
+        "details": [
+          "Fast Sunnah fasts in Sha'ban",
+          "Make up any missed fasts from previous year",
+          "Make dua to reach Ramadan",
+          "Plan your Quran reading schedule",
+          "Schedule prayers and worship",
+          "Purify your heart and intentions"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ بَلِّغْنَا رَمَضَان",
+          "transliteration": "Allahumma ballighna Ramadan",
+          "meaning": "O Allah, let us reach Ramadan"
+        },
+        "tips": "The Prophet ﷺ used to fast a lot in Sha'ban to prepare for Ramadan",
+        "icon": "📅"
+      },
+      {
+        "id": 2,
+        "title": "Making Intention",
+        "titleArabic": "النِّيَّة",
+        "description": "Make intention to fast before dawn",
+        "details": [
+          "Intend in your heart to fast the next day",
+          "Must intend before dawn (for obligatory fasts)",
+          "Intention is in the heart, no need to verbalize",
+          "One intention at the beginning of the month suffices for the whole month"
+        ],
+        "tips": "Waking up for Suhoor is considered an intention to fast",
+        "icon": "❤️"
+      },
+      {
+        "id": 3,
+        "title": "Eating Suhoor",
+        "titleArabic": "السُّحُور",
+        "description": "Pre-dawn meal before beginning the fast",
+        "details": [
+          "Wake up to eat before dawn",
+          "Eating Suhoor is a blessed Sunnah",
+          "Delay Suhoor close to Imsak (stop eating time)",
+          "Drink enough water",
+          "Eat nutritious food",
+          "Stop eating when hearing the Fajr Adhan"
+        ],
+        "dua": {
+          "arabic": "نَوَيْتُ صَوْمَ غَدٍ عَنْ أَدَاءِ فَرْضِ شَهْرِ رَمَضَانَ هَذِهِ السَّنَةِ لِلَّهِ تَعَالَى",
+          "transliteration": "Nawaytu sawma ghadin 'an ada'i fardi shahri Ramadana hadhihis-sanati lillahi ta'ala",
+          "meaning": "I intend to fast tomorrow to fulfill the obligation of Ramadan this year for Allah the Most High"
+        },
+        "tips": "The Prophet ﷺ said: Eat Suhoor, for there is blessing in Suhoor",
+        "icon": "🍽️"
+      },
+      {
+        "id": 4,
+        "title": "Fasting During the Day",
+        "titleArabic": "الصِّيَام",
+        "description": "Abstain from invalidators from dawn to sunset",
+        "details": [
+          "Abstain from all food and drink",
+          "Abstain from sexual relations",
+          "Guard your tongue from bad speech",
+          "Control your emotions, don't get angry",
+          "Avoid lying and backbiting",
+          "Increase Quran recitation and dhikr"
+        ],
+        "tips": "If someone insults or argues with you, say 'I am fasting'",
+        "icon": "☀️"
+      },
+      {
+        "id": 5,
+        "title": "What Breaks the Fast",
+        "titleArabic": "مُفْسِدَاتُ الصِّيَام",
+        "description": "Know what invalidates your fast",
+        "details": [
+          "Eating or drinking intentionally",
+          "Sexual intercourse",
+          "Intentional vomiting",
+          "Menstruation or post-natal bleeding",
+          "Nutritional injections that enter the body",
+          "Intentional ejaculation"
+        ],
+        "tips": "If you eat or drink forgetfully, the fast is still valid. Stop immediately and continue fasting",
+        "icon": "⚠️"
+      },
+      {
+        "id": 6,
+        "title": "What Doesn't Break the Fast",
+        "titleArabic": "مَا لَا يُفْسِدُ الصِّيَام",
+        "description": "Know what is permissible while fasting",
+        "details": [
+          "Eating or drinking forgetfully",
+          "Bathing and swimming (be careful of water entering mouth)",
+          "Brushing teeth and using miswak",
+          "Eye and ear drops",
+          "Blood tests and blood donation",
+          "Wet dreams (ejaculation while sleeping)"
+        ],
+        "tips": "The Prophet ﷺ used miswak while fasting",
+        "icon": "✅"
+      },
+      {
+        "id": 7,
+        "title": "Breaking the Fast (Iftar)",
+        "titleArabic": "الإِفْطَار",
+        "description": "Eating when the sun sets",
+        "details": [
+          "Break fast immediately when hearing Maghrib Adhan",
+          "Start with dates or water",
+          "Say dua before breaking fast",
+          "Don't overeat",
+          "Make dua while breaking fast (duas are accepted)"
+        ],
+        "dua": {
+          "arabic": "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ العُرُوقُ وَثَبَتَ الأَجْرُ إِنْ شَاءَ الله",
+          "transliteration": "Dhahaba adh-dhama'u wabtallatil-'uruqu wa thabatal-ajru insha'Allah",
+          "meaning": "The thirst has gone, the veins are moistened, and the reward is confirmed, if Allah wills"
+        },
+        "tips": "The Prophet ﷺ said: People will remain in goodness as long as they hasten to break their fast",
+        "icon": "🌅"
+      },
+      {
+        "id": 8,
+        "title": "Taraweeh Prayer",
+        "titleArabic": "صَلَاةُ التَّرَاوِيح",
+        "description": "Special Sunnah prayer during Ramadan nights",
+        "details": [
+          "Pray after Isha",
+          "Pray 8 or 20 rakaat",
+          "Pray 2 rakaat at a time",
+          "Praying in congregation at the mosque has great reward",
+          "End with Witr prayer",
+          "Try to pray every night throughout the month"
+        ],
+        "tips": "Whoever stands in prayer during Ramadan nights with faith and seeking reward, his past sins will be forgiven",
+        "icon": "🌙"
+      },
+      {
+        "id": 9,
+        "title": "Seeking Laylatul Qadr",
+        "titleArabic": "لَيْلَةُ القَدْر",
+        "description": "The Night better than a thousand months",
+        "details": [
+          "In the odd nights of the last 10 nights",
+          "Night of 21, 23, 25, 27, or 29",
+          "Increase worship in the last 10 nights",
+          "Perform I'tikaf in the mosque (if possible)",
+          "Make abundant dua, especially this one",
+          "Pray Qiyamul-Layl"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ العَفْوَ فَاعْفُ عَنِّي",
+          "transliteration": "Allahumma innaka 'afuwwun tuhibbul-'afwa fa'fu 'anni",
+          "meaning": "O Allah, You are Forgiving and love forgiveness, so forgive me"
+        },
+        "tips": "Aisha asked the Prophet ﷺ what dua to make on Laylatul Qadr, and he taught her this dua",
+        "icon": "⭐"
+      },
+      {
+        "id": 10,
+        "title": "Zakat al-Fitr",
+        "titleArabic": "زَكَاةُ الفِطْر",
+        "description": "Pay Zakat to purify before Eid",
+        "details": [
+          "Obligatory for every Muslim",
+          "Pay for yourself and those under your care",
+          "Amount: 1 Sa' (about 2.5-3 kg) of staple food",
+          "Pay before Eid prayer",
+          "Give to the poor",
+          "Can pay as money according to some scholars"
+        ],
+        "tips": "Zakat al-Fitr purifies the fast from idle talk and provides food for the poor on Eid day",
+        "icon": "💝"
+      },
+      {
+        "id": 11,
+        "title": "Eid al-Fitr",
+        "titleArabic": "عِيدُ الفِطْر",
+        "description": "Celebration day after Ramadan",
+        "details": [
+          "Take a bath and dress nicely",
+          "Eat something before going to prayer",
+          "Say Takbeer on the way to the mosque",
+          "Pray Eid prayer",
+          "Listen to the Khutbah",
+          "Visit relatives and friends"
+        ],
+        "dua": {
+          "arabic": "تَقَبَّلَ اللهُ مِنَّا وَمِنْكُم",
+          "transliteration": "Taqabbal Allahu minna wa minkum",
+          "meaning": "May Allah accept from us and from you"
+        },
+        "tips": "Fasting is prohibited on Eid day as it is a day of celebration",
+        "icon": "🎉"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the steps of fasting in Ramadan",
+      "dua": "May Allah let us reach Ramadan and accept our fasting. Ameen"
+    }
   }
 }
