@@ -90,6 +90,80 @@
       "steps": ["Morning Dua", "Leaving Home", "Eating Dua", "Sleeping Dua"]
     }
   },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "forgotPassword": "Forgot Password?",
+      "noAccount": "Don't have an account?",
+      "register": "Register",
+      "orContinueWith": "Or continue with",
+      "loginWithGoogle": "Login with Google",
+      "loginWithFacebook": "Login with Facebook",
+      "error": "An error occurred",
+      "success": "Login successful"
+    },
+    "register": {
+      "title": "Create Account",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Register",
+      "hasAccount": "Already have an account?",
+      "login": "Login",
+      "orContinueWith": "Or sign up with",
+      "passwordMismatch": "Passwords do not match",
+      "success": "Registration successful!",
+      "checkEmail": "Please check your email to verify your account"
+    }
+  },
+  "qna": {
+    "title": "Q&A - Religious Questions",
+    "titleArabic": "الأَسْئِلَة وَالأَجْوِبَة",
+    "description": "Have questions about Islam? Ask away, we're here to help",
+    "askQuestion": "Ask a Question",
+    "loginToAsk": "Login to ask a question",
+    "allQuestions": "All Questions",
+    "pendingQuestions": "Pending",
+    "answeredQuestions": "Answered",
+    "myQuestions": "My Questions",
+    "noQuestions": "No questions yet",
+    "askFirst": "Be the first to ask a question!",
+    "form": {
+      "title": "Question Title",
+      "titlePlaceholder": "Write your question title",
+      "content": "Details",
+      "contentPlaceholder": "Explain your question in detail...",
+      "category": "Category",
+      "selectCategory": "Select a category",
+      "submit": "Submit Question",
+      "submitting": "Submitting...",
+      "success": "Question submitted!",
+      "successMessage": "Your question has been submitted and is awaiting a response"
+    },
+    "categories": {
+      "salah": "Prayer (Salah)",
+      "wudu": "Ablution (Wudu)",
+      "fasting": "Fasting",
+      "zakat": "Zakat",
+      "hajj-umrah": "Hajj/Umrah",
+      "general": "General"
+    },
+    "status": {
+      "pending": "Pending",
+      "answered": "Answered",
+      "closed": "Closed"
+    },
+    "answer": {
+      "title": "Answer",
+      "by": "Answered by",
+      "sources": "Sources",
+      "noAnswer": "No answer yet"
+    }
+  },
   "umrah": {
     "title": "Umrah Journey",
     "arabic": "رِحْلَةُ العُمْرَة",
@@ -932,6 +1006,665 @@
       "title": "Congratulations!",
       "message": "You have learned all the steps of fasting in Ramadan",
       "dua": "May Allah let us reach Ramadan and accept our fasting. Ameen"
+    }
+  },
+  "waterTypes": {
+    "title": "Types of Water",
+    "titleArabic": "أَنْوَاعُ الْمَاء",
+    "description": "Learn about the types of water used for purification in Islam",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Mutlaq Water (Pure Water)",
+        "titleArabic": "الْمَاءُ الْمُطْلَق",
+        "description": "Pure water that can be used for wudu and ghusl",
+        "details": [
+          "Rain water - Water that Allah sends down from the sky",
+          "Well water - Water that springs from the ground",
+          "River water - Naturally flowing water",
+          "Sea water - Salt water that is considered clean",
+          "Melted snow or ice",
+          "Tap water - Filtered water"
+        ],
+        "tips": "Mutlaq water is the best for performing wudu and ghusl",
+        "icon": "💧"
+      },
+      {
+        "id": 2,
+        "title": "Musta'mal Water (Used Water)",
+        "titleArabic": "الْمَاءُ الْمُسْتَعْمَل",
+        "description": "Water that has been used for wudu or ghusl",
+        "details": [
+          "Water that has flowed over the body during wudu",
+          "Water used for ghusl al-janabah",
+          "According to some schools, it cannot be used to remove hadath again",
+          "Other opinions allow it if still clean"
+        ],
+        "tips": "It is recommended to always use fresh water when possible",
+        "icon": "🔄"
+      },
+      {
+        "id": 3,
+        "title": "Mutanajjis Water (Impure Water)",
+        "titleArabic": "الْمَاءُ الْمُتَنَجِّس",
+        "description": "Water contaminated with impurity that changes its properties",
+        "details": [
+          "Water whose color has changed due to impurity",
+          "Water whose smell has changed due to impurity",
+          "Water whose taste has changed due to impurity",
+          "Cannot be used for purification",
+          "Must be purified before use"
+        ],
+        "tips": "Water with impurity that doesn't change its properties is still considered pure if the quantity is large (2 qullah)",
+        "icon": "⚠️"
+      },
+      {
+        "id": 4,
+        "title": "Mukhallat Water (Mixed Water)",
+        "titleArabic": "الْمَاءُ الْمُخَالَط",
+        "description": "Water mixed with other substances that changed its properties",
+        "details": [
+          "Tea, coffee, fruit juice",
+          "Water mixed with thick soap",
+          "Water heavily mixed with perfume",
+          "Cannot be used for wudu or ghusl",
+          "Still considered clean (tahir) and drinkable"
+        ],
+        "tips": "The difference between mutanajjis and mukhallat is that mukhallat is still clean but cannot remove hadath",
+        "icon": "🧃"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the types of water",
+      "dua": "May Allah grant us knowledge to use water properly according to Islamic law. Ameen"
+    }
+  },
+  "najisTypes": {
+    "title": "Types of Najis",
+    "titleArabic": "أَنْوَاعُ النَّجَاسَة",
+    "description": "Learn about the types of impurity (najis) and how to purify them",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Najis Mughallazah (Heavy Impurity)",
+        "titleArabic": "النَّجَاسَةُ الْمُغَلَّظَة",
+        "description": "The heaviest impurity, requiring 7 washes with one containing soil",
+        "details": [
+          "Dog - saliva, urine, feces",
+          "Pig - all parts of its body",
+          "Method: Wash 7 times, with the first or one wash mixed with clean soil",
+          "The soil used must be clean"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ طَهِّرْنِي مِنَ الذُّنُوبِ وَالْخَطَايَا",
+          "transliteration": "Allahumma tahhirni minadh-dhunubi wal-khataya",
+          "meaning": "O Allah, purify me from sins and wrongdoings"
+        },
+        "tips": "If soil is unavailable, some scholars allow soap or detergent as a substitute",
+        "icon": "🐕"
+      },
+      {
+        "id": 2,
+        "title": "Najis Mutawassitah (Medium Impurity)",
+        "titleArabic": "النَّجَاسَةُ الْمُتَوَسِّطَة",
+        "description": "General impurity, wash until color, smell, and taste are removed",
+        "details": [
+          "Human urine and feces",
+          "Blood and pus",
+          "Vomit",
+          "Madhi (pre-seminal fluid)",
+          "Animal carcasses (except humans, fish, locusts)",
+          "Alcohol and intoxicants",
+          "Method: Wash with water until smell, color, and taste are gone"
+        ],
+        "tips": "Wash with flowing water to ensure impurity is completely removed",
+        "icon": "💉"
+      },
+      {
+        "id": 3,
+        "title": "Najis Mukhaffafah (Light Impurity)",
+        "titleArabic": "النَّجَاسَةُ الْمُخَفَّفَة",
+        "description": "The lightest impurity, easiest to purify",
+        "details": [
+          "Urine of a baby boy who only drinks breast milk",
+          "Method: Sprinkle water over the affected area",
+          "No need to wash or rub",
+          "Only applies to baby boys, not girls"
+        ],
+        "tips": "The key condition is the baby must not have eaten any food other than breast milk",
+        "icon": "👶"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the types of najis",
+      "dua": "May Allah help us maintain cleanliness in body and soul. Ameen"
+    }
+  },
+  "postPrayerAdhkar": {
+    "title": "Post-Prayer Adhkar",
+    "titleArabic": "أَذْكَارُ بَعْدَ الصَّلَاة",
+    "description": "Dhikr and duas to recite after prayer",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Istighfar 3 times",
+        "titleArabic": "الاِسْتِغْفَار",
+        "description": "Seek forgiveness immediately after salam",
+        "details": [
+          "Say immediately after giving salam",
+          "Repeat 3 times",
+          "This is the Sunnah of the Prophet ﷺ"
+        ],
+        "dua": {
+          "arabic": "أَسْتَغْفِرُ الله",
+          "transliteration": "Astaghfirullah",
+          "meaning": "I seek forgiveness from Allah"
+        },
+        "tips": "Say it with awareness of your shortcomings",
+        "icon": "🤲"
+      },
+      {
+        "id": 2,
+        "title": "Allahumma Antas-Salam",
+        "titleArabic": "اللَّهُمَّ أَنْتَ السَّلَام",
+        "description": "Praising Allah as the source of peace",
+        "details": [
+          "Say after istighfar",
+          "Recite once"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَام، تَبَارَكْتَ يَا ذَا الجَلَالِ وَالإِكْرَام",
+          "transliteration": "Allahumma antas-salamu wa minkas-salam, tabarakta ya dhal-jalali wal-ikram",
+          "meaning": "O Allah, You are Peace, and from You comes peace. Blessed are You, O Possessor of Majesty and Honor"
+        },
+        "icon": "✨"
+      },
+      {
+        "id": 3,
+        "title": "SubhanAllah 33 times",
+        "titleArabic": "سُبْحَانَ الله",
+        "description": "Glorifying Allah's perfection",
+        "details": [
+          "Recite 33 times",
+          "Count with fingers or prayer beads"
+        ],
+        "dua": {
+          "arabic": "سُبْحَانَ الله",
+          "transliteration": "SubhanAllah",
+          "meaning": "Glory be to Allah"
+        },
+        "tips": "The Prophet ﷺ used to count with his right hand",
+        "icon": "📿"
+      },
+      {
+        "id": 4,
+        "title": "Alhamdulillah 33 times",
+        "titleArabic": "الْحَمْدُ لِلَّه",
+        "description": "Praising and thanking Allah",
+        "details": [
+          "Recite 33 times",
+          "Continue after SubhanAllah"
+        ],
+        "dua": {
+          "arabic": "الْحَمْدُ لِلَّه",
+          "transliteration": "Alhamdulillah",
+          "meaning": "All praise is due to Allah"
+        },
+        "icon": "🙏"
+      },
+      {
+        "id": 5,
+        "title": "Allahu Akbar 33 times",
+        "titleArabic": "اللهُ أَكْبَر",
+        "description": "Declaring Allah's greatness",
+        "details": [
+          "Recite 33 times",
+          "Total count: 99 times (33x3)"
+        ],
+        "dua": {
+          "arabic": "اللهُ أَكْبَر",
+          "transliteration": "Allahu Akbar",
+          "meaning": "Allah is the Greatest"
+        },
+        "icon": "☝️"
+      },
+      {
+        "id": 6,
+        "title": "La ilaha illallah (completing 100)",
+        "titleArabic": "لَا إِلَٰهَ إِلَّا الله",
+        "description": "Complete to 100 by ending with Tahlil",
+        "details": [
+          "Recite once to complete 100"
+        ],
+        "dua": {
+          "arabic": "لَا إِلَٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَه، لَهُ المُلْكُ وَلَهُ الحَمْد، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِير",
+          "transliteration": "La ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamd, wa huwa 'ala kulli shay'in qadir",
+          "meaning": "There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He has power over all things"
+        },
+        "tips": "Whoever says this after every prayer, his sins will be forgiven even if they are like the foam of the sea",
+        "icon": "💎"
+      },
+      {
+        "id": 7,
+        "title": "Ayatul Kursi",
+        "titleArabic": "آيَةُ الْكُرْسِيّ",
+        "description": "Recite Ayatul Kursi (Al-Baqarah 255)",
+        "details": [
+          "Recite once",
+          "Whoever recites it after every prayer, nothing stands between him and Paradise except death"
+        ],
+        "dua": {
+          "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّوم، لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْم...",
+          "transliteration": "Allahu la ilaha illa huwal-hayyul-qayyum, la ta'khudhuhu sinatun wa la nawm...",
+          "meaning": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of existence..."
+        },
+        "tips": "The greatest verse in the Quran",
+        "icon": "📖"
+      },
+      {
+        "id": 8,
+        "title": "Surah Al-Ikhlas, Al-Falaq, An-Nas",
+        "titleArabic": "المُعَوِّذَات",
+        "description": "Recite all three surahs after prayer",
+        "details": [
+          "Recite Surah Al-Ikhlas once",
+          "Recite Surah Al-Falaq once",
+          "Recite Surah An-Nas once",
+          "After Fajr and Maghrib, recite 3 times each"
+        ],
+        "tips": "The Prophet ﷺ never missed reciting these surahs after prayer",
+        "icon": "📚"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the post-prayer adhkar",
+      "dua": "May Allah help us maintain these adhkar consistently. Ameen"
+    }
+  },
+  "morningEveningAdhkar": {
+    "title": "Morning & Evening Adhkar",
+    "titleArabic": "أَذْكَارُ الصَّبَاحِ وَالْمَسَاء",
+    "description": "Duas to recite every morning and evening",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Ayatul Kursi",
+        "titleArabic": "آيَةُ الْكُرْسِيّ",
+        "description": "Recite Ayatul Kursi morning and evening",
+        "details": [
+          "In the morning after Fajr prayer",
+          "In the evening after Asr or Maghrib prayer",
+          "Whoever recites it will be protected from Shaytan until evening/morning"
+        ],
+        "dua": {
+          "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّوم...",
+          "transliteration": "Allahu la ilaha illa huwal-hayyul-qayyum...",
+          "meaning": "Allah - there is no deity except Him..."
+        },
+        "tips": "The greatest verse in the Quran",
+        "icon": "📖"
+      },
+      {
+        "id": 2,
+        "title": "Surah Al-Ikhlas, Al-Falaq, An-Nas (3 times)",
+        "titleArabic": "المُعَوِّذَات",
+        "description": "Recite all three surahs 3 times morning and evening",
+        "details": [
+          "Recite Surah Al-Ikhlas 3 times",
+          "Recite Surah Al-Falaq 3 times",
+          "Recite Surah An-Nas 3 times",
+          "Sufficient for protection from everything"
+        ],
+        "tips": "The Prophet ﷺ said: It will suffice you from everything",
+        "icon": "📚"
+      },
+      {
+        "id": 3,
+        "title": "Sayyidul Istighfar",
+        "titleArabic": "سَيِّدُ الاِسْتِغْفَار",
+        "description": "The master supplication for forgiveness",
+        "details": [
+          "Recite morning and evening",
+          "Whoever says it in the morning and dies that day will enter Paradise",
+          "Whoever says it in the evening and dies that night will enter Paradise"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+          "transliteration": "Allahumma anta rabbi la ilaha illa ant, khalaqtani wa ana 'abduk, wa ana 'ala 'ahdika wa wa'dika mastata't, a'udhu bika min sharri ma sana't, abu'u laka bini'matika 'alayya, wa abu'u bidhanbi, faghfirli fa innahu la yaghfirudh-dhunuba illa ant",
+          "meaning": "O Allah, You are my Lord, there is no god but You. You created me and I am Your servant, and I am upon Your covenant and promise as much as I can. I seek refuge in You from the evil I have done. I acknowledge Your blessings upon me, and I acknowledge my sin, so forgive me, for none forgives sins but You"
+        },
+        "tips": "This dua is called 'The Master of Seeking Forgiveness'",
+        "icon": "🤲"
+      },
+      {
+        "id": 4,
+        "title": "Protection Dua Morning/Evening",
+        "titleArabic": "دُعَاءُ الصَّبَاحِ وَالْمَسَاء",
+        "description": "Seeking protection in Allah's name",
+        "details": [
+          "Recite 3 times morning and evening",
+          "Whoever says it, nothing will harm them"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيم",
+          "transliteration": "Bismillahilladhi la yadurru ma'asmihi shay'un fil-ardi wa la fis-sama'i wa huwas-sami'ul-'alim",
+          "meaning": "In the name of Allah, with whose name nothing in the earth or heaven can cause harm, and He is the All-Hearing, All-Knowing"
+        },
+        "icon": "🛡️"
+      },
+      {
+        "id": 5,
+        "title": "Contentment with Allah",
+        "titleArabic": "رَضِيتُ بِاللهِ رَبًّا",
+        "description": "Expressing satisfaction with Allah, Islam, and the Prophet",
+        "details": [
+          "Recite 3 times morning and evening",
+          "It becomes Allah's right to make that person content on the Day of Judgment"
+        ],
+        "dua": {
+          "arabic": "رَضِيتُ بِاللهِ رَبًّا، وَبِالإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ ﷺ نَبِيًّا",
+          "transliteration": "Raditu billahi rabba, wa bil-islami dina, wa bi-Muhammadin nabiyya",
+          "meaning": "I am pleased with Allah as my Lord, Islam as my religion, and Muhammad as my Prophet"
+        },
+        "icon": "❤️"
+      },
+      {
+        "id": 6,
+        "title": "Morning/Evening Entry Dua",
+        "titleArabic": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْك",
+        "description": "Dua for entering the morning (with evening version)",
+        "details": [
+          "In the morning: Asbahna...",
+          "In the evening: Amsayna..."
+        ],
+        "dua": {
+          "arabic": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّه، وَالْحَمْدُ لِلَّه، لَا إِلَٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَه، لَهُ الْمُلْكُ وَلَهُ الْحَمْد، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِير",
+          "transliteration": "Asbahna wa asbahal-mulku lillah, wal-hamdulillah, la ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamd, wa huwa 'ala kulli shay'in qadir",
+          "meaning": "We have entered the morning and the dominion belongs to Allah. Praise be to Allah. There is no god but Allah alone, with no partner. His is the dominion and His is the praise, and He has power over all things"
+        },
+        "icon": "🌅"
+      },
+      {
+        "id": 7,
+        "title": "Dua for Good in This Day",
+        "titleArabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْم",
+        "description": "Asking for goodness and success today",
+        "details": [
+          "In the morning: Ask for the good of this day",
+          "In the evening: Ask for the good of this night"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْمِ: فَتْحَهُ، وَنَصْرَهُ، وَنُورَهُ، وَبَرَكَتَهُ، وَهُدَاه، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِيهِ وَشَرِّ مَا بَعْدَه",
+          "transliteration": "Allahumma inni as'aluka khayra hadhal-yawm: fathahu, wa nasrahu, wa nurahu, wa barakatahu, wa hudah, wa a'udhu bika min sharri ma fihi wa sharri ma ba'dah",
+          "meaning": "O Allah, I ask You for the good of this day: its victory, its light, its blessing, and its guidance. And I seek refuge in You from the evil in it and the evil after it"
+        },
+        "icon": "🌟"
+      },
+      {
+        "id": 8,
+        "title": "Dua for Health",
+        "titleArabic": "اللَّهُمَّ عَافِنِي",
+        "description": "Asking for safety in body, hearing, and sight",
+        "details": [
+          "Recite 3 times morning and evening"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ",
+          "transliteration": "Allahumma 'afini fi badani, Allahumma 'afini fi sam'i, Allahumma 'afini fi basari, la ilaha illa ant",
+          "meaning": "O Allah, grant me health in my body. O Allah, grant me health in my hearing. O Allah, grant me health in my sight. There is no god but You"
+        },
+        "icon": "💪"
+      },
+      {
+        "id": 9,
+        "title": "Protection from Kufr",
+        "titleArabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْر",
+        "description": "Seeking protection from disbelief and poverty",
+        "details": [
+          "Recite 3 times morning and evening"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ",
+          "transliteration": "Allahumma inni a'udhu bika minal-kufri wal-faqr, Allahumma inni a'udhu bika min 'adhabil-qabr, la ilaha illa ant",
+          "meaning": "O Allah, I seek refuge in You from disbelief and poverty. O Allah, I seek refuge in You from the punishment of the grave. There is no god but You"
+        },
+        "icon": "🛡️"
+      },
+      {
+        "id": 10,
+        "title": "Bearing Witness Dua",
+        "titleArabic": "اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُك",
+        "description": "Bearing witness to Allah with angels as witnesses",
+        "details": [
+          "Recite 4 times morning and evening",
+          "Allah will free whoever says it from the Hellfire"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللهُ لَا إِلَٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُك",
+          "transliteration": "Allahumma inni asbahtu ushhiduka wa ushhidu hamalata 'arshika wa mala'ikataka wa jami'a khalqik, annaka antallahu la ilaha illa anta wahdaka la sharika lak, wa anna Muhammadan 'abduka wa rasuluk",
+          "meaning": "O Allah, I have entered the morning and I call upon You and the bearers of Your Throne, Your angels, and all of Your creation to witness that You are Allah, there is no god but You alone, with no partner, and that Muhammad is Your servant and messenger"
+        },
+        "tips": "Recite 4 times to be freed from the Hellfire",
+        "icon": "🙌"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the morning and evening adhkar",
+      "dua": "May Allah help us maintain these adhkar consistently. Ameen"
+    }
+  },
+  "dailyDuas": {
+    "title": "Daily Duas",
+    "titleArabic": "أَدْعِيَةُ يَوْمِيَّة",
+    "description": "Supplications for daily activities from waking up to sleeping",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Dua Upon Waking Up",
+        "titleArabic": "دُعَاءُ الاِسْتِيقَاظ",
+        "description": "Dua to say when waking from sleep",
+        "details": [
+          "Say immediately upon waking",
+          "Thank Allah for giving you life again"
+        ],
+        "dua": {
+          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُور",
+          "transliteration": "Alhamdulillahilladhi ahyana ba'da ma amatana wa ilayhin-nushur",
+          "meaning": "All praise is due to Allah who gave us life after causing us to die, and to Him is the resurrection"
+        },
+        "tips": "Sleep is like a minor death, waking is like resurrection",
+        "icon": "🌅"
+      },
+      {
+        "id": 2,
+        "title": "Dua Before Entering Bathroom",
+        "titleArabic": "دُعَاءُ دُخُولِ الْخَلَاء",
+        "description": "Dua before entering the bathroom",
+        "details": [
+          "Say before stepping into the bathroom",
+          "Enter with left foot"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِث",
+          "transliteration": "Bismillah, Allahumma inni a'udhu bika minal-khubuthi wal-khaba'ith",
+          "meaning": "In the name of Allah. O Allah, I seek refuge in You from male and female evil spirits"
+        },
+        "icon": "🚪"
+      },
+      {
+        "id": 3,
+        "title": "Dua After Leaving Bathroom",
+        "titleArabic": "دُعَاءُ الْخُرُوجِ مِنَ الْخَلَاء",
+        "description": "Dua after leaving the bathroom",
+        "details": [
+          "Say after leaving the bathroom",
+          "Exit with right foot"
+        ],
+        "dua": {
+          "arabic": "غُفْرَانَك",
+          "transliteration": "Ghufranaka",
+          "meaning": "I seek Your forgiveness"
+        },
+        "icon": "🚿"
+      },
+      {
+        "id": 4,
+        "title": "Dua When Leaving Home",
+        "titleArabic": "دُعَاءُ الْخُرُوجِ مِنَ الْمَنْزِل",
+        "description": "Dua when leaving your home",
+        "details": [
+          "Say every time you leave home",
+          "You will be protected from Shaytan"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ، تَوَكَّلْتُ عَلَى اللهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِالله",
+          "transliteration": "Bismillah, tawakkaltu 'alallah, wa la hawla wa la quwwata illa billah",
+          "meaning": "In the name of Allah, I place my trust in Allah, and there is no might nor power except with Allah"
+        },
+        "tips": "Shaytan will say: You have been protected, guided, and sufficed",
+        "icon": "🏠"
+      },
+      {
+        "id": 5,
+        "title": "Dua When Entering Home",
+        "titleArabic": "دُعَاءُ دُخُولِ الْمَنْزِل",
+        "description": "Dua when entering your home",
+        "details": [
+          "Say every time you enter home",
+          "Give salam to your family"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ وَلَجْنَا، وَبِسْمِ اللهِ خَرَجْنَا، وَعَلَى رَبِّنَا تَوَكَّلْنَا",
+          "transliteration": "Bismillahi walajna, wa bismillahi kharajna, wa 'ala rabbina tawakkalna",
+          "meaning": "In the name of Allah we enter, in the name of Allah we leave, and upon our Lord we place our trust"
+        },
+        "icon": "🏡"
+      },
+      {
+        "id": 6,
+        "title": "Dua Before Eating",
+        "titleArabic": "دُعَاءُ قَبْلَ الطَّعَام",
+        "description": "Dua before eating food",
+        "details": [
+          "Say Bismillah before eating",
+          "Eat with your right hand",
+          "Eat from what is nearest to you"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ الله",
+          "transliteration": "Bismillah",
+          "meaning": "In the name of Allah"
+        },
+        "tips": "If you forget at the start, say: Bismillahi awwalahu wa akhirah",
+        "icon": "🍽️"
+      },
+      {
+        "id": 7,
+        "title": "Dua After Eating",
+        "titleArabic": "دُعَاءُ بَعْدَ الطَّعَام",
+        "description": "Dua after finishing food",
+        "details": [
+          "Say after finishing your meal",
+          "Thank Allah for the food"
+        ],
+        "dua": {
+          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّة",
+          "transliteration": "Alhamdulillahilladhi at'amani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah",
+          "meaning": "All praise is due to Allah who fed me this and provided it for me without any might or power from me"
+        },
+        "tips": "Whoever says this after eating, their past sins will be forgiven",
+        "icon": "🙏"
+      },
+      {
+        "id": 8,
+        "title": "Dua When Entering Mosque",
+        "titleArabic": "دُعَاءُ دُخُولِ الْمَسْجِد",
+        "description": "Dua when entering the mosque",
+        "details": [
+          "Enter with right foot",
+          "Say this dua"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِك",
+          "transliteration": "Allahumma-ftah li abwaba rahmatik",
+          "meaning": "O Allah, open for me the doors of Your mercy"
+        },
+        "icon": "🕌"
+      },
+      {
+        "id": 9,
+        "title": "Dua When Leaving Mosque",
+        "titleArabic": "دُعَاءُ الْخُرُوجِ مِنَ الْمَسْجِد",
+        "description": "Dua when leaving the mosque",
+        "details": [
+          "Exit with left foot",
+          "Say this dua"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك",
+          "transliteration": "Allahumma inni as'aluka min fadlik",
+          "meaning": "O Allah, I ask You from Your bounty"
+        },
+        "icon": "🚶"
+      },
+      {
+        "id": 10,
+        "title": "Dua Before Sleeping",
+        "titleArabic": "دُعَاءُ قَبْلَ النَّوْم",
+        "description": "Dua before going to sleep",
+        "details": [
+          "Lie on your right side",
+          "Place right hand under your cheek",
+          "Say this dua"
+        ],
+        "dua": {
+          "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+          "transliteration": "Bismika Allahumma amutu wa ahya",
+          "meaning": "In Your name, O Allah, I die and I live"
+        },
+        "tips": "Read Surah Al-Mulk before sleeping for protection from the punishment of the grave",
+        "icon": "🌙"
+      },
+      {
+        "id": 11,
+        "title": "Dua When Wearing Clothes",
+        "titleArabic": "دُعَاءُ لُبْسِ الثَّوْب",
+        "description": "Dua when wearing new clothes",
+        "details": [
+          "Say when wearing new clothes"
+        ],
+        "dua": {
+          "arabic": "الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّة",
+          "transliteration": "Alhamdulillahilladhi kasani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah",
+          "meaning": "All praise is due to Allah who clothed me with this and provided it for me without any might or power from me"
+        },
+        "icon": "👔"
+      },
+      {
+        "id": 12,
+        "title": "Dua When Looking in Mirror",
+        "titleArabic": "دُعَاءُ النَّظَرِ فِي الْمِرْآة",
+        "description": "Dua when looking at yourself in the mirror",
+        "details": [
+          "Say when looking at yourself in the mirror"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ أَنْتَ حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي",
+          "transliteration": "Allahumma anta hassanta khalqi fa hassin khuluqi",
+          "meaning": "O Allah, You have made my form beautiful, so beautify my character"
+        },
+        "tips": "Ask for beauty both externally and internally",
+        "icon": "🪞"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the daily duas",
+      "dua": "May Allah help us practice these duas in our daily lives. Ameen"
     }
   }
 }

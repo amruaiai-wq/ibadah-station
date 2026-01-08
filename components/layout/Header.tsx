@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import DonateButton from '@/components/donate/DonateButton';
+import UserMenu from '@/components/auth/UserMenu';
 
 interface HeaderProps {
   locale: string;
@@ -26,9 +28,18 @@ export default function Header({ locale }: HeaderProps) {
   const navItems = [
     { href: `/${locale}`, label: t('nav.home') },
     { href: `/${locale}#journeys`, label: t('nav.journeys') },
+    { href: `/${locale}/qna`, label: locale === 'th' ? 'ถาม-ตอบ' : 'Q&A' },
     { href: `/${locale}/articles`, label: locale === 'th' ? 'บทความ' : 'Articles' },
     { href: `/${locale}#about`, label: t('nav.about') },
   ];
+
+  const userMenuTranslations = {
+    login: locale === 'th' ? 'เข้าสู่ระบบ' : 'Login',
+    register: locale === 'th' ? 'สมัครสมาชิก' : 'Register',
+    profile: locale === 'th' ? 'โปรไฟล์' : 'Profile',
+    myQuestions: locale === 'th' ? 'คำถามของฉัน' : 'My Questions',
+    logout: locale === 'th' ? 'ออกจากระบบ' : 'Logout',
+  };
 
   return (
     <header className="bg-gradient-to-r from-primary to-primary-dark text-white sticky top-0 z-50 shadow-lg">
@@ -37,11 +48,11 @@ export default function Header({ locale }: HeaderProps) {
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-3">
             <Image
-              src="/logo.jpg"
+              src="/logo.png"
               alt="Ibadah Station Logo"
               width={44}
               height={44}
-              className="rounded-full bg-white p-0.5"
+              className="rounded-full"
             />
             <div className="hidden sm:block">
               <span className="font-bold text-xl text-white">ibadah</span>
@@ -63,8 +74,16 @@ export default function Header({ locale }: HeaderProps) {
             ))}
           </nav>
 
-          {/* Language Switcher */}
-          <div className="flex items-center gap-4">
+          {/* User Menu & Language Switcher */}
+          <div className="flex items-center gap-3">
+            {/* Donate Button - Desktop (Hidden for now) */}
+            {/* <div className="hidden md:block">
+              <DonateButton locale={locale} />
+            </div> */}
+
+            {/* User Menu */}
+            <UserMenu locale={locale} translations={userMenuTranslations} />
+
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
@@ -128,7 +147,7 @@ export default function Header({ locale }: HeaderProps) {
         {isMobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-white/20 animate-slide-down">
             {navItems.map((item) => (
-              <Link 
+              <Link
                 key={item.href}
                 href={item.href}
                 className="block py-2 hover:text-gold transition-colors"
@@ -137,6 +156,10 @@ export default function Header({ locale }: HeaderProps) {
                 {item.label}
               </Link>
             ))}
+            {/* Donate Button - Mobile (Hidden for now) */}
+            {/* <div className="pt-3 mt-3 border-t border-white/20">
+              <DonateButton locale={locale} />
+            </div> */}
           </nav>
         )}
       </div>

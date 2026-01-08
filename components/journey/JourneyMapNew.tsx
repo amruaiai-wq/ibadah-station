@@ -67,6 +67,12 @@ export default function JourneyMapNew({
     emerald: { bg: 'bg-emerald-500', text: 'text-emerald-500', border: 'border-emerald-500', glow: 'shadow-emerald-500/50' },
     teal: { bg: 'bg-teal-500', text: 'text-teal-500', border: 'border-teal-500', glow: 'shadow-teal-500/50' },
     amber: { bg: 'bg-amber-500', text: 'text-amber-500', border: 'border-amber-500', glow: 'shadow-amber-500/50' },
+    cyan: { bg: 'bg-cyan-500', text: 'text-cyan-500', border: 'border-cyan-500', glow: 'shadow-cyan-500/50' },
+    orange: { bg: 'bg-orange-500', text: 'text-orange-500', border: 'border-orange-500', glow: 'shadow-orange-500/50' },
+    purple: { bg: 'bg-purple-500', text: 'text-purple-500', border: 'border-purple-500', glow: 'shadow-purple-500/50' },
+    sky: { bg: 'bg-sky-500', text: 'text-sky-500', border: 'border-sky-500', glow: 'shadow-sky-500/50' },
+    rose: { bg: 'bg-rose-500', text: 'text-rose-500', border: 'border-rose-500', glow: 'shadow-rose-500/50' },
+    indigo: { bg: 'bg-indigo-500', text: 'text-indigo-500', border: 'border-indigo-500', glow: 'shadow-indigo-500/50' },
   };
   const colors = colorClasses[journeyColor] || colorClasses.emerald;
 

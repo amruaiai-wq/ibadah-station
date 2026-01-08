@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/lib/i18n';
+import { AuthProvider } from '@/lib/auth-context';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import PageViewTracker from '@/components/analytics/PageViewTracker';
@@ -32,12 +33,14 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen flex flex-col islamic-pattern-bg">
         <NextIntlClientProvider messages={messages}>
-          <PageViewTracker />
-          <Header locale={locale} />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
+          <AuthProvider>
+            <PageViewTracker />
+            <Header locale={locale} />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </AuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -195,3 +195,179 @@ CREATE TRIGGER update_daily_wisdom_updated_at
 CREATE TRIGGER update_articles_updated_at
   BEFORE UPDATE ON articles
   FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+-- =============================================
+-- 8. User Profiles (extends auth.users)
+-- =============================================
+CREATE TABLE user_profiles (
+  id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
+  display_name VARCHAR(100),
+  avatar_url TEXT,
+  preferred_locale VARCHAR(2) DEFAULT 'th',
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Enable RLS for user_profiles
+ALTER TABLE user_profiles ENABLE ROW LEVEL SECURITY;
+
+-- Users can view their own profile
+CREATE POLICY "Users can view own profile" ON user_profiles
+  FOR SELECT USING (auth.uid() = id);
+
+-- Users can update their own profile
+CREATE POLICY "Users can update own profile" ON user_profiles
+  FOR UPDATE USING (auth.uid() = id);
+
+-- Allow profile creation on signup
+CREATE POLICY "Enable insert for authenticated users only" ON user_profiles
+  FOR INSERT WITH CHECK (auth.uid() = id);
+
+-- Trigger to auto-create profile on user signup
+CREATE OR REPLACE FUNCTION handle_new_user()
+RETURNS TRIGGER AS $$
+BEGIN
+  INSERT INTO user_profiles (id, display_name, avatar_url)
+  VALUES (
+    NEW.id,
+    COALESCE(NEW.raw_user_meta_data->>'full_name', split_part(NEW.email, '@', 1)),
+    NEW.raw_user_meta_data->>'avatar_url'
+  );
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+CREATE TRIGGER on_auth_user_created
+  AFTER INSERT ON auth.users
+  FOR EACH ROW EXECUTE FUNCTION handle_new_user();
+
+CREATE TRIGGER update_user_profiles_updated_at
+  BEFORE UPDATE ON user_profiles
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+-- =============================================
+-- 9. Question Categories (Q&A)
+-- =============================================
+CREATE TABLE question_categories (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  slug VARCHAR(50) UNIQUE NOT NULL,
+  name_th VARCHAR(100) NOT NULL,
+  name_en VARCHAR(100) NOT NULL,
+  icon VARCHAR(10),
+  sort_order INTEGER DEFAULT 0,
+  is_active BOOLEAN DEFAULT true,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Insert default categories
+INSERT INTO question_categories (slug, name_th, name_en, icon, sort_order) VALUES
+('salah', 'การละหมาด', 'Prayer (Salah)', '🕌', 1),
+('wudu', 'การอาบน้ำละหมาด', 'Ablution (Wudu)', '💧', 2),
+('fasting', 'การถือศีลอด', 'Fasting', '🌙', 3),
+('zakat', 'ซะกาต', 'Zakat', '💎', 4),
+('hajj-umrah', 'ฮัจญ์/อุมเราะฮ์', 'Hajj/Umrah', '🕋', 5),
+('general', 'ทั่วไป', 'General', '❓', 6);
+
+-- Enable RLS
+ALTER TABLE question_categories ENABLE ROW LEVEL SECURITY;
+
+-- Public can read active categories
+CREATE POLICY "Public can read active categories" ON question_categories
+  FOR SELECT USING (is_active = true);
+
+-- =============================================
+-- 10. Questions (Q&A)
+-- =============================================
+CREATE TABLE questions (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID REFERENCES auth.users(id) ON DELETE SET NULL,
+  category_id UUID REFERENCES question_categories(id),
+  title TEXT NOT NULL,
+  content TEXT NOT NULL,
+  status VARCHAR(20) DEFAULT 'pending', -- pending, answered, closed
+  view_count INTEGER DEFAULT 0,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Indexes
+CREATE INDEX idx_questions_user_id ON questions(user_id);
+CREATE INDEX idx_questions_category_id ON questions(category_id);
+CREATE INDEX idx_questions_status ON questions(status);
+CREATE INDEX idx_questions_created_at ON questions(created_at DESC);
+
+-- Enable RLS
+ALTER TABLE questions ENABLE ROW LEVEL SECURITY;
+
+-- Public can read answered questions
+CREATE POLICY "Public can read answered questions" ON questions
+  FOR SELECT USING (status = 'answered');
+
+-- Users can read their own questions (any status)
+CREATE POLICY "Users can read own questions" ON questions
+  FOR SELECT USING (auth.uid() = user_id);
+
+-- Authenticated users can create questions
+CREATE POLICY "Authenticated users can create questions" ON questions
+  FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+-- Users can update their own pending questions
+CREATE POLICY "Users can update own pending questions" ON questions
+  FOR UPDATE USING (auth.uid() = user_id AND status = 'pending');
+
+-- Admins can manage all questions
+CREATE POLICY "Admins can manage questions" ON questions
+  FOR ALL USING (
+    EXISTS (SELECT 1 FROM admin_users WHERE id = auth.uid() AND is_active = true)
+  );
+
+CREATE TRIGGER update_questions_updated_at
+  BEFORE UPDATE ON questions
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+-- =============================================
+-- 11. Answers (Q&A - Admin Only)
+-- =============================================
+CREATE TABLE answers (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  question_id UUID REFERENCES questions(id) ON DELETE CASCADE,
+  admin_id UUID REFERENCES admin_users(id),
+  content TEXT NOT NULL,
+  sources TEXT[], -- References/sources
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Indexes
+CREATE INDEX idx_answers_question_id ON answers(question_id);
+
+-- Enable RLS
+ALTER TABLE answers ENABLE ROW LEVEL SECURITY;
+
+-- Public can read answers
+CREATE POLICY "Public can read answers" ON answers
+  FOR SELECT USING (true);
+
+-- Only admins can create/update answers
+CREATE POLICY "Admins can manage answers" ON answers
+  FOR ALL USING (
+    EXISTS (SELECT 1 FROM admin_users WHERE id = auth.uid() AND is_active = true)
+  );
+
+CREATE TRIGGER update_answers_updated_at
+  BEFORE UPDATE ON answers
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+-- Function to update question status when answered
+CREATE OR REPLACE FUNCTION update_question_status_on_answer()
+RETURNS TRIGGER AS $$
+BEGIN
+  UPDATE questions SET status = 'answered', updated_at = NOW()
+  WHERE id = NEW.question_id AND status = 'pending';
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+CREATE TRIGGER on_answer_created
+  AFTER INSERT ON answers
+  FOR EACH ROW EXECUTE FUNCTION update_question_status_on_answer();

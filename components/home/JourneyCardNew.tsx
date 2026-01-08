@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 interface JourneyCardNewProps {
-  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar';
+  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas';
   locale: string;
   progress?: number;
   disabled?: boolean;
@@ -53,6 +53,41 @@ const journeyData = {
     shadowColor: 'shadow-rose-500/30',
     th: { title: 'อัซการ์', titleArabic: 'الأذكار', description: 'ดุอาและซิกรุลลอฮ์ประจำวัน', steps: 12 },
     en: { title: 'Daily Adhkar', titleArabic: 'الأذكار', description: 'Daily duas and remembrance', steps: 12 },
+  },
+  'water-types': {
+    icon: '💧',
+    gradient: 'from-cyan-500 to-cyan-700',
+    shadowColor: 'shadow-cyan-500/30',
+    th: { title: 'ประเภทน้ำ', titleArabic: 'أَنْوَاعُ الْمَاء', description: 'เรียนรู้ประเภทน้ำตามหลักศาสนา', steps: 4 },
+    en: { title: 'Types of Water', titleArabic: 'أَنْوَاعُ الْمَاء', description: 'Learn water types in Islamic purification', steps: 4 },
+  },
+  'najis-types': {
+    icon: '⚠️',
+    gradient: 'from-orange-500 to-orange-700',
+    shadowColor: 'shadow-orange-500/30',
+    th: { title: 'ประเภทนะยิส', titleArabic: 'أَنْوَاعُ النَّجَاسَة', description: 'เรียนรู้ประเภทนะยิสและวิธีทำความสะอาด', steps: 3 },
+    en: { title: 'Types of Najis', titleArabic: 'أَنْوَاعُ النَّجَاسَة', description: 'Learn impurity types and cleansing methods', steps: 3 },
+  },
+  'post-prayer-adhkar': {
+    icon: '📿',
+    gradient: 'from-purple-500 to-purple-700',
+    shadowColor: 'shadow-purple-500/30',
+    th: { title: 'วิริดหลังละหมาด', titleArabic: 'أَذْكَارُ بَعْدَ الصَّلَاة', description: 'ซิกรุลลอฮ์และดุอาหลังละหมาด', steps: 8 },
+    en: { title: 'Post-Prayer Adhkar', titleArabic: 'أَذْكَارُ بَعْدَ الصَّلَاة', description: 'Dhikr and duas after prayer', steps: 8 },
+  },
+  'morning-evening-adhkar': {
+    icon: '🌅',
+    gradient: 'from-sky-500 to-sky-700',
+    shadowColor: 'shadow-sky-500/30',
+    th: { title: 'อัซการเช้า-เย็น', titleArabic: 'أَذْكَارُ الصَّبَاحِ وَالْمَسَاء', description: 'ดุอาประจำวันเช้าและเย็น', steps: 10 },
+    en: { title: 'Morning & Evening Adhkar', titleArabic: 'أَذْكَارُ الصَّبَاحِ وَالْمَسَاء', description: 'Daily morning and evening supplications', steps: 10 },
+  },
+  'daily-duas': {
+    icon: '🤲',
+    gradient: 'from-rose-500 to-rose-700',
+    shadowColor: 'shadow-rose-500/30',
+    th: { title: 'ดุอาประจำวัน', titleArabic: 'أَدْعِيَةُ يَوْمِيَّة', description: 'ดุอาสำหรับกิจวัตรประจำวัน', steps: 12 },
+    en: { title: 'Daily Duas', titleArabic: 'أَدْعِيَةُ يَوْمِيَّة', description: 'Supplications for daily activities', steps: 12 },
   },
 };
 
