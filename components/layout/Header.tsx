@@ -87,41 +87,31 @@ export default function Header({ locale }: HeaderProps) {
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                className="w-8 h-8 rounded-full overflow-hidden border-2 border-white/30 hover:border-white/60 transition-colors flex items-center justify-center text-lg"
+                title={locale === 'th' ? 'เปลี่ยนภาษา' : 'Change language'}
               >
-                <span className="text-lg">🌐</span>
-                <span className="font-medium">{locale.toUpperCase()}</span>
-                <svg 
-                  className={`w-4 h-4 transition-transform ${isLangOpen ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                {locale === 'th' ? '🇹🇭' : '🇬🇧'}
               </button>
 
               {isLangOpen && (
-                <div className="absolute right-0 top-full mt-2 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden min-w-[140px] animate-slide-down">
+                <div className="absolute right-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden min-w-[120px] animate-slide-down">
                   <button
                     onClick={() => switchLocale('th')}
-                    className={`w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 transition-colors text-dark ${
-                      locale === 'th' ? 'bg-primary/10 text-primary' : ''
+                    className={`w-full px-4 py-2.5 flex items-center gap-3 hover:bg-gray-50 transition-colors text-dark ${
+                      locale === 'th' ? 'bg-primary/10' : ''
                     }`}
                   >
-                    <span>🇹🇭</span>
-                    <span>ไทย</span>
-                    {locale === 'th' && <span className="ml-auto">✓</span>}
+                    <span className="text-lg">🇹🇭</span>
+                    <span className="text-sm font-medium">ไทย</span>
                   </button>
                   <button
                     onClick={() => switchLocale('en')}
-                    className={`w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 transition-colors text-dark ${
-                      locale === 'en' ? 'bg-primary/10 text-primary' : ''
+                    className={`w-full px-4 py-2.5 flex items-center gap-3 hover:bg-gray-50 transition-colors text-dark ${
+                      locale === 'en' ? 'bg-primary/10' : ''
                     }`}
                   >
-                    <span>🇬🇧</span>
-                    <span>English</span>
-                    {locale === 'en' && <span className="ml-auto">✓</span>}
+                    <span className="text-lg">🇬🇧</span>
+                    <span className="text-sm font-medium">EN</span>
                   </button>
                 </div>
               )}

@@ -1008,6 +1008,158 @@
       "dua": "May Allah let us reach Ramadan and accept our fasting. Ameen"
     }
   },
+  "zakat": {
+    "title": "Zakat",
+    "titleArabic": "الزَّكَاة",
+    "description": "Learn how to pay Zakat correctly according to Islamic principles",
+    "intro": {
+      "title": "Welcome to the Zakat Journey",
+      "description": "Zakat is the third pillar of Islam. It is obligatory charity for Muslims who possess wealth above the nisab threshold.",
+      "hadith": "Islam is built on five pillars... and paying Zakat",
+      "hadithSource": "Reported by Bukhari and Muslim"
+    },
+    "steps": [
+      {
+        "id": 1,
+        "title": "Understanding Zakat",
+        "titleArabic": "مَعْرِفَةُ الزَّكَاة",
+        "description": "Learn the meaning and importance of Zakat",
+        "details": [
+          "Zakat means growth and purification",
+          "It is the third pillar of Islam",
+          "Obligatory for Muslims with wealth above nisab",
+          "Purifies wealth and soul",
+          "Helps those in need in society",
+          "Creates equality and solidarity"
+        ],
+        "tips": "Zakat is not charity - it is the right of the poor in our wealth",
+        "icon": "💎"
+      },
+      {
+        "id": 2,
+        "title": "Zakatable Assets",
+        "titleArabic": "الأَمْوَالُ الزَّكَوِيَّة",
+        "description": "Learn which types of wealth require Zakat",
+        "details": [
+          "Gold and silver",
+          "Cash and bank deposits",
+          "Trade merchandise",
+          "Agricultural produce",
+          "Livestock (camels, cattle, sheep, goats)",
+          "Minerals and buried treasures"
+        ],
+        "tips": "Personal items for daily use like house, car, and clothes are exempt from Zakat",
+        "icon": "💰"
+      },
+      {
+        "id": 3,
+        "title": "Nisab (Minimum Threshold)",
+        "titleArabic": "النِّصَاب",
+        "description": "Learn the minimum threshold for Zakat obligation",
+        "details": [
+          "Gold: 85 grams (20 dinars)",
+          "Silver: 595 grams (200 dirhams)",
+          "Cash: equivalent value to gold or silver",
+          "Must possess for one lunar year (hawl)",
+          "Debts are deducted before calculation",
+          "If below nisab, no Zakat is due"
+        ],
+        "tips": "It is better to use the silver nisab as it helps more people in need",
+        "icon": "⚖️"
+      },
+      {
+        "id": 4,
+        "title": "Zakat Rates",
+        "titleArabic": "مِقْدَارُ الزَّكَاة",
+        "description": "Calculate how much Zakat to pay",
+        "details": [
+          "Gold, silver, cash, trade goods: 2.5%",
+          "Agricultural produce (irrigated): 5%",
+          "Agricultural produce (rain-fed): 10%",
+          "Minerals and treasures: 20%",
+          "Livestock: according to set amounts"
+        ],
+        "tips": "Simple calculation: Total wealth × 2.5 ÷ 100",
+        "icon": "🧮"
+      },
+      {
+        "id": 5,
+        "title": "Recipients of Zakat",
+        "titleArabic": "مُسْتَحِقُّو الزَّكَاة",
+        "description": "Learn the 8 categories of Zakat recipients",
+        "details": [
+          "Faqir - The poor with insufficient income",
+          "Miskin - The needy whose income doesn't cover expenses",
+          "Amil - Those who collect and distribute Zakat",
+          "Muallaf - Those whose hearts are to be reconciled",
+          "Riqab - Freeing of slaves",
+          "Gharimin - Those burdened with debt",
+          "Fi Sabilillah - In the cause of Allah",
+          "Ibn Sabil - Stranded travelers"
+        ],
+        "dua": {
+          "arabic": "إِنَّمَا الصَّدَقَاتُ لِلْفُقَرَاءِ وَالْمَسَاكِينِ",
+          "transliteration": "Innamas-sadaqatu lil-fuqara'i wal-masakin...",
+          "meaning": "Indeed, Zakat is for the poor and the needy..."
+        },
+        "tips": "This verse is from Surah At-Tawbah, verse 60",
+        "icon": "👥"
+      },
+      {
+        "id": 6,
+        "title": "How to Pay Zakat",
+        "titleArabic": "كَيْفِيَّةُ إِخْرَاجِ الزَّكَاة",
+        "description": "Steps to pay Zakat correctly",
+        "details": [
+          "Make intention (niyyah) to pay Zakat",
+          "Calculate all wealth that meets nisab and hawl",
+          "Deduct debts and necessary expenses",
+          "Calculate 2.5% of the remainder",
+          "Give directly to recipients or through organizations",
+          "No need to announce it as Zakat (if giving money)"
+        ],
+        "tips": "It is preferable to pay Zakat locally unless there is greater need elsewhere",
+        "icon": "🤝"
+      },
+      {
+        "id": 7,
+        "title": "Zakat al-Fitr",
+        "titleArabic": "زَكَاةُ الفِطْر",
+        "description": "Special Zakat paid during Ramadan",
+        "details": [
+          "Obligatory for every Muslim",
+          "Paid for oneself and dependents",
+          "Amount: 1 Sa' (approx. 2.5-3 kg) of staple food",
+          "Must be paid before Eid prayer",
+          "Given to the poor",
+          "Can be paid as money according to some scholars"
+        ],
+        "tips": "Zakat al-Fitr purifies the fast and provides food for the poor on Eid day",
+        "icon": "🌙"
+      },
+      {
+        "id": 8,
+        "title": "Important Considerations",
+        "titleArabic": "تَنْبِيهَاتٌ فِي الزَّكَاة",
+        "description": "Things to be mindful of when paying Zakat",
+        "details": [
+          "Cannot give to parents or children",
+          "Cannot give to spouse",
+          "Cannot give to wealthy people",
+          "Cannot give to non-Muslims (except Muallaf)",
+          "Do not boast or belittle the recipient",
+          "Cannot spend on unspecified purposes"
+        ],
+        "tips": "Zakat should be given with humility and respect for the recipient",
+        "icon": "⚠️"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the steps about Zakat",
+      "dua": "May Allah bless our wealth and accept our Zakat. Ameen"
+    }
+  },
   "waterTypes": {
     "title": "Types of Water",
     "titleArabic": "أَنْوَاعُ الْمَاء",

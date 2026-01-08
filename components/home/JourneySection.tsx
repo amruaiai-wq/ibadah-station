@@ -92,10 +92,7 @@ export default function JourneySection({ locale }: JourneySectionProps) {
             <JourneyCardNew type="sawm" locale={locale} progress={0} />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <JourneyCardNew type="zakat" locale={locale} disabled />
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <JourneyCardNew type="adhkar" locale={locale} disabled />
+            <JourneyCardNew type="zakat" locale={locale} progress={0} />
           </motion.div>
         </motion.div>
 
