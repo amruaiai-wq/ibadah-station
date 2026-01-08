@@ -1160,6 +1160,273 @@
       "dua": "May Allah bless our wealth and accept our Zakat. Ameen"
     }
   },
+  "dailySunnah": {
+    "title": "Daily Sunnah",
+    "titleArabic": "سُنَنٌ يَوْمِيَّة",
+    "description": "Learn the various Sunnahs practiced by Prophet Muhammad ﷺ in daily life",
+    "intro": {
+      "title": "Welcome to the Daily Sunnah Journey",
+      "description": "Sunnah refers to the practices and traditions of Prophet Muhammad ﷺ. Following the Sunnah is an expression of love for the Prophet.",
+      "hadith": "Whoever revives my Sunnah when my Ummah is corrupt will have the reward of a hundred martyrs",
+      "hadithSource": "Reported by Ibn Majah"
+    },
+    "steps": [
+      {
+        "id": 1,
+        "title": "Waking Up Sunnahs",
+        "titleArabic": "سُنَنُ الاِسْتِيقَاظ",
+        "description": "What to do upon waking up",
+        "details": [
+          "Say the dua upon waking",
+          "Rub eyes with both hands",
+          "Sit up and say بِسْمِ اللهِ",
+          "Use the miswak (tooth stick)",
+          "Perform wudu and wash hands 3 times",
+          "Sniff water and clean nose 3 times"
+        ],
+        "dua": {
+          "arabic": "الحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُور",
+          "transliteration": "Alhamdulillahilladhi ahyana ba'da ma amatana wa ilayhin-nushur",
+          "meaning": "All praise is for Allah who gave us life after causing us to die, and unto Him is the resurrection"
+        },
+        "tips": "The Prophet ﷺ would rub his eyes and sniff water every time he woke up",
+        "icon": "🌅"
+      },
+      {
+        "id": 2,
+        "title": "Bathroom Etiquette",
+        "titleArabic": "سُنَنُ دُخُولِ الخَلَاء",
+        "description": "Manners when entering and leaving the bathroom",
+        "details": [
+          "Say the dua before entering: بِسْمِ اللهِ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الخُبْثِ وَالخَبَائِث",
+          "Enter with the left foot",
+          "Do not speak or recite Quran",
+          "Use the left hand for cleaning",
+          "Exit with the right foot",
+          "Say the dua after exiting: غُفْرَانَكَ"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الخُبْثِ وَالخَبَائِث",
+          "transliteration": "Bismillah, Allahumma inni a'udhu bika minal-khubthi wal-khaba'ith",
+          "meaning": "In the name of Allah. O Allah, I seek refuge in You from male and female devils"
+        },
+        "tips": "Do not bring items with Allah's name into the bathroom",
+        "icon": "🚿"
+      },
+      {
+        "id": 3,
+        "title": "Dressing Sunnahs",
+        "titleArabic": "سُنَنُ اللِّبَاس",
+        "description": "Etiquette for wearing and removing clothes",
+        "details": [
+          "Say بِسْمِ اللهِ before dressing",
+          "Start wearing clothes from the right side",
+          "Remove clothes starting from the left side",
+          "Say dua when wearing new clothes",
+          "Put on right shoe first, remove left first",
+          "Avoid dressing while standing"
+        ],
+        "dua": {
+          "arabic": "الحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّة",
+          "transliteration": "Alhamdulillahilladhi kasani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah",
+          "meaning": "All praise is for Allah who clothed me with this and provided it for me without any power or strength from me"
+        },
+        "tips": "The Prophet ﷺ loved to start from the right in all good matters",
+        "icon": "👔"
+      },
+      {
+        "id": 4,
+        "title": "Leaving Home Sunnahs",
+        "titleArabic": "سُنَنُ الخُرُوجِ مِنَ البَيْت",
+        "description": "What to do when leaving the house",
+        "details": [
+          "Say the dua for leaving home",
+          "Exit with the left foot",
+          "Look at the sky and make dhikr",
+          "Walk with composure",
+          "Give salaam to those you meet",
+          "Put trust (tawakkul) in Allah"
+        ],
+        "dua": {
+          "arabic": "بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ",
+          "transliteration": "Bismillah, tawakkaltu 'alallah, wa la hawla wa la quwwata illa billah",
+          "meaning": "In the name of Allah, I put my trust in Allah, there is no power and no strength except with Allah"
+        },
+        "tips": "When you say this dua, Shaytan flees and says 'He has been protected'",
+        "icon": "🚪"
+      },
+      {
+        "id": 5,
+        "title": "Entering Home Sunnahs",
+        "titleArabic": "سُنَنُ دُخُولِ البَيْت",
+        "description": "What to do when returning home",
+        "details": [
+          "Say بِسْمِ اللهِ and give salaam",
+          "Enter with the right foot",
+          "Greet family with salaam",
+          "Use the miswak (tooth stick)",
+          "Say the dua for entering home",
+          "If no one is home, say: السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللهِ الصَّالِحِين"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ المَوْلَجِ وَخَيْرَ المَخْرَج بِسْمِ اللهِ وَلَجْنَا وَبِسْمِ اللهِ خَرَجْنَا وَعَلَى اللهِ رَبِّنَا تَوَكَّلْنَا",
+          "transliteration": "Allahumma inni as'aluka khayral-mawliji wa khayral-makhraji, bismillahi walajina, wa bismillahi kharajna, wa 'alallahi rabbina tawakkalna",
+          "meaning": "O Allah, I ask You for the best entry and the best exit. In the name of Allah we enter, and in the name of Allah we leave, and upon Allah our Lord we put our trust"
+        },
+        "tips": "Giving salaam when entering brings barakah to the home",
+        "icon": "🏠"
+      },
+      {
+        "id": 6,
+        "title": "Eating Sunnahs",
+        "titleArabic": "سُنَنُ الأَكْل",
+        "description": "Etiquette for eating",
+        "details": [
+          "Wash hands before and after eating",
+          "Say بِسْمِ اللهِ before eating",
+          "Eat with the right hand",
+          "Eat from what is in front of you",
+          "Do not criticize food",
+          "Say dua after eating",
+          "Do not eat until overly full"
+        ],
+        "dua": {
+          "arabic": "الحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِين",
+          "transliteration": "Alhamdulillahilladhi at'amana wa saqana wa ja'alana muslimin",
+          "meaning": "All praise is for Allah who fed us, gave us drink, and made us Muslims"
+        },
+        "tips": "The Prophet ﷺ said: The son of Adam does not fill any vessel worse than his stomach",
+        "icon": "🍽️"
+      },
+      {
+        "id": 7,
+        "title": "Drinking Sunnahs",
+        "titleArabic": "سُنَنُ الشُّرْب",
+        "description": "Etiquette for drinking",
+        "details": [
+          "Say بِسْمِ اللهِ before drinking",
+          "Drink with the right hand",
+          "Sit while drinking",
+          "Drink in 3 sips (pause to breathe)",
+          "Do not breathe into the container",
+          "Say الحَمْدُ لِلَّهِ after drinking",
+          "Zamzam water may be drunk standing"
+        ],
+        "tips": "The Prophet ﷺ drank in 3 sips and said: It is more satisfying and more beneficial",
+        "icon": "💧"
+      },
+      {
+        "id": 8,
+        "title": "Sleeping Sunnahs",
+        "titleArabic": "سُنَنُ النَّوْم",
+        "description": "What to do before sleeping",
+        "details": [
+          "Perform wudu before sleeping",
+          "Dust off the bed with cloth",
+          "Lie on the right side",
+          "Place right hand under cheek",
+          "Recite Ayatul Kursi",
+          "Recite Surah Al-Mulk",
+          "Recite Surah Al-Ikhlas, Al-Falaq, An-Nas",
+          "Say dhikr before sleeping"
+        ],
+        "dua": {
+          "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+          "transliteration": "Bismikallahumma amutu wa ahya",
+          "meaning": "In Your name, O Allah, I die and I live"
+        },
+        "tips": "The Prophet ﷺ would recite Al-Ikhlas, Al-Falaq, and An-Nas, blow into his hands and wipe over his body 3 times",
+        "icon": "🌙"
+      },
+      {
+        "id": 9,
+        "title": "Friday Sunnahs",
+        "titleArabic": "سُنَنُ يَوْمِ الجُمُعَة",
+        "description": "Special Sunnahs for Friday",
+        "details": [
+          "Take a bath (ghusl) before Friday prayer",
+          "Wear your best clothes",
+          "Use perfume",
+          "Use the miswak",
+          "Go to the masjid early",
+          "Recite Surah Al-Kahf",
+          "Increase salawat upon the Prophet",
+          "Make dua during the accepted time"
+        ],
+        "dua": {
+          "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+          "transliteration": "Allahumma salli 'ala Muhammad wa 'ala ali Muhammad",
+          "meaning": "O Allah, send blessings upon Muhammad and upon the family of Muhammad"
+        },
+        "tips": "The Prophet ﷺ said: The best day on which the sun rises is Friday",
+        "icon": "🕌"
+      },
+      {
+        "id": 10,
+        "title": "Travel Sunnahs",
+        "titleArabic": "سُنَنُ السَّفَر",
+        "description": "Sunnahs when traveling",
+        "details": [
+          "Pray 2 rakah before traveling",
+          "Say the travel dua",
+          "Do not travel alone if possible",
+          "Choose a leader (amir) if traveling in a group",
+          "Say takbir when ascending",
+          "Say tasbih when descending",
+          "Say dua when reaching destination"
+        ],
+        "dua": {
+          "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُون",
+          "transliteration": "Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinin wa inna ila rabbina lamunqalibun",
+          "meaning": "Glory be to Him who has subjected this to us, for we could never have accomplished it by ourselves, and to our Lord is our return"
+        },
+        "tips": "The dua of the traveler is accepted, so make plenty of dua",
+        "icon": "✈️"
+      },
+      {
+        "id": 11,
+        "title": "Sneezing Sunnahs",
+        "titleArabic": "سُنَنُ العُطَاس",
+        "description": "Etiquette when sneezing and hearing someone sneeze",
+        "details": [
+          "Sneezer: Say الحَمْدُ لِلَّهِ",
+          "Listener: Say يَرْحَمُكَ اللهُ",
+          "Sneezer responds: يَهْدِيكُمُ اللهُ وَيُصْلِحُ بَالَكُم",
+          "Cover mouth when sneezing",
+          "Lower the sound",
+          "Do not say يَرْحَمُكَ اللهُ if sneezer doesn't say الحَمْدُ لِلَّهِ"
+        ],
+        "tips": "The Prophet ﷺ said: Allah loves sneezing and dislikes yawning",
+        "icon": "🤧"
+      },
+      {
+        "id": 12,
+        "title": "Marketplace Sunnahs",
+        "titleArabic": "سُنَنُ دُخُولِ السُّوق",
+        "description": "Dua and etiquette when entering the marketplace",
+        "details": [
+          "Say the marketplace dua",
+          "Do not stay longer than necessary",
+          "Do not lie in business dealings",
+          "Avoid swearing or bad language",
+          "Do not haggle excessively",
+          "Remember Allah in places where people forget"
+        ],
+        "dua": {
+          "arabic": "لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ المُلْكُ وَلَهُ الحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لَا يَمُوتُ بِيَدِهِ الخَيْرُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِير",
+          "transliteration": "La ilaha illallahu wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu, yuhyi wa yumitu, wa huwa hayyun la yamutu, biyadihil-khayr, wa huwa 'ala kulli shay'in qadir",
+          "meaning": "There is no god but Allah alone, with no partner. To Him belongs the dominion and all praise. He gives life and causes death. He is Ever-Living and does not die. In His hand is all good, and He has power over all things"
+        },
+        "tips": "Whoever says this dua when entering the market, Allah will record a million good deeds, erase a million sins, and raise him a million levels",
+        "icon": "🛒"
+      }
+    ],
+    "completed": {
+      "title": "Congratulations!",
+      "message": "You have learned all the daily Sunnahs",
+      "dua": "May Allah make us among those who follow the Sunnah of Prophet Muhammad ﷺ. Ameen"
+    }
+  },
   "waterTypes": {
     "title": "Types of Water",
     "titleArabic": "أَنْوَاعُ الْمَاء",

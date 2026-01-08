@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 interface JourneyCardNewProps {
-  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas';
+  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah';
   locale: string;
   progress?: number;
   disabled?: boolean;
@@ -88,6 +88,13 @@ const journeyData = {
     shadowColor: 'shadow-rose-500/30',
     th: { title: 'ดุอาประจำวัน', titleArabic: 'أَدْعِيَةُ يَوْمِيَّة', description: 'ดุอาสำหรับกิจวัตรประจำวัน', steps: 12 },
     en: { title: 'Daily Duas', titleArabic: 'أَدْعِيَةُ يَوْمِيَّة', description: 'Supplications for daily activities', steps: 12 },
+  },
+  'daily-sunnah': {
+    icon: '☀️',
+    gradient: 'from-amber-500 to-amber-700',
+    shadowColor: 'shadow-amber-500/30',
+    th: { title: 'สุนนะฮ์ประจำวัน', titleArabic: 'سُنَنٌ يَوْمِيَّة', description: 'เรียนรู้สุนนะฮ์ต่างๆ ในชีวิตประจำวัน', steps: 12 },
+    en: { title: 'Daily Sunnah', titleArabic: 'سُنَنٌ يَوْمِيَّة', description: 'Learn daily Sunnahs of Prophet Muhammad ﷺ', steps: 12 },
   },
 };
 

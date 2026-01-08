@@ -144,6 +144,9 @@ export default function JourneySection({ locale }: JourneySectionProps) {
           <motion.div variants={itemVariants}>
             <JourneyCardNew type="daily-duas" locale={locale} progress={0} />
           </motion.div>
+          <motion.div variants={itemVariants}>
+            <JourneyCardNew type="daily-sunnah" locale={locale} progress={0} />
+          </motion.div>
         </motion.div>
       </div>
     </section>
