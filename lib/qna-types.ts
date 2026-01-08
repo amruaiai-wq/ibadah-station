@@ -23,7 +23,7 @@ export interface Question {
   updated_at: string;
   // Joined data
   category?: QuestionCategory;
-  user?: UserProfile;
+  user?: UserProfile | null;
   answers?: Answer[];
 }
 

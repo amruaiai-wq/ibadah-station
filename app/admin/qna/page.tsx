@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 
 interface Question {
@@ -30,11 +30,7 @@ export default function AdminQnAPage() {
   const [answerSources, setAnswerSources] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
-  useEffect(() => {
-    fetchQuestions();
-  }, [statusFilter]);
-
-  const fetchQuestions = async () => {
+  const fetchQuestions = useCallback(async () => {
     setLoading(true);
     try {
       const params = new URLSearchParams();
@@ -53,7 +49,11 @@ export default function AdminQnAPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [statusFilter]);
+
+  useEffect(() => {
+    fetchQuestions();
+  }, [fetchQuestions]);
 
   const handleSubmitAnswer = async (e: React.FormEvent) => {
     e.preventDefault();

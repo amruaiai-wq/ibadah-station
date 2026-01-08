@@ -28,7 +28,7 @@ export default function QuestionDetailPage({
           setError(data.error);
         }
       })
-      .catch(err => {
+      .catch(() => {
         setError('Failed to load question');
       })
       .finally(() => {

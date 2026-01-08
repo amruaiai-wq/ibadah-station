@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
@@ -19,21 +19,7 @@ export default function QnAPage({ params: { locale } }: { params: { locale: stri
   const [statusFilter, setStatusFilter] = useState<'all' | 'answered' | 'pending'>('all');
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Fetch categories
-    fetch('/api/qna/categories')
-      .then(res => res.json())
-      .then(data => {
-        if (data.categories) {
-          setCategories(data.categories);
-        }
-      });
-
-    // Fetch questions
-    fetchQuestions();
-  }, [selectedCategory, statusFilter]);
-
-  const fetchQuestions = async () => {
+  const fetchQuestions = useCallback(async () => {
     setLoading(true);
     try {
       const params = new URLSearchParams();
@@ -55,7 +41,21 @@ export default function QnAPage({ params: { locale } }: { params: { locale: stri
     } finally {
       setLoading(false);
     }
-  };
+  }, [selectedCategory, statusFilter]);
+
+  useEffect(() => {
+    // Fetch categories
+    fetch('/api/qna/categories')
+      .then(res => res.json())
+      .then(data => {
+        if (data.categories) {
+          setCategories(data.categories);
+        }
+      });
+
+    // Fetch questions
+    fetchQuestions();
+  }, [fetchQuestions]);
 
   return (
     <div className="min-h-screen bg-cream">

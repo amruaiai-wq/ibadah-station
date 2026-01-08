@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useAuth } from '@/lib/auth-context';
@@ -25,7 +24,6 @@ interface RegisterFormProps {
 }
 
 export default function RegisterForm({ locale, translations: t }: RegisterFormProps) {
-  const router = useRouter();
   const { signUp, signInWithGoogle, signInWithFacebook } = useAuth();
 
   const [name, setName] = useState('');

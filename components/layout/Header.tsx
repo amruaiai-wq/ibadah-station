@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import DonateButton from '@/components/donate/DonateButton';
+// import DonateButton from '@/components/donate/DonateButton';
 import UserMenu from '@/components/auth/UserMenu';
 
 interface HeaderProps {
