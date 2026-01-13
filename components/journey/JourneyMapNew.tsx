@@ -73,6 +73,8 @@ export default function JourneyMapNew({
     sky: { bg: 'bg-sky-500', text: 'text-sky-500', border: 'border-sky-500', glow: 'shadow-sky-500/50' },
     rose: { bg: 'bg-rose-500', text: 'text-rose-500', border: 'border-rose-500', glow: 'shadow-rose-500/50' },
     indigo: { bg: 'bg-indigo-500', text: 'text-indigo-500', border: 'border-indigo-500', glow: 'shadow-indigo-500/50' },
+    red: { bg: 'bg-red-600', text: 'text-red-600', border: 'border-red-600', glow: 'shadow-red-600/50' },
+    slate: { bg: 'bg-slate-600', text: 'text-slate-600', border: 'border-slate-600', glow: 'shadow-slate-600/50' },
   };
   const colors = colorClasses[journeyColor] || colorClasses.emerald;
 

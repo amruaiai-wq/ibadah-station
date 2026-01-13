@@ -2085,5 +2085,474 @@
       "message": "You have learned all the daily duas",
       "dua": "May Allah help us practice these duas in our daily lives. Ameen"
     }
+  },
+  "jahannam": {
+    "title": "Hellfire (Jahannam)",
+    "titleArabic": "جَهَنَّم",
+    "description": "Learn about Hellfire in Islam as a warning to stay away from sins",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Meaning of Jahannam",
+        "titleArabic": "مَعْنَى جَهَنَّم",
+        "description": "Jahannam is the place of punishment for disbelievers and sinners",
+        "details": [
+          "Jahannam is one of the names of Hell in Arabic",
+          "Allah created Hell to punish disbelievers and wrongdoers",
+          "Hell is real and proven by Quran and Hadith",
+          "Belief in Hell is part of the pillars of Iman"
+        ],
+        "tips": "Knowing about Hell helps us fear Allah and avoid sins",
+        "icon": "🔥"
+      },
+      {
+        "id": 2,
+        "title": "Names of Hellfire",
+        "titleArabic": "أَسْمَاءُ النَّار",
+        "description": "Hell has many names mentioned in the Quran",
+        "details": [
+          "Jahannam (جَهَنَّم) - Most commonly used name",
+          "An-Nar (النَّار) - Means fire",
+          "Jaheem (الجَحِيم) - Blazing fire",
+          "Sa'eer (السَّعِير) - Intensely burning fire",
+          "Saqar (سَقَر) - Scorching fire",
+          "Hutamah (الحُطَمَة) - Crushing fire",
+          "Laza (لَظَى) - Blazing flame"
+        ],
+        "tips": "Each name represents different aspects of its terror",
+        "icon": "📛"
+      },
+      {
+        "id": 3,
+        "title": "Levels of Hellfire",
+        "titleArabic": "طَبَقَاتُ النَّار",
+        "description": "Hell has 7 levels, each with different severity",
+        "details": [
+          "Level 1: Jahannam - For sinful Muslims",
+          "Level 2: Laza - For Christians",
+          "Level 3: Hutamah - For Jews",
+          "Level 4: Sa'eer - For star worshippers",
+          "Level 5: Saqar - For fire worshippers",
+          "Level 6: Jaheem - For idol worshippers",
+          "Level 7: Hawiyah - For hypocrites (lowest level)"
+        ],
+        "tips": "Lower levels have more severe punishment",
+        "icon": "📊"
+      },
+      {
+        "id": 4,
+        "title": "Gates of Hellfire",
+        "titleArabic": "أَبْوَابُ جَهَنَّم",
+        "description": "Hell has 7 gates as mentioned in the Quran",
+        "details": [
+          "Allah says: 'It has seven gates, for each gate is a portion assigned' (Al-Hijr: 44)",
+          "Each gate is for different groups of sinners",
+          "The gates will be closed after the people of Hell enter",
+          "There is no way out for disbelievers"
+        ],
+        "tips": "Avoid the actions that lead to these gates",
+        "icon": "🚪"
+      },
+      {
+        "id": 5,
+        "title": "Guardians of Hellfire",
+        "titleArabic": "خَزَنَةُ جَهَنَّم",
+        "description": "Angels assigned to guard Hellfire",
+        "details": [
+          "The chief guardian is named Malik",
+          "There are 19 angels as guardians",
+          "They are strong and never disobey Allah",
+          "Allah says: 'Over it are angels, stern and strong' (At-Tahrim: 6)"
+        ],
+        "tips": "These angels strictly follow Allah's commands",
+        "icon": "👼"
+      },
+      {
+        "id": 6,
+        "title": "Punishments in Hellfire",
+        "titleArabic": "عَذَابُ جَهَنَّم",
+        "description": "Types of severe punishments in Hell",
+        "details": [
+          "Fire that burns skin repeatedly",
+          "Boiling water poured on heads",
+          "Food from Zaqqum tree (thorny tree)",
+          "Drink from pus and blood",
+          "Chains and shackles",
+          "Skin replaced when burned"
+        ],
+        "tips": "Seek Allah's protection from the Hellfire",
+        "icon": "⛓️",
+        "dua": {
+          "arabic": "اللَّهُمَّ أَجِرْنِي مِنَ النَّار",
+          "transliteration": "Allahumma ajirni minan-nar",
+          "meaning": "O Allah, protect me from the Hellfire"
+        }
+      },
+      {
+        "id": 7,
+        "title": "People of Hellfire",
+        "titleArabic": "أَهْلُ النَّار",
+        "description": "Types of people who will enter Hell",
+        "details": [
+          "Disbelievers (Kafir) - eternally",
+          "Hypocrites (Munafiqeen) - lowest level",
+          "Polytheists (Mushrik) - eternally",
+          "Sinful Muslims - temporarily",
+          "Those who died without repentance"
+        ],
+        "tips": "Muslims who die with Iman will eventually leave Hell",
+        "icon": "👥"
+      },
+      {
+        "id": 8,
+        "title": "Protection from Hellfire",
+        "titleArabic": "الوِقَايَةُ مِنَ النَّار",
+        "description": "Ways to protect yourself from Hellfire",
+        "details": [
+          "Maintain Iman and hold firm to Tawheed",
+          "Perform the 5 daily prayers",
+          "Pay Zakat and give charity",
+          "Do good deeds and avoid evil",
+          "Make dua for protection frequently",
+          "Repent and make Tawbah always"
+        ],
+        "tips": "Even giving half a date in charity protects from Hellfire",
+        "icon": "🛡️",
+        "dua": {
+          "arabic": "رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ إِنَّ عَذَابَهَا كَانَ غَرَامًا",
+          "transliteration": "Rabbanas-rif 'anna 'adhaba Jahannam inna 'adhabaha kana gharama",
+          "meaning": "Our Lord, avert from us the punishment of Hell. Indeed, its punishment is ever adhering"
+        }
+      }
+    ],
+    "completed": {
+      "title": "Lesson Complete",
+      "message": "You have learned about Hellfire in Islam",
+      "dua": "May Allah protect us from the Hellfire. Ameen"
+    }
+  },
+  "jannah": {
+    "title": "Paradise (Jannah)",
+    "titleArabic": "الجَنَّة",
+    "description": "Learn about Paradise in Islam, the ultimate reward for believers",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Meaning of Jannah",
+        "titleArabic": "مَعْنَى الجَنَّة",
+        "description": "Jannah is the eternal reward for believers and righteous people",
+        "details": [
+          "Jannah means garden or hidden place",
+          "Allah created Paradise as reward for believers",
+          "Paradise has pleasures no eye has seen, no ear has heard",
+          "Belief in Paradise is part of the pillars of Iman"
+        ],
+        "tips": "Thinking about Paradise motivates us to do good deeds",
+        "icon": "🏡"
+      },
+      {
+        "id": 2,
+        "title": "Names of Paradise",
+        "titleArabic": "أَسْمَاءُ الجَنَّة",
+        "description": "Paradise has many names mentioned in the Quran",
+        "details": [
+          "Al-Jannah (الجَنَّة) - Garden",
+          "Dar as-Salam (دَارُ السَّلَام) - Home of Peace",
+          "Jannat an-Na'im (جَنَّةُ النَّعِيم) - Garden of Bliss",
+          "Jannat al-Firdaws (جَنَّاتُ الفِرْدَوْس) - Garden of Firdaws (highest)",
+          "Jannat al-Ma'wa (جَنَّاتُ الْمَأْوَى) - Garden of Refuge",
+          "Jannat Adn (جَنَّاتُ عَدْن) - Garden of Eden"
+        ],
+        "tips": "Jannat al-Firdaws is the highest level of Paradise",
+        "icon": "🌳"
+      },
+      {
+        "id": 3,
+        "title": "Levels of Paradise",
+        "titleArabic": "دَرَجَاتُ الجَنَّة",
+        "description": "Paradise has many levels, each with different excellence",
+        "details": [
+          "Paradise has 100 levels",
+          "Between each level is like the distance between heaven and earth",
+          "Firdaws is the highest, beneath the Throne of Allah",
+          "The 4 rivers of Paradise flow from Firdaws",
+          "Levels depend on one's Iman and deeds"
+        ],
+        "tips": "Always ask Allah for Firdaws",
+        "icon": "📈",
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الفِرْدَوْسَ الأَعْلَى مِنَ الجَنَّة",
+          "transliteration": "Allahumma inni as'alukal-Firdawsal-A'la minal-Jannah",
+          "meaning": "O Allah, I ask You for the highest Firdaws of Paradise"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Gates of Paradise",
+        "titleArabic": "أَبْوَابُ الجَنَّة",
+        "description": "Paradise has 8 gates, each for different good deeds",
+        "details": [
+          "Gate of Rayyan - For those who fasted",
+          "Gate of Salah - For those who prayed",
+          "Gate of Sadaqah - For those who gave charity",
+          "Gate of Jihad - For those who strived in Allah's way",
+          "Gate of Ayman - On the right of the Throne",
+          "And other gates for various good deeds",
+          "Those who did all good deeds will be called from all gates"
+        ],
+        "tips": "Abu Bakr was called from all the gates of Paradise",
+        "icon": "🚪"
+      },
+      {
+        "id": 5,
+        "title": "Rivers in Paradise",
+        "titleArabic": "أَنْهَارُ الجَنَّة",
+        "description": "Paradise has 4 rivers that flow eternally",
+        "details": [
+          "River of Water - Never changes taste, pure forever",
+          "River of Milk - Taste never changes, pure white",
+          "River of Honey - Pure clarified honey",
+          "River of Wine - Delicious, does not intoxicate",
+          "River of Kawthar - Belongs to Prophet ﷺ"
+        ],
+        "tips": "Those who drink from Kawthar will never feel thirsty again",
+        "icon": "🌊"
+      },
+      {
+        "id": 6,
+        "title": "Blessings in Paradise",
+        "titleArabic": "نَعِيمُ الجَنَّة",
+        "description": "Countless blessings awaiting the people of Paradise",
+        "details": [
+          "Palaces made of gold, silver, and gems",
+          "Food and fruits as desired",
+          "Clothes of silk and gold",
+          "Companions of Hoor al-Ayn, extremely beautiful",
+          "No tiredness, sickness, or aging",
+          "No hatred, jealousy, or conflict",
+          "Eternal life, no death"
+        ],
+        "tips": "The greatest blessing is seeing the Face of Allah",
+        "icon": "✨"
+      },
+      {
+        "id": 7,
+        "title": "People of Paradise",
+        "titleArabic": "أَهْلُ الجَنَّة",
+        "description": "Types of people who will enter Paradise",
+        "details": [
+          "Those who believe in Allah and His Messenger",
+          "Those who practice the 5 pillars of Islam",
+          "Those who do good and avoid evil",
+          "Those who repent and are forgiven",
+          "Martyrs (those who died in Allah's path)",
+          "Those who are patient through trials"
+        ],
+        "tips": "The first person to enter Paradise is Prophet Muhammad ﷺ",
+        "icon": "👥"
+      },
+      {
+        "id": 8,
+        "title": "Path to Paradise",
+        "titleArabic": "طَرِيقُ الجَنَّة",
+        "description": "Actions that lead to Paradise",
+        "details": [
+          "Say the Shahada with sincerity",
+          "Maintain the 5 daily prayers consistently",
+          "Fast during Ramadan",
+          "Pay Zakat and give charity",
+          "Perform Hajj if able",
+          "Maintain family ties",
+          "Have good character and speak kindly",
+          "Avoid major sins and always repent"
+        ],
+        "tips": "Whoever says La ilaha illallah with sincerity will enter Paradise",
+        "icon": "🛤️",
+        "dua": {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الجَنَّة وَأَعُوذُ بِكَ مِنَ النَّار",
+          "transliteration": "Allahumma inni as'alukal-Jannah wa a'udhu bika minan-nar",
+          "meaning": "O Allah, I ask You for Paradise and seek refuge in You from the Fire"
+        }
+      }
+    ],
+    "completed": {
+      "title": "Lesson Complete",
+      "message": "You have learned about Paradise in Islam",
+      "dua": "May Allah grant us all Jannat al-Firdaws. Ameen"
+    }
+  },
+  "dayOfJudgment": {
+    "title": "Day of Judgment (Qiyamah)",
+    "titleArabic": "يَوْمُ القِيَامَة",
+    "description": "Learn about the Day of Judgment and its major events",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Meaning of Qiyamah",
+        "titleArabic": "مَعْنَى يَوْمِ القِيَامَة",
+        "description": "Qiyamah is the Day when all humans will be resurrected and judged",
+        "details": [
+          "Qiyamah means rising or resurrection",
+          "It is the Day when this world will be destroyed",
+          "All humans will be resurrected",
+          "Everyone will be questioned about their deeds",
+          "Belief in Qiyamah is the 5th pillar of Iman"
+        ],
+        "tips": "No one knows the exact time of Qiyamah except Allah",
+        "icon": "⏰"
+      },
+      {
+        "id": 2,
+        "title": "Minor Signs of the Hour",
+        "titleArabic": "عَلَامَاتُ السَّاعَةِ الصُّغْرَى",
+        "description": "Signs that appeared before the Day of Judgment",
+        "details": [
+          "The sending of Prophet Muhammad ﷺ",
+          "Religious knowledge being lifted, ignorance spreading",
+          "Alcohol being consumed openly",
+          "Widespread immorality",
+          "Tall buildings constructed",
+          "Time passing quickly",
+          "Trust disappearing",
+          "People competing in worldly matters"
+        ],
+        "tips": "Most minor signs have already occurred",
+        "icon": "📋"
+      },
+      {
+        "id": 3,
+        "title": "Major Signs of the Hour",
+        "titleArabic": "عَلَامَاتُ السَّاعَةِ الكُبْرَى",
+        "description": "Major signs indicating the Day is very near",
+        "details": [
+          "Appearance of Al-Mahdi",
+          "Appearance of Dajjal",
+          "Descent of Prophet Isa (Jesus)",
+          "Ya'juj and Ma'juj (Gog and Magog)",
+          "Smoke covering the earth",
+          "Sun rising from the West",
+          "Beast emerging and speaking to people",
+          "Fire from Yemen driving people to Sham",
+          "Three major earthquakes (East, West, Arabian Peninsula)"
+        ],
+        "tips": "When major signs start, they will follow like beads falling from a broken string",
+        "icon": "🔮"
+      },
+      {
+        "id": 4,
+        "title": "Blowing of the Trumpet",
+        "titleArabic": "النَّفْخُ فِي الصُّور",
+        "description": "Angel Israfil will blow the trumpet twice",
+        "details": [
+          "First blow: Everything will die except whom Allah wills",
+          "Second blow: Everyone will be resurrected",
+          "Between the two blows is 40 (days/months/years - not specified)",
+          "When blown the second time, all will rise from graves"
+        ],
+        "tips": "Angel Israfil has been waiting with the trumpet ready",
+        "icon": "📯"
+      },
+      {
+        "id": 5,
+        "title": "The Resurrection",
+        "titleArabic": "البَعْث",
+        "description": "All humans will be resurrected from their graves",
+        "details": [
+          "Everyone will be raised from the tailbone (coccyx)",
+          "People will rise naked, barefoot, uncircumcised",
+          "The first to be clothed is Prophet Ibrahim",
+          "Everyone will head to the gathering place (Mahshar)"
+        ],
+        "tips": "Aisha asked about people being naked. The Prophet ﷺ said the situation will be too severe for anyone to care",
+        "icon": "🌅"
+      },
+      {
+        "id": 6,
+        "title": "The Reckoning",
+        "titleArabic": "الحِسَاب",
+        "description": "Everyone will be questioned about their deeds",
+        "details": [
+          "The first thing questioned is prayer",
+          "Will be asked about lifespan - how it was spent",
+          "Will be asked about knowledge - how it was used",
+          "Will be asked about wealth - how earned and spent",
+          "Will be asked about body - how it was used",
+          "The record of deeds will be opened"
+        ],
+        "tips": "Whoever is questioned in detail will be punished",
+        "icon": "📖"
+      },
+      {
+        "id": 7,
+        "title": "The Scale",
+        "titleArabic": "المِيزَان",
+        "description": "Good and bad deeds will be weighed on the Scale",
+        "details": [
+          "The Scale is enormous",
+          "Good deeds on the right, bad deeds on the left",
+          "Those whose good deeds outweigh will enter Paradise",
+          "Those whose bad deeds outweigh will enter Hell",
+          "Even small deeds will be weighed"
+        ],
+        "tips": "The words 'La ilaha illallah' are the heaviest on the Scale",
+        "icon": "⚖️"
+      },
+      {
+        "id": 8,
+        "title": "The Pool of Kawthar",
+        "titleArabic": "الحَوْض",
+        "description": "The Pool of Prophet ﷺ awaiting his Ummah",
+        "details": [
+          "Width equals one month's journey",
+          "Water whiter than milk, sweeter than musk",
+          "Cups as numerous as stars in the sky",
+          "Those who drink will never thirst again",
+          "Only the Ummah of Prophet ﷺ will drink from it"
+        ],
+        "tips": "Some will be turned away for changing the religion after the Prophet ﷺ",
+        "icon": "🏊"
+      },
+      {
+        "id": 9,
+        "title": "The Bridge (Sirat)",
+        "titleArabic": "الصِّرَاط",
+        "description": "The bridge that crosses over Hellfire to Paradise",
+        "details": [
+          "Thinner than a hair, sharper than a sword",
+          "Everyone must cross, no other way",
+          "Believers will cross based on their deeds",
+          "Some cross like lightning, some crawl",
+          "Disbelievers will fall into Hell",
+          "Has hooks like thorns of Sa'dan tree"
+        ],
+        "tips": "The dua of prophets while crossing: 'Allahumma sallim, sallim' (O Allah, grant safety)",
+        "icon": "🌉"
+      },
+      {
+        "id": 10,
+        "title": "Entry to Paradise or Hell",
+        "titleArabic": "دُخُولُ الجَنَّةِ أَوِ النَّار",
+        "description": "The final destination of all humans",
+        "details": [
+          "Those who cross the Sirat will enter Paradise",
+          "Those who fall will enter Hell",
+          "Sinful Muslims will be in Hell temporarily",
+          "Disbelievers will be in Hell eternally",
+          "Eventually some will exit Hell by Allah's mercy"
+        ],
+        "tips": "The last person to leave Hell and enter Paradise will receive reward equal to 10 times this world",
+        "icon": "🏁",
+        "dua": {
+          "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّار",
+          "transliteration": "Rabbana atina fid-dunya hasanah wa fil-akhirati hasanah wa qina 'adhaban-nar",
+          "meaning": "Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of Fire"
+        }
+      }
+    ],
+    "completed": {
+      "title": "Lesson Complete",
+      "message": "You have learned about the Day of Judgment in Islam",
+      "dua": "May Allah grant us safety on the Day of Judgment. Ameen"
+    }
   }
 }

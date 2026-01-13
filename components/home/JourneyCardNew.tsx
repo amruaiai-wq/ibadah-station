@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 interface JourneyCardNewProps {
-  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah';
+  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah' | 'jahannam' | 'jannah' | 'day-of-judgment';
   locale: string;
   progress?: number;
   disabled?: boolean;
@@ -95,6 +95,27 @@ const journeyData = {
     shadowColor: 'shadow-amber-500/30',
     th: { title: 'สุนนะฮ์ประจำวัน', titleArabic: 'سُنَنٌ يَوْمِيَّة', description: 'เรียนรู้สุนนะฮ์ต่างๆ ในชีวิตประจำวัน', steps: 12 },
     en: { title: 'Daily Sunnah', titleArabic: 'سُنَنٌ يَوْمِيَّة', description: 'Learn daily Sunnahs of Prophet Muhammad ﷺ', steps: 12 },
+  },
+  'jahannam': {
+    icon: '🔥',
+    gradient: 'from-red-600 to-red-900',
+    shadowColor: 'shadow-red-500/30',
+    th: { title: 'นรก (ญะฮันนัม)', titleArabic: 'جَهَنَّم', description: 'เรียนรู้เกี่ยวกับนรกในอิสลามเพื่อเตือนใจ', steps: 8 },
+    en: { title: 'Hellfire (Jahannam)', titleArabic: 'جَهَنَّم', description: 'Learn about Hellfire in Islam as a reminder', steps: 8 },
+  },
+  'jannah': {
+    icon: '🏡',
+    gradient: 'from-emerald-500 to-teal-700',
+    shadowColor: 'shadow-emerald-500/30',
+    th: { title: 'สวรรค์ (ญันนะฮ์)', titleArabic: 'الجَنَّة', description: 'เรียนรู้เกี่ยวกับสวรรค์และความประเสริฐ', steps: 8 },
+    en: { title: 'Paradise (Jannah)', titleArabic: 'الجَنَّة', description: 'Learn about Paradise and its blessings', steps: 8 },
+  },
+  'day-of-judgment': {
+    icon: '⚖️',
+    gradient: 'from-slate-600 to-slate-900',
+    shadowColor: 'shadow-slate-500/30',
+    th: { title: 'วันกิยามะฮ์', titleArabic: 'يَوْمُ القِيَامَة', description: 'เรียนรู้เหตุการณ์ในวันสิ้นโลก', steps: 10 },
+    en: { title: 'Day of Judgment', titleArabic: 'يَوْمُ القِيَامَة', description: 'Learn about events on the Day of Judgment', steps: 10 },
   },
 };
 
