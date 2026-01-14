@@ -28,9 +28,9 @@ export default function Header({ locale }: HeaderProps) {
   const navItems = [
     { href: `/${locale}`, label: t('nav.home') },
     { href: `/${locale}#journeys`, label: t('nav.journeys') },
+    { href: `/${locale}/quran`, label: locale === 'th' ? 'อัลกุรอาน' : 'Quran' },
     { href: `/${locale}/quiz`, label: locale === 'th' ? 'ควิซ' : 'Quiz' },
     { href: `/${locale}/qna`, label: locale === 'th' ? 'ถาม-ตอบ' : 'Q&A' },
-    { href: `/${locale}/articles`, label: locale === 'th' ? 'บทความ' : 'Articles' },
   ];
 
   const userMenuTranslations = {
