@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import JourneyMapNew from '@/components/journey/JourneyMapNew';
 import StepPopup from '@/components/journey/StepPopup';
+import ZakatCalculator from '@/components/zakat/ZakatCalculator';
 
 interface Step {
   id: number;
@@ -114,8 +115,31 @@ export default function ZakatPage({ params: { locale } }: { params: { locale: st
         </div>
       </section>
 
+      {/* Zakat Calculator Section */}
+      <section className="py-12 px-4 bg-gradient-to-b from-cream to-white">
+        <div className="max-w-2xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <ZakatCalculator locale={locale} />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Journey Steps Section */}
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
+          <motion.h2
+            className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            {locale === 'th' ? '📚 เรียนรู้เกี่ยวกับซะกาต' : '📚 Learn About Zakat'}
+          </motion.h2>
           <JourneyMapNew steps={steps} journeyIcon="💎" journeyColor="violet" onStepClick={handleStepClick} locale={locale} />
         </div>
       </section>

@@ -3,6 +3,7 @@ import PrayerTimes from '@/components/home/PrayerTimes';
 import DailyWisdomNew from '@/components/home/DailyWisdomNew';
 import JourneySection from '@/components/home/JourneySection';
 import FivePillars from '@/components/home/FivePillars';
+import QuizSection from '@/components/home/QuizSection';
 
 interface HomePageProps {
   params: { locale: string };
@@ -25,6 +26,9 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
 
       {/* Five Pillars Section */}
       <FivePillars locale={locale} />
+
+      {/* Quiz Section */}
+      <QuizSection locale={locale} />
 
       {/* About Section */}
       <AboutSection locale={locale} />
