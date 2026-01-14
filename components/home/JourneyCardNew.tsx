@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 interface JourneyCardNewProps {
-  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah' | 'jahannam' | 'jannah' | 'day-of-judgment';
+  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah' | 'jahannam' | 'jannah' | 'day-of-judgment' | 'islam-faq';
   locale: string;
   progress?: number;
   disabled?: boolean;
@@ -116,6 +116,13 @@ const journeyData = {
     shadowColor: 'shadow-slate-500/30',
     th: { title: 'วันกิยามะฮ์', titleArabic: 'يَوْمُ القِيَامَة', description: 'เรียนรู้เหตุการณ์ในวันสิ้นโลก', steps: 10 },
     en: { title: 'Day of Judgment', titleArabic: 'يَوْمُ القِيَامَة', description: 'Learn about events on the Day of Judgment', steps: 10 },
+  },
+  'islam-faq': {
+    icon: '❓',
+    gradient: 'from-blue-600 to-indigo-800',
+    shadowColor: 'shadow-blue-500/30',
+    th: { title: 'คำถามที่ถูกถามบ่อย', titleArabic: 'أَسْئِلَة شَائِعَة', description: 'คำตอบสำหรับคำถามที่ผู้คนมักสงสัยเกี่ยวกับอิสลาม', steps: 13 },
+    en: { title: 'Islam FAQ', titleArabic: 'أَسْئِلَة شَائِعَة', description: 'Answers to frequently asked questions about Islam', steps: 13 },
   },
 };
 

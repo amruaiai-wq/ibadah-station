@@ -2554,5 +2554,302 @@
       "message": "You have learned about the Day of Judgment in Islam",
       "dua": "May Allah grant us safety on the Day of Judgment. Ameen"
     }
+  },
+  "islamFaq": {
+    "title": "Frequently Asked Questions About Islam",
+    "titleArabic": "أَسْئِلَة شَائِعَة عَنِ الإِسْلَام",
+    "description": "Answers to common questions people ask about Islam, with evidence from the Quran and Sunnah",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Why don't Muslims eat pork?",
+        "titleArabic": "لِمَاذَا يُحَرَّمُ لَحْمُ الْخِنْزِير؟",
+        "description": "The prohibition of pork is a clear command from Allah in the Quran, which Muslims follow out of faith and obedience.",
+        "details": [
+          "Allah explicitly forbids it in the Quran (Surah Al-Baqarah 2:173)",
+          "This prohibition also exists in the Torah and Bible (Leviticus 11:7-8)",
+          "Pigs are scavengers that eat filth and garbage indiscriminately",
+          "Pork contains parasites and diseases like tapeworm and trichinosis",
+          "Pig fat is difficult to digest and accumulates in the body",
+          "Muslims obey Allah's commands even without knowing all the reasons"
+        ],
+        "tips": "Following Allah's commands is an act of faith, even when we don't fully understand the reasons",
+        "icon": "🐷",
+        "dua": {
+          "arabic": "حُرِّمَتْ عَلَيْكُمُ الْمَيْتَةُ وَالدَّمُ وَلَحْمُ الْخِنزِيرِ",
+          "transliteration": "Hurrimat alaykumul-maytatu wad-damu wa lahmul-khinzeer",
+          "meaning": "Forbidden to you are dead animals, blood, and the flesh of swine"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Why can Muslim men have 4 wives?",
+        "titleArabic": "لِمَاذَا يُبَاحُ تَعَدُّدُ الزَّوْجَات؟",
+        "description": "Islam permits a maximum of 4 wives with strict conditions of justice and fairness - it is neither required nor encouraged.",
+        "details": [
+          "Islam does not require multiple wives - it permits it with strict conditions",
+          "The key condition is treating all wives with absolute justice and equality",
+          "If a man cannot be just, the Quran commands him to marry only one",
+          "Before Islam, men had unlimited wives; Islam limited it to 4",
+          "It helps address social issues like widows and orphans after wars",
+          "Women can stipulate in their marriage contract that their husband cannot take another wife",
+          "The Prophet ﷺ had multiple wives for political, social, and religious reasons"
+        ],
+        "tips": "Most Muslims today have only one wife; having multiple requires valid reasons and capability",
+        "icon": "💑",
+        "dua": {
+          "arabic": "فَإِنْ خِفْتُمْ أَلَّا تَعْدِلُوا فَوَاحِدَةً",
+          "transliteration": "Fa in khiftum alla ta'dilu fawahidah",
+          "meaning": "But if you fear that you will not be just, then marry only one"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Does Islam teach terrorism?",
+        "titleArabic": "هَلْ يَأْمُرُ الإِسْلَامُ بِالإِرْهَاب؟",
+        "description": "Islam strictly forbids terrorism and killing innocent people. Violence committed in its name contradicts Islamic teachings.",
+        "details": [
+          "The word 'Islam' comes from 'salam' meaning peace",
+          "The Quran states killing one person is like killing all of humanity (5:32)",
+          "Islam forbids harming civilians, women, children, and elderly even in war",
+          "The Prophet ﷺ forbade destroying trees, animals, and places of worship",
+          "Terrorism is the act of extremist groups who distort religion",
+          "1.8 billion Muslims worldwide condemn terrorism",
+          "True Jihad means struggling against one's ego and self-improvement"
+        ],
+        "tips": "Don't judge a religion by the actions of a small minority; study from authentic sources",
+        "icon": "☮️",
+        "dua": {
+          "arabic": "مَن قَتَلَ نَفْسًا بِغَيْرِ نَفْسٍ فَكَأَنَّمَا قَتَلَ النَّاسَ جَمِيعًا",
+          "transliteration": "Man qatala nafsan bighayri nafsin faka'annama qatalan-nasa jamee'a",
+          "meaning": "Whoever kills a soul unless for a soul or for corruption in the land - it is as if he had slain mankind entirely"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Why do Muslim men grow beards?",
+        "titleArabic": "لِمَاذَا يُعْفِي الْمُسْلِمُ لِحْيَتَه؟",
+        "description": "Growing a beard is a Sunnah of the Prophet ﷺ and all prophets before him. It is considered a distinguishing characteristic of Muslim men.",
+        "details": [
+          "The Prophet ﷺ commanded to grow beards and trim mustaches",
+          "It is a Sunnah the Prophet ﷺ practiced throughout his life",
+          "All prophets before him had beards, including Moses and Jesus",
+          "It distinguishes men from women",
+          "It is a natural beauty that Allah created",
+          "Scholars differ on whether shaving is forbidden or disliked",
+          "Some Muslims don't have beards due to personal or professional reasons"
+        ],
+        "tips": "Growing a beard is a rewarding Sunnah, but we shouldn't judge others' faith by their appearance",
+        "icon": "🧔",
+        "dua": {
+          "arabic": "أَحْفُوا الشَّوَارِبَ وَأَعْفُوا اللِّحَى",
+          "transliteration": "Ahfush-shawariba wa a'ful-liha",
+          "meaning": "Trim the mustache and let the beard grow"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Why do Muslim women wear hijab?",
+        "titleArabic": "لِمَاذَا تَرْتَدِي الْمُسْلِمَةُ الْحِجَاب؟",
+        "description": "Hijab is a command from Allah to protect the honor and dignity of Muslim women. It is not oppression.",
+        "details": [
+          "It is commanded by Allah in the Quran (Surah An-Nur 24:31)",
+          "It protects women from inappropriate gazes",
+          "It identifies them as practicing Muslim women",
+          "Women in other religions also historically covered their heads",
+          "Hijab comes in many styles according to local culture",
+          "Wearing hijab is a personal choice in many countries",
+          "Many Muslim women take pride in wearing hijab"
+        ],
+        "tips": "Hijab is a symbol of modesty and faith, not a tool of oppression",
+        "icon": "🧕",
+        "dua": {
+          "arabic": "وَلْيَضْرِبْنَ بِخُمُرِهِنَّ عَلَىٰ جُيُوبِهِنَّ",
+          "transliteration": "Walyadribna bikhumurihinna 'ala juyoobihinna",
+          "meaning": "And let them draw their head covers over their chests"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Why do Muslims pray 5 times a day?",
+        "titleArabic": "لِمَاذَا يُصَلِّي الْمُسْلِمُ خَمْسَ مَرَّات؟",
+        "description": "The five daily prayers are the second pillar of Islam, serving as a direct connection between the servant and God.",
+        "details": [
+          "It was commanded by Allah to the Prophet ﷺ during the Night Journey (Isra' and Mi'raj)",
+          "Originally 50 prayers were prescribed, reduced to 5 but with the reward of 50",
+          "It serves as remembrance of Allah throughout the day",
+          "It helps Muslims maintain discipline and structure in life",
+          "It provides spiritual rest from worldly distractions",
+          "Prayer is the first thing one will be asked about on Judgment Day",
+          "It distinguishes Muslims from disbelievers"
+        ],
+        "tips": "Prayer is direct communication with Allah, bringing peace and strength to the soul",
+        "icon": "🕌",
+        "dua": {
+          "arabic": "إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا",
+          "transliteration": "Innas-salata kanat 'alal-mu'mineena kitabam-mawqoota",
+          "meaning": "Indeed, prayer has been decreed upon the believers at specified times"
+        }
+      },
+      {
+        "id": 7,
+        "title": "Why don't Muslims drink alcohol?",
+        "titleArabic": "لِمَاذَا يُحَرَّمُ الْخَمْر؟",
+        "description": "Alcohol and intoxicants are forbidden in Islam because they destroy the intellect and cause many social problems.",
+        "details": [
+          "The Quran explicitly forbids it, calling it 'rijs' (filth)",
+          "It destroys the intellect, which Allah values highly",
+          "It causes crime, accidents, and family problems",
+          "It damages health - liver, brain, and other organs",
+          "It causes neglect of duties to Allah, like abandoning prayer",
+          "The Prophet ﷺ cursed producers, sellers, drinkers, and all involved",
+          "The prohibition came gradually to help people adjust"
+        ],
+        "tips": "There are many halal beverage alternatives that are healthy",
+        "icon": "🚫",
+        "dua": {
+          "arabic": "إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنصَابُ وَالْأَزْلَامُ رِجْسٌ مِّنْ عَمَلِ الشَّيْطَانِ",
+          "transliteration": "Innamal-khamru wal-maysiru wal-ansabu wal-azlamu rijsun min 'amalish-shaytan",
+          "meaning": "Indeed, intoxicants, gambling, idols, and divining arrows are filth from the work of Satan"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Why do Muslims face the Qiblah?",
+        "titleArabic": "لِمَاذَا يَتَّجِهُ الْمُسْلِمُ إِلَى الْقِبْلَة؟",
+        "description": "The Qiblah (direction of the Kaaba) is the direction all Muslims worldwide face when praying, symbolizing unity.",
+        "details": [
+          "The Kaaba is the first house built for worshipping Allah",
+          "It was built by Prophet Ibrahim and Prophet Ismail",
+          "It symbolizes the unity of Muslims worldwide",
+          "Muslims don't worship the Kaaba - they worship Allah while facing it",
+          "Originally the Qiblah was Al-Aqsa Mosque before being changed to the Kaaba",
+          "Facing the same direction represents unity",
+          "The Kaaba is in Makkah, the holiest city"
+        ],
+        "tips": "Today there are apps that can accurately find the Qiblah direction",
+        "icon": "🕋",
+        "dua": {
+          "arabic": "فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ",
+          "transliteration": "Fawalli wajhaka shatral-masjidil-haram",
+          "meaning": "So turn your face toward al-Masjid al-Haram"
+        }
+      },
+      {
+        "id": 9,
+        "title": "Why do Muslims only eat halal food?",
+        "titleArabic": "لِمَاذَا يَأْكُلُ الْمُسْلِمُ الْحَلَال فَقَط؟",
+        "description": "Halal food is food permitted by Islamic law, with specific rules about the type and slaughter method.",
+        "details": [
+          "Halal means 'permissible' - Haram means 'forbidden'",
+          "Animals must be slaughtered properly while mentioning Allah's name",
+          "Blood vessels and windpipe must be cut to drain all blood",
+          "Blood is considered forbidden in Islam",
+          "Animals that die naturally, are strangled, or beaten to death are forbidden",
+          "Most seafood is halal without requiring slaughter",
+          "Vegetables, fruits, and grains are naturally halal"
+        ],
+        "tips": "Look for halal certification on products or ask vendors before buying",
+        "icon": "🍖",
+        "dua": {
+          "arabic": "فَكُلُوا مِمَّا ذُكِرَ اسْمُ اللَّهِ عَلَيْهِ",
+          "transliteration": "Fakulu mimma dhukirasmullahi 'alayhi",
+          "meaning": "So eat of that upon which the name of Allah has been mentioned"
+        }
+      },
+      {
+        "id": 10,
+        "title": "Do Muslims believe in Jesus?",
+        "titleArabic": "هَلْ يُؤْمِنُ الْمُسْلِمُ بِعِيسَى؟",
+        "description": "Muslims believe in Prophet Isa (Jesus) as a great prophet and messenger, but not as God or the son of God.",
+        "details": [
+          "Prophet Isa is one of the greatest prophets (Ulul Azm)",
+          "Muslims believe he was born to Maryam (Mary) without a father (a miracle)",
+          "He performed many miracles by Allah's permission",
+          "Muslims don't believe he was the son of God or God himself",
+          "Muslims don't believe he was crucified",
+          "Muslims believe he was raised to heaven and will return before the End Times",
+          "Muslims say 'Peace be upon him' when mentioning his name"
+        ],
+        "tips": "Muslims hold Prophet Isa and Lady Maryam in very high esteem",
+        "icon": "✝️",
+        "dua": {
+          "arabic": "إِنَّمَا الْمَسِيحُ عِيسَى ابْنُ مَرْيَمَ رَسُولُ اللَّهِ",
+          "transliteration": "Innamal-Maseehu 'Eesa-bnu Maryama Rasoolullah",
+          "meaning": "The Messiah, Jesus son of Mary, was only a messenger of Allah"
+        }
+      },
+      {
+        "id": 11,
+        "title": "Why does Islam forbid interest/usury?",
+        "titleArabic": "لِمَاذَا يُحَرَّمُ الرِّبَا؟",
+        "description": "Interest (Riba) is forbidden in Islam because it is exploitative and creates economic injustice.",
+        "details": [
+          "The Quran strictly and severely prohibits Riba",
+          "Those who consume interest are declared war upon by Allah and His Messenger",
+          "Interest makes the rich richer and the poor poorer",
+          "It is earning money without work or risk",
+          "Islam encourages trade and profit-loss sharing (Musharakah)",
+          "Islamic banks use profit-sharing systems instead",
+          "Both giving and taking interest is forbidden"
+        ],
+        "tips": "Today there are many Islamic financial products that are interest-free",
+        "icon": "💰",
+        "dua": {
+          "arabic": "أَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا",
+          "transliteration": "Ahallallahul-bay'a wa harramar-riba",
+          "meaning": "Allah has permitted trade and has forbidden interest"
+        }
+      },
+      {
+        "id": 12,
+        "title": "Why do Muslims fast in Ramadan?",
+        "titleArabic": "لِمَاذَا يَصُومُ الْمُسْلِمُ رَمَضَان؟",
+        "description": "Fasting in Ramadan is the fourth pillar of Islam, providing spiritual and physical benefits.",
+        "details": [
+          "It is commanded by Allah (Surah Al-Baqarah 2:183)",
+          "Ramadan is the month when the Quran was revealed",
+          "It trains patience, self-control, and God-consciousness (Taqwa)",
+          "It creates empathy by experiencing the hunger of the poor",
+          "It detoxifies and rests the digestive system",
+          "It is an opportunity for seeking forgiveness and increasing worship",
+          "The gates of Paradise open, gates of Hell close, and devils are chained"
+        ],
+        "tips": "Fasting is not just abstaining from food - it includes abstaining from all bad things",
+        "icon": "🌙",
+        "dua": {
+          "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ",
+          "transliteration": "Ya ayyuhalladhina amanu kutiba 'alaykumus-siyam",
+          "meaning": "O you who believe, fasting has been prescribed for you"
+        }
+      },
+      {
+        "id": 13,
+        "title": "Why do Muslims go for Hajj?",
+        "titleArabic": "لِمَاذَا يَحُجُّ الْمُسْلِم؟",
+        "description": "Hajj is the fifth pillar of Islam - a pilgrimage to Makkah required once in a lifetime for those who are able.",
+        "details": [
+          "It is commanded by Allah for those who have the ability",
+          "Performing it once in a lifetime is sufficient",
+          "It is the largest gathering of Muslims from around the world",
+          "Everyone wears the same white clothes, showing equality",
+          "One who performs Hajj correctly has all sins forgiven",
+          "It retraces the history of Prophet Ibrahim",
+          "It is training in patience and sacrifice"
+        ],
+        "tips": "Hajj is obligatory only for those who are physically and financially capable",
+        "icon": "🕋",
+        "dua": {
+          "arabic": "وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا",
+          "transliteration": "Walillahi 'alan-nasi hijjul-bayti manistata'a ilayhi sabeela",
+          "meaning": "And due to Allah from the people is a pilgrimage to the House - for whoever is able to find a way"
+        }
+      }
+    ],
+    "completed": {
+      "title": "Lesson Complete",
+      "message": "You have learned the answers to frequently asked questions about Islam",
+      "dua": "May Allah increase our knowledge and understanding. Ameen"
+    }
   }
 }

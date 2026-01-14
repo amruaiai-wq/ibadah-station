@@ -75,6 +75,7 @@ export default function JourneyMapNew({
     indigo: { bg: 'bg-indigo-500', text: 'text-indigo-500', border: 'border-indigo-500', glow: 'shadow-indigo-500/50' },
     red: { bg: 'bg-red-600', text: 'text-red-600', border: 'border-red-600', glow: 'shadow-red-600/50' },
     slate: { bg: 'bg-slate-600', text: 'text-slate-600', border: 'border-slate-600', glow: 'shadow-slate-600/50' },
+    blue: { bg: 'bg-blue-600', text: 'text-blue-600', border: 'border-blue-600', glow: 'shadow-blue-600/50' },
   };
   const colors = colorClasses[journeyColor] || colorClasses.emerald;
 
