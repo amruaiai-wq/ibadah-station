@@ -134,14 +134,19 @@ export default function HeroSection({ locale }: HeroSectionProps) {
           transition={{ type: 'spring', duration: 1.5 }}
           className="mb-8"
         >
-          <div className="inline-block p-2 bg-white/10 backdrop-blur-sm rounded-full">
-            <Image
-              src="/logo.jpg"
-              alt="Ibadah Station"
-              width={100}
-              height={100}
-              className="rounded-full"
-            />
+          <div className="inline-flex flex-col items-center gap-3">
+            <div className="p-3 bg-white/10 backdrop-blur-sm rounded-full shadow-lg">
+              <Image
+                src="/logo.jpg"
+                alt="Ibadah Station"
+                width={80}
+                height={80}
+                className="rounded-full"
+              />
+            </div>
+            <span className="text-gold font-semibold text-lg tracking-wide">
+              Ibadah Station
+            </span>
           </div>
         </motion.div>
 
@@ -201,24 +206,6 @@ export default function HeroSection({ locale }: HeroSectionProps) {
           </a>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center gap-2 text-white/50"
-          >
-            <span className="text-sm">{t.scroll}</span>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </motion.div>
-        </motion.div>
       </div>
 
       {/* Bottom Wave */}
