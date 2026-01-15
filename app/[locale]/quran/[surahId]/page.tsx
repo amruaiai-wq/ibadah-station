@@ -37,7 +37,9 @@ export default function SurahPage({ params: { locale, surahId } }: SurahPageProp
       bismillah: 'بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ',
       bismillahMeaning: 'ด้วยพระนามของอัลลอฮ์ ผู้ทรงกรุณาปรานี ผู้ทรงเมตตาเสมอ',
       readingMode: 'โหมดอ่าน',
-      exitReadingMode: 'ออกจากโหมดอ่าน',
+      exitReadingMode: 'ออก',
+      translation: 'คำแปล',
+      reading: 'อ่าน',
     },
     en: {
       back: 'Back to Surah List',
@@ -56,7 +58,9 @@ export default function SurahPage({ params: { locale, surahId } }: SurahPageProp
       bismillah: 'بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ',
       bismillahMeaning: 'In the name of Allah, the Most Gracious, the Most Merciful',
       readingMode: 'Reading Mode',
-      exitReadingMode: 'Exit Reading Mode',
+      exitReadingMode: 'Exit',
+      translation: 'Translation',
+      reading: 'Reading',
     },
   };
   const t = texts[locale as keyof typeof texts] || texts.th;
@@ -88,12 +92,6 @@ export default function SurahPage({ params: { locale, surahId } }: SurahPageProp
     xlarge: 'text-4xl',
   };
 
-  const readingFontSizeClasses = {
-    normal: 'text-3xl',
-    large: 'text-4xl',
-    xlarge: 'text-5xl',
-  };
-
   if (loading) {
     return (
       <div className="min-h-screen bg-cream flex items-center justify-center">
@@ -113,109 +111,189 @@ export default function SurahPage({ params: { locale, surahId } }: SurahPageProp
     );
   }
 
-  // Reading Mode - Full Screen Arabic Only
+  // Reading Mode - Full Screen Arabic Only (Like Real Quran)
   if (readingMode) {
     return (
-      <div className="min-h-screen bg-[#FDF8F0]">
-        {/* Reading Mode Header */}
-        <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-[#FDF8F0] to-transparent">
-          <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-            <button
-              onClick={() => setReadingMode(false)}
-              className="flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur rounded-xl shadow-md text-gray-700 hover:bg-white transition-all"
-            >
-              <span>✕</span>
-              <span className="text-sm">{t.exitReadingMode}</span>
-            </button>
+      <div className="min-h-screen bg-[#1a1a2e] text-white">
+        {/* Top Header Bar - Dark Theme */}
+        <header className="fixed top-0 left-0 right-0 z-50 bg-[#16162a] border-b border-white/10">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            {/* Left - Surah Selector */}
+            <div className="flex items-center gap-3">
+              <Link
+                href={`/${locale}/quran`}
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                ←
+              </Link>
+              <div className="flex items-center gap-2">
+                <span className="text-white font-medium">{chapterNumber}. {chapter.name_simple}</span>
+                <span className="text-gray-500">▼</span>
+              </div>
+            </div>
 
-            {/* Font Size Controls */}
-            <div className="flex items-center gap-2 bg-white/80 backdrop-blur rounded-xl shadow-md px-3 py-2">
-              {(['normal', 'large', 'xlarge'] as const).map((size) => (
-                <button
-                  key={size}
-                  onClick={() => setFontSize(size)}
-                  className={`w-8 h-8 rounded-lg text-sm font-bold transition-all ${
-                    fontSize === size
-                      ? 'bg-emerald-600 text-white'
-                      : 'text-gray-500 hover:bg-gray-100'
-                  }`}
-                >
-                  {size === 'normal' ? 'A' : size === 'large' ? 'A+' : 'A++'}
-                </button>
-              ))}
+            {/* Center - Page Info */}
+            <div className="hidden md:flex items-center gap-4 text-gray-400 text-sm">
+              <span>Page {chapter.pages[0]}</span>
+              <span>•</span>
+              <span>Juz {Math.ceil(chapterNumber / 4)}</span>
+            </div>
+
+            {/* Right - Controls */}
+            <div className="flex items-center gap-2">
+              {/* Translation Toggle */}
+              <button
+                onClick={() => setShowTranslation(!showTranslation)}
+                className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm transition-all ${
+                  showTranslation
+                    ? 'bg-emerald-600 text-white'
+                    : 'bg-white/10 text-gray-400 hover:text-white'
+                }`}
+              >
+                <span>📄</span>
+                <span>{t.translation}</span>
+              </button>
+
+              {/* Reading Mode Active */}
+              <button
+                onClick={() => setReadingMode(false)}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm bg-white/10 text-white"
+              >
+                <span>📖</span>
+                <span>{t.reading}</span>
+              </button>
+
+              {/* Settings */}
+              <button className="p-2 rounded-lg bg-white/10 text-gray-400 hover:text-white transition-colors">
+                ⚙️
+              </button>
             </div>
           </div>
-        </div>
+        </header>
 
-        {/* Surah Title */}
-        <div className="pt-20 pb-8 text-center">
-          <h1 className="text-5xl font-arabic text-emerald-800 mb-2">
+        {/* Surah Header Section */}
+        <div className="pt-20 pb-6 text-center border-b border-white/10">
+          {/* Arabic Surah Name */}
+          <h1 className="text-5xl md:text-6xl font-arabic text-[#d4af37] mb-2" style={{ fontFamily: 'Amiri, serif' }}>
             {chapter.name_arabic}
           </h1>
-          <p className="text-gray-500">{chapter.name_simple}</p>
+          <p className="text-gray-400 text-lg">{chapter.name_simple}</p>
         </div>
 
-        {/* Reading Content */}
-        <div className="max-w-4xl mx-auto px-6 pb-32">
-          {/* Bismillah */}
-          {chapter.bismillah_pre && (
-            <div className="text-center mb-12">
-              <p className="text-4xl font-arabic text-emerald-700 leading-relaxed">
-                {t.bismillah}
+        {/* Bismillah */}
+        {chapter.bismillah_pre && (
+          <div className="py-8 text-center border-b border-white/5">
+            <p className="text-3xl md:text-4xl font-arabic text-[#d4af37]/80" style={{ fontFamily: 'Amiri, serif' }}>
+              بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
+            </p>
+            {showTranslation && (
+              <p className="text-gray-500 text-sm mt-3">
+                In the Name of Allah—the Most Compassionate, Most Merciful
               </p>
-            </div>
-          )}
+            )}
+          </div>
+        )}
 
-          {/* Continuous Arabic Text */}
+        {/* Quran Content - Styled like real mushaf */}
+        <div className="max-w-4xl mx-auto px-4 md:px-8 py-8">
           <div
-            className={`font-arabic text-right leading-[2.5] text-gray-800 ${readingFontSizeClasses[fontSize]}`}
+            className="text-center leading-[3] md:leading-[3.5]"
             dir="rtl"
+            style={{ fontFamily: 'Amiri Quran, Amiri, serif' }}
           >
-            {verses.map((verse, index) => (
-              <span key={verse.id}>
-                {verse.text_uthmani}
-                <span className="inline-flex items-center justify-center w-10 h-10 mx-2 text-base bg-emerald-100 text-emerald-700 rounded-full font-sans">
-                  {verse.verse_number}
+            {verses.map((verse) => (
+              <span key={verse.id} className="inline">
+                <span className="text-2xl md:text-3xl lg:text-4xl text-white/90 hover:text-[#d4af37] transition-colors">
+                  {verse.text_uthmani}
                 </span>
-                {index < verses.length - 1 && ' '}
+                {/* Verse Number in decorative circle */}
+                <span
+                  className="inline-flex items-center justify-center mx-1 md:mx-2 align-middle"
+                  style={{ verticalAlign: 'middle' }}
+                >
+                  <span className="relative flex items-center justify-center w-8 h-8 md:w-10 md:h-10">
+                    {/* Decorative border */}
+                    <svg viewBox="0 0 40 40" className="absolute inset-0 w-full h-full text-[#d4af37]/60">
+                      <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                      <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" strokeWidth="0.5"/>
+                    </svg>
+                    <span className="relative text-xs md:text-sm text-[#d4af37] font-sans">
+                      {verse.verse_number}
+                    </span>
+                  </span>
+                </span>
+                {' '}
               </span>
             ))}
           </div>
+
+          {/* Translation Section (if enabled) */}
+          {showTranslation && (
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <div className="space-y-6">
+                {verses.map((verse) => (
+                  <div key={`trans-${verse.id}`} className="flex gap-4" dir="ltr">
+                    <span className="flex-shrink-0 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-sm text-[#d4af37]">
+                      {verse.verse_number}
+                    </span>
+                    <p className="text-gray-400 leading-relaxed text-sm md:text-base">
+                      {verse.translation}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* Navigation Footer */}
-        <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-[#FDF8F0] via-[#FDF8F0] to-transparent pt-8 pb-6">
+        {/* Bottom Navigation */}
+        <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-[#1a1a2e] via-[#1a1a2e] to-transparent pt-12 pb-4">
           <div className="max-w-4xl mx-auto px-4 flex justify-between items-center">
             {chapterNumber > 1 ? (
               <Link
                 href={`/${locale}/quran/${chapterNumber - 1}`}
-                className="flex items-center gap-2 px-4 py-2 bg-white shadow-md text-emerald-700 rounded-xl hover:bg-emerald-50 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-colors"
               >
-                <span>←</span>
+                <span>→</span>
                 <span className="text-sm">{t.prev}</span>
               </Link>
             ) : (
               <div />
             )}
 
+            {/* Page Number */}
             <div className="text-center">
-              <p className="text-sm text-gray-500">
-                {chapter.verses_count} {t.verses}
-              </p>
+              <p className="text-2xl text-gray-600 font-arabic">{chapter.pages[0]}</p>
             </div>
 
             {chapterNumber < 114 ? (
               <Link
                 href={`/${locale}/quran/${chapterNumber + 1}`}
-                className="flex items-center gap-2 px-4 py-2 bg-white shadow-md text-emerald-700 rounded-xl hover:bg-emerald-50 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-colors"
               >
                 <span className="text-sm">{t.next}</span>
-                <span>→</span>
+                <span>←</span>
               </Link>
             ) : (
               <div />
             )}
           </div>
+        </div>
+
+        {/* Scroll to top/bottom buttons */}
+        <div className="fixed right-4 bottom-20 flex flex-col gap-2">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="w-10 h-10 rounded-full bg-white/10 text-gray-400 hover:text-white hover:bg-white/20 transition-all flex items-center justify-center"
+          >
+            ↑
+          </button>
+          <button
+            onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+            className="w-10 h-10 rounded-full bg-white/10 text-gray-400 hover:text-white hover:bg-white/20 transition-all flex items-center justify-center"
+          >
+            ↓
+          </button>
         </div>
       </div>
     );
