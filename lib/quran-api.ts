@@ -22,6 +22,7 @@ export interface Verse {
   verse_number: number;
   text_uthmani: string;
   translation?: string;
+  audioUrl?: string;
 }
 
 export interface ChaptersResponse {
@@ -42,6 +43,23 @@ export interface TranslationsResponse {
     text: string;
   }[];
 }
+
+export interface Reciter {
+  id: number;
+  name: string;
+  style?: string;
+}
+
+// Available reciters
+export const RECITERS: Reciter[] = [
+  { id: 7, name: 'Mishari Rashid al-Afasy' },
+  { id: 3, name: 'Abdur-Rahman as-Sudais' },
+  { id: 4, name: 'Abu Bakr al-Shatri' },
+  { id: 1, name: 'AbdulBaset AbdulSamad', style: 'Mujawwad' },
+  { id: 2, name: 'AbdulBaset AbdulSamad', style: 'Murattal' },
+  { id: 5, name: 'Hani ar-Rifai' },
+  { id: 12, name: 'Mahmoud Khalil Al-Husary', style: 'Muallim' },
+];
 
 const BASE_URL = 'https://api.quran.com/api/v4';
 
@@ -87,11 +105,11 @@ export async function getEnglishTranslation(chapterId: number): Promise<string[]
   return data.translations.map(t => t.text.replace(/<[^>]*>/g, '')); // Remove HTML tags
 }
 
-// Get Thai translation if available (resource_id: 161 - Thai)
+// Get Thai translation (King Fahad Quran Complex - resource_id: 51)
 export async function getThaiTranslation(chapterId: number): Promise<string[]> {
   try {
     const response = await fetch(
-      `${BASE_URL}/quran/translations/161?chapter_number=${chapterId}`
+      `${BASE_URL}/quran/translations/51?chapter_number=${chapterId}`
     );
     if (!response.ok) return [];
     const data: TranslationsResponse = await response.json();
@@ -101,15 +119,33 @@ export async function getThaiTranslation(chapterId: number): Promise<string[]> {
   }
 }
 
-// Get verses with translations
+// Get audio URLs for verses
+export async function getAudioUrls(chapterId: number, reciterId: number = 7): Promise<string[]> {
+  try {
+    const response = await fetch(
+      `${BASE_URL}/recitations/${reciterId}/by_chapter/${chapterId}`
+    );
+    if (!response.ok) return [];
+    const data = await response.json();
+
+    // Audio files are stored on CDN
+    return data.audio_files.map((file: { url: string }) => file.url);
+  } catch {
+    return [];
+  }
+}
+
+// Get verses with translations and audio
 export async function getVersesWithTranslation(
   chapterId: number,
-  locale: string
+  locale: string,
+  reciterId: number = 7
 ): Promise<Verse[]> {
-  const [verses, enTranslations, thTranslations] = await Promise.all([
+  const [verses, enTranslations, thTranslations, audioUrls] = await Promise.all([
     getVerses(chapterId),
     getEnglishTranslation(chapterId),
     locale === 'th' ? getThaiTranslation(chapterId) : Promise.resolve([]),
+    getAudioUrls(chapterId, reciterId),
   ]);
 
   return verses.map((verse, index) => ({
@@ -117,5 +153,14 @@ export async function getVersesWithTranslation(
     translation: locale === 'th' && thTranslations[index]
       ? thTranslations[index]
       : enTranslations[index] || '',
+    audioUrl: audioUrls[index] || '',
   }));
+}
+
+// Get chapter audio URL (full surah recitation)
+export function getChapterAudioUrl(chapterId: number): string {
+  // Pad chapter number to 3 digits
+  const paddedChapter = chapterId.toString().padStart(3, '0');
+  // CDN URL pattern for full chapter audio
+  return `https://download.quranicaudio.com/quran/mishaari_raashid_al_3teleasy/${paddedChapter}.mp3`;
 }
