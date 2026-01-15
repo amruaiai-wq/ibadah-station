@@ -11,6 +11,7 @@
     "buttons": {
       "next": "Next",
       "previous": "Previous",
+      "back": "Back",
       "start": "Start Journey",
       "close": "Close",
       "backToHome": "Back to Home",
@@ -365,6 +366,8 @@
   },
   "salah": {
     "title": "Salah Journey",
+    "titleArabic": "الصَّلَاة",
+    "description": "The second pillar of Islam. Learn the 5 daily prayers from preparation, ablution, to the correct way of performing prayer",
     "arabic": "رِحْلَةُ الصَّلَاة",
     "intro": {
       "title": "Welcome to the Salah Journey",
