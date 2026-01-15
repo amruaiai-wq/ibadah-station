@@ -48,7 +48,7 @@ export default function Header({ locale }: HeaderProps) {
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="Ibadah Station Logo"
               width={44}
               height={44}
