@@ -2854,5 +2854,589 @@
       "message": "You have learned the answers to frequently asked questions about Islam",
       "dua": "May Allah increase our knowledge and understanding. Ameen"
     }
+  },
+  "prophetBiography": {
+    "title": "Biography of Prophet Muhammad ﷺ",
+    "titleArabic": "سِيرَةُ النَّبِيِّ مُحَمَّد ﷺ",
+    "description": "Learn about the life of Prophet Muhammad ﷺ from birth to death, covering all significant events",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Year of the Elephant",
+        "titleArabic": "عَامُ الْفِيل",
+        "description": "The year Prophet Muhammad ﷺ was born, when Abraha tried to destroy the Kaaba",
+        "details": [
+          "In 570 CE, the Abyssinian ruler Abraha came to destroy the Kaaba",
+          "He brought a large army with elephants",
+          "Allah sent flocks of birds carrying stones of baked clay",
+          "The army was completely destroyed",
+          "This is mentioned in Surah Al-Fil in the Quran",
+          "The Prophet ﷺ was born in this blessed year"
+        ],
+        "tips": "This event shows Allah's protection of His sacred house",
+        "icon": "🐘"
+      },
+      {
+        "id": 2,
+        "title": "Birth of the Prophet ﷺ",
+        "titleArabic": "مَوْلِدُ النَّبِيّ ﷺ",
+        "description": "Prophet Muhammad ﷺ was born on Monday, 12th Rabi al-Awwal",
+        "details": [
+          "Born in Makkah in the Year of the Elephant (570 CE)",
+          "His father Abdullah died before his birth",
+          "His mother was Aminah bint Wahb",
+          "He was born into the noble Hashim clan of Quraysh",
+          "His grandfather Abdul Muttalib named him 'Muhammad' (The Praised One)",
+          "Signs and miracles accompanied his birth"
+        ],
+        "tips": "The Prophet ﷺ said: 'I am the answered prayer of Ibrahim'",
+        "icon": "👶"
+      },
+      {
+        "id": 3,
+        "title": "Childhood with Halimah",
+        "titleArabic": "طُفُولَتُهُ مَعَ حَلِيمَة",
+        "description": "The Prophet ﷺ was nursed by Halimah al-Sa'diyyah in the desert",
+        "details": [
+          "It was Arab custom to send children to the desert for nursing",
+          "Halimah initially hesitated due to his orphan status",
+          "After taking him, her family was blessed with abundance",
+          "The opening of his chest occurred during this period",
+          "Angels came and purified his heart",
+          "He stayed with Halimah until age 4-5"
+        ],
+        "tips": "This period helped him learn pure Arabic and develop a strong character",
+        "icon": "🏜️"
+      },
+      {
+        "id": 4,
+        "title": "Death of His Mother",
+        "titleArabic": "وَفَاةُ أُمِّه",
+        "description": "Aminah passed away when the Prophet ﷺ was 6 years old",
+        "details": [
+          "She died while returning from visiting relatives in Madinah",
+          "She passed away at Abwa, between Makkah and Madinah",
+          "The young Muhammad ﷺ was now a complete orphan",
+          "His grandfather Abdul Muttalib then took care of him",
+          "Allah mentions orphans' care in the Quran due to this",
+          "This experience made him compassionate towards orphans"
+        ],
+        "tips": "The Prophet ﷺ encouraged caring for orphans throughout his life",
+        "icon": "😢"
+      },
+      {
+        "id": 5,
+        "title": "Under His Uncle's Care",
+        "titleArabic": "كَفَالَةُ عَمِّهِ أَبِي طَالِب",
+        "description": "After Abdul Muttalib's death, Abu Talib raised the Prophet ﷺ",
+        "details": [
+          "Abdul Muttalib died when Muhammad ﷺ was 8 years old",
+          "Abu Talib took him in despite having many children",
+          "He loved Muhammad ﷺ more than his own children",
+          "He took him on trading journeys to Syria",
+          "Abu Talib protected him until his own death",
+          "Though he never became Muslim, Abu Talib defended Islam"
+        ],
+        "tips": "Abu Talib's protection was crucial in the early days of Islam",
+        "icon": "👨‍👦"
+      },
+      {
+        "id": 6,
+        "title": "Meeting Monk Bahira",
+        "titleArabic": "لِقَاءُ الرَّاهِب بَحِيرَا",
+        "description": "The Christian monk Bahira recognized signs of prophethood in young Muhammad ﷺ",
+        "details": [
+          "This occurred during a trade journey to Syria",
+          "Bahira saw a cloud shading the caravan",
+          "He noticed the Seal of Prophethood between his shoulders",
+          "Bahira warned Abu Talib to protect him",
+          "He recognized signs from previous scriptures",
+          "Muhammad ﷺ was about 12 years old"
+        ],
+        "tips": "This shows that people of knowledge recognized his prophethood before revelation",
+        "icon": "⛪"
+      },
+      {
+        "id": 7,
+        "title": "The Fijar War",
+        "titleArabic": "حَرْبُ الْفِجَار",
+        "description": "The Prophet ﷺ witnessed warfare during his youth",
+        "details": [
+          "This war occurred between Quraysh and Hawazin tribes",
+          "The Prophet ﷺ was about 15-20 years old",
+          "He participated by collecting arrows for his uncles",
+          "He witnessed the horrors of tribal warfare",
+          "This experience influenced his later peacemaking",
+          "He later called it a 'war of transgression'"
+        ],
+        "tips": "These experiences shaped his character as a peacemaker",
+        "icon": "⚔️"
+      },
+      {
+        "id": 8,
+        "title": "Alliance of the Virtuous (Hilf al-Fudul)",
+        "titleArabic": "حِلْفُ الْفُضُول",
+        "description": "The Prophet ﷺ participated in an alliance to support the oppressed",
+        "details": [
+          "This alliance was formed after the Fijar War",
+          "Members pledged to help the oppressed regardless of tribe",
+          "It was formed in the house of Abdullah ibn Jud'an",
+          "The Prophet ﷺ said he would honor it even after Islam",
+          "This shows Islam's values existed before revelation",
+          "It established principles of justice and human rights"
+        ],
+        "tips": "The Prophet ﷺ said: 'If I were called to it in Islam, I would respond'",
+        "icon": "🤝"
+      },
+      {
+        "id": 9,
+        "title": "Working as a Shepherd",
+        "titleArabic": "عَمَلُهُ فِي رِعَايَةِ الْغَنَم",
+        "description": "The Prophet ﷺ worked as a shepherd in his youth",
+        "details": [
+          "He herded sheep for the people of Makkah",
+          "All prophets were shepherds at some point",
+          "This taught him patience and responsibility",
+          "He said: 'Every prophet herded sheep'",
+          "It developed his contemplative nature",
+          "Shepherding requires constant vigilance and care"
+        ],
+        "tips": "Shepherding developed qualities needed for leading a nation",
+        "icon": "🐑"
+      },
+      {
+        "id": 10,
+        "title": "Trading for Khadijah",
+        "titleArabic": "تِجَارَتُهُ لِخَدِيجَة",
+        "description": "The Prophet ﷺ worked as a trader for the noble Khadijah",
+        "details": [
+          "Khadijah was a successful businesswoman in Makkah",
+          "She heard of Muhammad's honesty and trustworthiness",
+          "She hired him to trade with her caravan to Syria",
+          "Her servant Maysarah accompanied him",
+          "The journey was extremely profitable",
+          "His honesty and character impressed Khadijah"
+        ],
+        "tips": "His title 'Al-Amin' (The Trustworthy) preceded his prophethood",
+        "icon": "🐪"
+      },
+      {
+        "id": 11,
+        "title": "Marriage to Khadijah",
+        "titleArabic": "زَوَاجُهُ مِنْ خَدِيجَة",
+        "description": "The Prophet ﷺ married Khadijah when he was 25 years old",
+        "details": [
+          "Khadijah proposed marriage through her friend",
+          "She was about 40 years old, he was 25",
+          "She was previously married twice and was a widow",
+          "Abu Talib conducted the marriage ceremony",
+          "They had 6 children: 2 sons and 4 daughters",
+          "She was his only wife until her death"
+        ],
+        "tips": "Khadijah was the first to believe in his prophethood",
+        "icon": "💍"
+      },
+      {
+        "id": 12,
+        "title": "Rebuilding the Kaaba",
+        "titleArabic": "إِعَادَةُ بِنَاءِ الْكَعْبَة",
+        "description": "The Prophet ﷺ resolved a dispute during the Kaaba's reconstruction",
+        "details": [
+          "The Kaaba was damaged by flooding",
+          "Tribes disputed who would place the Black Stone",
+          "They agreed the next person entering would decide",
+          "Muhammad ﷺ was that person",
+          "He placed the stone on a cloth, each tribe held a corner",
+          "Then he placed the stone himself"
+        ],
+        "tips": "This wisdom prevented bloodshed and earned him great respect",
+        "icon": "🕋"
+      },
+      {
+        "id": 13,
+        "title": "Seclusion in Cave Hira",
+        "titleArabic": "التَّحَنُّثُ فِي غَارِ حِرَاء",
+        "description": "The Prophet ﷺ would spend time in contemplation in Cave Hira",
+        "details": [
+          "He began this practice before revelation",
+          "The cave is on Jabal al-Nur (Mountain of Light)",
+          "He would bring provisions for several nights",
+          "Khadijah would send him food and water",
+          "He pondered about the Creator and creation",
+          "This prepared him for receiving revelation"
+        ],
+        "tips": "Contemplation and reflection are important in Islam",
+        "icon": "🏔️"
+      },
+      {
+        "id": 14,
+        "title": "The First Revelation",
+        "titleArabic": "نُزُولُ الْوَحْيِ الأَوَّل",
+        "description": "Angel Jibreel came with the first verses of the Quran",
+        "details": [
+          "This occurred in the month of Ramadan, 610 CE",
+          "The Prophet ﷺ was 40 years old",
+          "Jibreel commanded him to 'Read' (Iqra)",
+          "The first 5 verses of Surah Al-Alaq were revealed",
+          "He was terrified and rushed home to Khadijah",
+          "She comforted him and took him to her cousin Waraqah"
+        ],
+        "tips": "The first word revealed was 'Read' - emphasizing knowledge",
+        "icon": "📖"
+      },
+      {
+        "id": 15,
+        "title": "Secret Preaching Period",
+        "titleArabic": "الدَّعْوَةُ السِّرِّيَّة",
+        "description": "The first 3 years of Islam were preached secretly",
+        "details": [
+          "The Prophet ﷺ invited close family and friends first",
+          "The first Muslims: Khadijah, Abu Bakr, Ali, Zayd",
+          "Abu Bakr brought many prominent Makkans to Islam",
+          "They prayed secretly in homes and remote areas",
+          "This period built a solid foundation of believers",
+          "About 40 people accepted Islam during this time"
+        ],
+        "tips": "Starting with a strong core group is crucial for any movement",
+        "icon": "🤫"
+      },
+      {
+        "id": 16,
+        "title": "Public Preaching",
+        "titleArabic": "الدَّعْوَةُ الْجَهْرِيَّة",
+        "description": "Allah commanded the Prophet ﷺ to preach openly",
+        "details": [
+          "The command came: 'Warn your closest relatives'",
+          "He climbed Mount Safa to address Quraysh",
+          "He asked if they would believe him about an army",
+          "They said yes, as he never lied",
+          "He then warned them of Allah's punishment",
+          "Abu Lahab cursed him, leading to Surah Lahab"
+        ],
+        "tips": "Speaking truth publicly requires courage and conviction",
+        "icon": "📢"
+      },
+      {
+        "id": 17,
+        "title": "Persecution of Muslims",
+        "titleArabic": "اضْطِهَادُ الْمُسْلِمِين",
+        "description": "The Quraysh severely persecuted the early Muslims",
+        "details": [
+          "Bilal was tortured in the desert sun",
+          "The family of Yasir was killed, making them first martyrs",
+          "The Prophet ﷺ himself was harassed and mocked",
+          "Muslims were boycotted economically and socially",
+          "Some were forced to emigrate to Abyssinia",
+          "The boycott lasted 3 years"
+        ],
+        "tips": "Patience in hardship is a test of true faith",
+        "icon": "😰"
+      },
+      {
+        "id": 18,
+        "title": "Year of Sorrow",
+        "titleArabic": "عَامُ الْحُزْن",
+        "description": "The Prophet ﷺ lost both Khadijah and Abu Talib",
+        "details": [
+          "In 619 CE, both supporters died within months",
+          "Khadijah was his emotional and spiritual support",
+          "Abu Talib was his political protector",
+          "Persecution intensified after their deaths",
+          "He traveled to Taif seeking support but was rejected",
+          "This was one of the hardest periods of his life"
+        ],
+        "tips": "Even in darkest times, trust in Allah's plan",
+        "icon": "💔"
+      },
+      {
+        "id": 19,
+        "title": "Isra and Mi'raj",
+        "titleArabic": "الإِسْرَاءُ وَالْمِعْرَاج",
+        "description": "The miraculous night journey and ascension to heaven",
+        "details": [
+          "Occurred about a year after the Year of Sorrow",
+          "He was taken from Makkah to Jerusalem in one night",
+          "Then ascended through the seven heavens",
+          "Met previous prophets including Ibrahim and Musa",
+          "The five daily prayers were prescribed",
+          "He saw Jannah and Jahannam"
+        ],
+        "tips": "This journey was a gift from Allah after great hardship",
+        "icon": "🌙"
+      },
+      {
+        "id": 20,
+        "title": "The Hijrah to Madinah",
+        "titleArabic": "الْهِجْرَةُ إِلَى الْمَدِينَة",
+        "description": "The migration from Makkah to Madinah marks the Islamic calendar",
+        "details": [
+          "Occurred in 622 CE after 13 years in Makkah",
+          "The Quraysh plotted to kill him",
+          "He escaped with Abu Bakr, hiding in Cave Thawr",
+          "He arrived in Madinah on 12th Rabi al-Awwal",
+          "The Ansar of Madinah welcomed them joyfully",
+          "This marks year 1 of the Islamic calendar"
+        ],
+        "tips": "Sometimes leaving home is necessary for a greater purpose",
+        "icon": "🐫"
+      },
+      {
+        "id": 21,
+        "title": "Establishing the State in Madinah",
+        "titleArabic": "تَأْسِيسُ الدَّوْلَةِ فِي الْمَدِينَة",
+        "description": "The Prophet ﷺ established the first Islamic state",
+        "details": [
+          "Built the Prophet's Mosque as the center",
+          "Created brotherhood between Muhajirun and Ansar",
+          "Drafted the Constitution of Madinah",
+          "Established treaties with Jewish tribes",
+          "Set up the market and economy",
+          "Created a system of governance"
+        ],
+        "tips": "Islam provides guidance for both spiritual and civic life",
+        "icon": "🏛️"
+      },
+      {
+        "id": 22,
+        "title": "The Farewell Pilgrimage",
+        "titleArabic": "حَجَّةُ الْوَدَاع",
+        "description": "The Prophet's ﷺ final pilgrimage and sermon",
+        "details": [
+          "Performed in 632 CE (10 AH)",
+          "Over 100,000 Muslims accompanied him",
+          "He delivered his famous Farewell Sermon at Arafat",
+          "Declared equality of all humans regardless of race",
+          "Emphasized women's rights and brotherhood",
+          "The verse 'Today I have perfected your religion' was revealed"
+        ],
+        "tips": "His final sermon contains timeless principles for humanity",
+        "icon": "🕌"
+      },
+      {
+        "id": 23,
+        "title": "Death of the Prophet ﷺ",
+        "titleArabic": "وَفَاةُ النَّبِيّ ﷺ",
+        "description": "The Prophet ﷺ passed away on Monday, 12th Rabi al-Awwal 11 AH",
+        "details": [
+          "He fell ill after the Farewell Pilgrimage",
+          "He passed away in the lap of Aisha",
+          "His last words were about prayer and treating servants well",
+          "Abu Bakr announced his death to the shocked community",
+          "He was buried in Aisha's room, now in the Prophet's Mosque",
+          "He was 63 years old"
+        ],
+        "tips": "His message lives on through the Quran and Sunnah",
+        "icon": "🕯️"
+      }
+    ],
+    "completed": {
+      "title": "Journey Complete",
+      "message": "You have learned about the blessed life of Prophet Muhammad ﷺ",
+      "dua": "O Allah, send blessings upon Muhammad and the family of Muhammad. Ameen"
+    }
+  },
+  "islamicBattles": {
+    "title": "Major Battles in Islamic History",
+    "titleArabic": "الْغَزَوَاتُ الْكُبْرَى فِي الإِسْلَام",
+    "description": "Learn about the significant battles during the Prophet's ﷺ time, their causes, and lessons",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Battle of Badr",
+        "titleArabic": "غَزْوَةُ بَدْر",
+        "description": "The first major battle of Islam - a decisive victory against the Quraysh",
+        "details": [
+          "Occurred on 17th Ramadan, 2 AH (624 CE)",
+          "313 Muslims faced 1,000 Quraysh fighters",
+          "Allah sent angels to support the Muslims",
+          "70 enemies killed, 70 captured",
+          "Key Quraysh leaders like Abu Jahl were killed",
+          "Known as 'The Day of Criterion' (Yawm al-Furqan)"
+        ],
+        "tips": "Victory comes from Allah, not from numbers or strength",
+        "icon": "⚔️"
+      },
+      {
+        "id": 2,
+        "title": "Battle of Uhud",
+        "titleArabic": "غَزْوَةُ أُحُد",
+        "description": "A battle with lessons about following the Prophet's commands",
+        "details": [
+          "Occurred in Shawwal, 3 AH (625 CE)",
+          "Quraysh came with 3,000 men seeking revenge for Badr",
+          "Muslims numbered about 700 after hypocrites withdrew",
+          "Initial victory turned to loss when archers left their post",
+          "The Prophet ﷺ was injured and rumors spread of his death",
+          "70 Muslims were martyred including Hamzah"
+        ],
+        "tips": "Disobedience to leadership can lead to disaster",
+        "icon": "🏔️"
+      },
+      {
+        "id": 3,
+        "title": "Battle of the Trench (Khandaq)",
+        "titleArabic": "غَزْوَةُ الْخَنْدَق",
+        "description": "The siege of Madinah and the strategy of the trench",
+        "details": [
+          "Occurred in Shawwal, 5 AH (627 CE)",
+          "A coalition of 10,000 fighters besieged Madinah",
+          "Salman al-Farisi suggested digging a trench",
+          "The siege lasted about a month",
+          "Allah sent wind and angels to scatter the enemy",
+          "This was the last major Quraysh offensive"
+        ],
+        "tips": "Strategic thinking and preparation are important in Islam",
+        "icon": "🏗️"
+      },
+      {
+        "id": 4,
+        "title": "Banu Qurayzah Campaign",
+        "titleArabic": "غَزْوَةُ بَنِي قُرَيْظَة",
+        "description": "Dealing with treachery during the Battle of the Trench",
+        "details": [
+          "Occurred immediately after the Battle of the Trench",
+          "Banu Qurayzah broke their treaty during the siege",
+          "They conspired with the enemy against the Muslims",
+          "The Prophet ﷺ besieged them for 25 days",
+          "They surrendered and asked for arbitration",
+          "Sa'd ibn Mu'adh judged according to their own scripture"
+        ],
+        "tips": "Betrayal of trust has serious consequences",
+        "icon": "⚖️"
+      },
+      {
+        "id": 5,
+        "title": "Treaty of Hudaybiyyah",
+        "titleArabic": "صُلْحُ الْحُدَيْبِيَة",
+        "description": "The peace treaty that Allah called a 'clear victory'",
+        "details": [
+          "Occurred in Dhul Qi'dah, 6 AH (628 CE)",
+          "Muslims set out for Umrah but were stopped at Hudaybiyyah",
+          "A 10-year peace treaty was negotiated",
+          "Terms seemed unfavorable to Muslims initially",
+          "Allah revealed Surah Al-Fath calling it a victory",
+          "Islam spread rapidly during the peace period"
+        ],
+        "tips": "Sometimes apparent setbacks are actually victories",
+        "icon": "🤝"
+      },
+      {
+        "id": 6,
+        "title": "Battle of Khaybar",
+        "titleArabic": "غَزْوَةُ خَيْبَر",
+        "description": "The conquest of the Jewish fortress of Khaybar",
+        "details": [
+          "Occurred in Muharram, 7 AH (628 CE)",
+          "Khaybar Jews had been plotting against Muslims",
+          "Ali ibn Abi Talib was given the banner",
+          "He defeated the champion Marhab in single combat",
+          "The fortresses were conquered one by one",
+          "Jews were allowed to stay and farm the land"
+        ],
+        "tips": "True strength comes from faith, not physical power alone",
+        "icon": "🏰"
+      },
+      {
+        "id": 7,
+        "title": "Battle of Mu'tah",
+        "titleArabic": "غَزْوَةُ مُؤْتَة",
+        "description": "The first battle against the Byzantine Empire",
+        "details": [
+          "Occurred in Jumada al-Awwal, 8 AH (629 CE)",
+          "3,000 Muslims faced 200,000 Byzantine and Arab forces",
+          "Three commanders were martyred: Zayd, Ja'far, Abdullah",
+          "Khalid ibn al-Walid took command and saved the army",
+          "The Prophet ﷺ announced the deaths by revelation",
+          "This showed Muslim willingness to face superpowers"
+        ],
+        "tips": "Leadership and strategic retreat can save an army",
+        "icon": "🦅"
+      },
+      {
+        "id": 8,
+        "title": "Conquest of Makkah",
+        "titleArabic": "فَتْحُ مَكَّة",
+        "description": "The peaceful conquest of Makkah",
+        "details": [
+          "Occurred in Ramadan, 8 AH (630 CE)",
+          "Quraysh broke the Treaty of Hudaybiyyah",
+          "The Prophet ﷺ marched with 10,000 Muslims",
+          "Makkah surrendered peacefully",
+          "The Prophet ﷺ granted general amnesty",
+          "He destroyed the idols around the Kaaba"
+        ],
+        "tips": "Forgiveness in victory shows true nobility of character",
+        "icon": "🕋"
+      },
+      {
+        "id": 9,
+        "title": "Battle of Hunayn",
+        "titleArabic": "غَزْوَةُ حُنَيْن",
+        "description": "A lesson about relying on Allah, not numbers",
+        "details": [
+          "Occurred in Shawwal, 8 AH (630 CE)",
+          "Hawazin and Thaqif tribes gathered 20,000 fighters",
+          "Muslims numbered 12,000 - their largest army",
+          "Initial pride in numbers led to initial defeat",
+          "The Prophet ﷺ rallied them and victory came",
+          "Allah mentions this in Surah At-Tawbah"
+        ],
+        "tips": "Numbers mean nothing without Allah's support",
+        "icon": "⚡"
+      },
+      {
+        "id": 10,
+        "title": "Siege of Taif",
+        "titleArabic": "حِصَارُ الطَّائِف",
+        "description": "The unsuccessful siege after Hunayn",
+        "details": [
+          "Occurred after the Battle of Hunayn in 8 AH",
+          "The Thaqif tribe retreated to their fortified city",
+          "Muslims besieged Taif for about 20 days",
+          "The siege was lifted without conquest",
+          "The Prophet ﷺ prayed for Thaqif's guidance",
+          "Thaqif accepted Islam the following year"
+        ],
+        "tips": "Sometimes patience achieves what force cannot",
+        "icon": "🏯"
+      },
+      {
+        "id": 11,
+        "title": "Expedition of Tabuk",
+        "titleArabic": "غَزْوَةُ تَبُوك",
+        "description": "The march to face the Byzantine army",
+        "details": [
+          "Occurred in Rajab, 9 AH (630 CE)",
+          "Rumors of Byzantine army gathering at the border",
+          "The Prophet ﷺ led 30,000 men in extreme heat",
+          "Known as the 'Expedition of Hardship'",
+          "No battle occurred as the enemy retreated",
+          "It established Muslim power in the north"
+        ],
+        "tips": "Responding to threats shows strength even without fighting",
+        "icon": "🌵"
+      },
+      {
+        "id": 12,
+        "title": "Lessons from the Battles",
+        "titleArabic": "دُرُوسٌ مِنَ الْغَزَوَات",
+        "description": "Key lessons from the Prophet's military campaigns",
+        "details": [
+          "The Prophet ﷺ participated in 27 expeditions",
+          "Only 9 involved actual fighting",
+          "Total Muslim casualties in all battles: about 250",
+          "The Prophet ﷺ always sought peace first",
+          "Strict rules of warfare were established",
+          "Protection of civilians, trees, and religious sites was mandated"
+        ],
+        "tips": "Islamic warfare has strict ethical rules unlike any other",
+        "icon": "📚"
+      }
+    ],
+    "completed": {
+      "title": "Journey Complete",
+      "message": "You have learned about the major battles in Islamic history",
+      "dua": "O Allah, grant us understanding of our history and guide us. Ameen"
+    }
   }
 }

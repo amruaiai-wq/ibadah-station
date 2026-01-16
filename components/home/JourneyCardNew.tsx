@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 interface JourneyCardNewProps {
-  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah' | 'jahannam' | 'jannah' | 'day-of-judgment' | 'islam-faq';
+  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah' | 'jahannam' | 'jannah' | 'day-of-judgment' | 'islam-faq' | 'prophet-biography' | 'islamic-battles';
   locale: string;
   progress?: number;
   disabled?: boolean;
@@ -123,6 +123,20 @@ const journeyData = {
     shadowColor: 'shadow-blue-500/30',
     th: { title: 'คำถามที่ถูกถามบ่อย', titleArabic: 'أَسْئِلَة شَائِعَة', description: 'คำตอบสำหรับคำถามที่ผู้คนมักสงสัยเกี่ยวกับอิสลาม', steps: 13 },
     en: { title: 'Islam FAQ', titleArabic: 'أَسْئِلَة شَائِعَة', description: 'Answers to frequently asked questions about Islam', steps: 13 },
+  },
+  'prophet-biography': {
+    icon: '☪️',
+    gradient: 'from-amber-600 to-amber-800',
+    shadowColor: 'shadow-amber-500/30',
+    th: { title: 'ประวัติท่านนบีมูฮัมหมัด ﷺ', titleArabic: 'سِيرَةُ النَّبِيِّ', description: 'เรียนรู้ประวัติชีวิตท่านนบีตั้งแต่ประสูติจนวะฟาต', steps: 23 },
+    en: { title: 'Prophet Muhammad ﷺ Biography', titleArabic: 'سِيرَةُ النَّبِيِّ', description: 'Learn the life story of Prophet Muhammad ﷺ', steps: 23 },
+  },
+  'islamic-battles': {
+    icon: '⚔️',
+    gradient: 'from-red-600 to-red-900',
+    shadowColor: 'shadow-red-500/30',
+    th: { title: 'สงครามในอิสลาม', titleArabic: 'الغَزَوَات', description: 'เรียนรู้ประวัติศาสตร์สงครามสำคัญในอิสลาม', steps: 12 },
+    en: { title: 'Islamic Battles', titleArabic: 'الغَزَوَات', description: 'Learn about the major battles in Islamic history', steps: 12 },
   },
 };
 

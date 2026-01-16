@@ -18,6 +18,8 @@ export default function JourneySection({ locale }: JourneySectionProps) {
       akhirahSubtitle: 'เรียนรู้เกี่ยวกับชีวิตหลังความตายตามหลักอิสลาม',
       understandingTitle: 'ทำความเข้าใจอิสลาม',
       understandingSubtitle: 'คำตอบสำหรับคำถามที่พบบ่อยเกี่ยวกับอิสลาม',
+      historyTitle: 'ประวัติศาสตร์อิสลาม',
+      historySubtitle: 'เรียนรู้ประวัติศาสตร์ท่านนบีและเหตุการณ์สำคัญ',
     },
     en: {
       title: 'Choose Your Journey',
@@ -28,6 +30,8 @@ export default function JourneySection({ locale }: JourneySectionProps) {
       akhirahSubtitle: 'Learn about life after death in Islam',
       understandingTitle: 'Understanding Islam',
       understandingSubtitle: 'Answers to frequently asked questions about Islam',
+      historyTitle: 'Islamic History',
+      historySubtitle: 'Learn about the Prophet\'s life and significant events',
     }
   };
   const t = texts[locale as keyof typeof texts] || texts.th;
@@ -236,6 +240,47 @@ export default function JourneySection({ locale }: JourneySectionProps) {
         >
           <motion.div variants={itemVariants}>
             <JourneyCardNew type="islam-faq" locale={locale} progress={0} />
+          </motion.div>
+        </motion.div>
+
+        {/* Islamic History Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mt-20 mb-12"
+        >
+          <motion.span
+            className="inline-block px-4 py-2 bg-amber-500/10 text-amber-600 rounded-full text-sm font-medium mb-4"
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ type: 'spring', delay: 0.2 }}
+          >
+            📜 {t.historyTitle}
+          </motion.span>
+          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+            {t.historyTitle}
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            {t.historySubtitle}
+          </p>
+        </motion.div>
+
+        {/* Islamic History Journey Cards Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <motion.div variants={itemVariants}>
+            <JourneyCardNew type="prophet-biography" locale={locale} progress={0} />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <JourneyCardNew type="islamic-battles" locale={locale} progress={0} />
           </motion.div>
         </motion.div>
       </div>
