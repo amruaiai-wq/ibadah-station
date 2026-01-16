@@ -127,38 +127,38 @@ export default function HeroSection({ locale }: HeroSectionProps) {
 
       {/* Main Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Logo */}
+        {/* Bismillah - Above Logo */}
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-3xl md:text-4xl lg:text-5xl font-arabic text-gold mb-8"
+        >
+          {t.bismillah}
+        </motion.p>
+
+        {/* Logo - Larger */}
         <motion.div
           initial={{ scale: 0, rotate: -180 }}
           animate={{ scale: 1, rotate: 0 }}
-          transition={{ type: 'spring', duration: 1.5 }}
-          className="mb-8"
+          transition={{ type: 'spring', duration: 1.5, delay: 0.3 }}
+          className="mb-10"
         >
-          <div className="inline-flex flex-col items-center gap-3">
-            <div className="p-3 bg-white/10 backdrop-blur-sm rounded-full shadow-lg">
+          <div className="inline-flex flex-col items-center gap-4">
+            <div className="p-4 bg-white/10 backdrop-blur-sm rounded-full shadow-2xl border border-gold/20">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Ibadah Station"
-                width={80}
-                height={80}
+                width={120}
+                height={120}
                 className="rounded-full"
               />
             </div>
-            <span className="text-gold font-semibold text-lg tracking-wide">
+            <span className="text-gold font-semibold text-xl tracking-wide">
               Ibadah Station
             </span>
           </div>
         </motion.div>
-
-        {/* Bismillah */}
-        <motion.p
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="text-3xl md:text-4xl font-arabic text-gold mb-6"
-        >
-          {t.bismillah}
-        </motion.p>
 
         {/* Animated Title */}
         <div className="h-24 md:h-32 flex items-center justify-center mb-6">

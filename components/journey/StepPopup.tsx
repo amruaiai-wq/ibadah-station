@@ -88,6 +88,9 @@ export default function StepPopup({
     dua: step.dua,
   };
 
+  // Progress percentage
+  const progress = ((currentIndex + 1) / totalSteps) * 100;
+
   return (
     <>
       <AnimatePresence>
@@ -95,7 +98,7 @@ export default function StepPopup({
           <>
             {/* Backdrop */}
             <motion.div
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
+              className="fixed inset-0 bg-black/60 backdrop-blur-md z-50"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -104,127 +107,151 @@ export default function StepPopup({
 
             {/* Modal */}
             <motion.div
-              className="fixed inset-x-4 top-[5%] bottom-[5%] md:inset-x-auto md:left-1/2 md:top-1/2 md:w-full md:max-w-2xl md:h-auto md:max-h-[85vh] md:-translate-x-1/2 md:-translate-y-1/2 z-50 flex flex-col"
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 md:w-full md:max-w-lg md:-translate-x-1/2 md:-translate-y-1/2 z-50"
+              initial={{ opacity: 0, scale: 0.9, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              exit={{ opacity: 0, scale: 0.9, y: 30 }}
+              transition={{ type: 'spring', damping: 30, stiffness: 400 }}
             >
-              <div className="bg-cream rounded-2xl shadow-2xl overflow-hidden flex flex-col h-full border border-gold/20">
-                {/* Header */}
-                <div className="bg-gradient-to-r from-primary to-primary-dark text-white p-5 flex-shrink-0">
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex items-center gap-4 flex-1 min-w-0">
-                      <span className="text-3xl bg-gold/30 rounded-xl w-14 h-14 flex items-center justify-center flex-shrink-0 border border-gold/40">
-                        {step.icon}
-                      </span>
-                      <div className="min-w-0">
-                        <p className="text-gold-light text-xs font-medium mb-1">
-                          {t.step} {currentIndex + 1} / {totalSteps}
-                        </p>
-                        <h2 className="text-xl font-bold leading-tight">{step.title}</h2>
-                        <p className="text-lg font-arabic text-gold-light mt-0.5 truncate">
-                          {step.titleArabic}
-                        </p>
-                      </div>
-                    </div>
-                    <button
-                      onClick={onClose}
-                      className="text-white/80 hover:text-white text-xl w-9 h-9 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors flex-shrink-0"
-                    >
-                      ×
-                    </button>
+              <div className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh] md:max-h-[80vh]">
+                {/* Header - Compact */}
+                <div className="bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 text-white px-5 pt-5 pb-4 relative overflow-hidden">
+                  {/* Background Pattern */}
+                  <div className="absolute inset-0 opacity-10">
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0L30 15L15 30L0 15L15 0zm0 5L5 15l10 10 10-10-10-10z' fill='%23ffffff' fill-opacity='1'/%3E%3C/svg%3E")`,
+                      }}
+                    />
                   </div>
 
-                  {/* Export Button */}
+                  {/* Close Button */}
                   <button
-                    onClick={() => setIsPostcardOpen(true)}
-                    className="mt-3 flex items-center gap-2 px-4 py-2 bg-gold/20 rounded-full
-                             hover:bg-gold/30 transition-colors text-sm font-medium border border-gold/30"
+                    onClick={onClose}
+                    className="absolute top-3 right-3 text-white/70 hover:text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-all z-10"
                   >
-                    <span>🎴</span>
-                    <span>{t.createPostcard}</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
                   </button>
+
+                  <div className="relative z-10">
+                    {/* Step Counter & Icon */}
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-12 h-12 bg-white/20 backdrop-blur rounded-2xl flex items-center justify-center text-2xl border border-white/20 shadow-lg">
+                        {step.icon}
+                      </div>
+                      <div>
+                        <span className="text-emerald-200 text-xs font-medium tracking-wide">
+                          {t.step} {currentIndex + 1} / {totalSteps}
+                        </span>
+                        {/* Progress Bar */}
+                        <div className="w-24 h-1.5 bg-white/20 rounded-full mt-1.5 overflow-hidden">
+                          <motion.div
+                            className="h-full bg-amber-400 rounded-full"
+                            initial={{ width: 0 }}
+                            animate={{ width: `${progress}%` }}
+                            transition={{ duration: 0.5, ease: 'easeOut' }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Title */}
+                    <h2 className="text-xl font-bold leading-tight mb-1">{step.title}</h2>
+                    <p className="text-lg font-arabic text-amber-300/90">{step.titleArabic}</p>
+
+                    {/* Postcard Button - Inline */}
+                    <button
+                      onClick={() => setIsPostcardOpen(true)}
+                      className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/15 rounded-full
+                               hover:bg-white/25 transition-all text-xs font-medium backdrop-blur-sm border border-white/20"
+                    >
+                      <span>🎴</span>
+                      <span>{t.createPostcard}</span>
+                    </button>
+                  </div>
                 </div>
 
-                {/* Body */}
-                <div className="flex-1 overflow-y-auto p-5">
+                {/* Body - Scrollable */}
+                <div className="flex-1 overflow-y-auto px-5 py-4 bg-gradient-to-b from-gray-50 to-white">
                   {/* Description */}
-                  <p className="text-dark/80 text-base mb-5 leading-relaxed">
+                  <p className="text-gray-700 text-sm leading-relaxed mb-4">
                     {step.description}
                   </p>
 
-                  {/* Details */}
-                  <div className="mb-5">
-                    <ul className="space-y-2.5">
-                      {step.details.map((detail, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                          <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
-                            {index + 1}
-                          </span>
-                          <span className="text-dark/80 text-sm leading-relaxed">{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Details - Compact List */}
+                  <div className="space-y-2 mb-4">
+                    {step.details.map((detail, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.05 }}
+                        className="flex items-start gap-2.5 group"
+                      >
+                        <span className="w-5 h-5 bg-emerald-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+                          {index + 1}
+                        </span>
+                        <span className="text-gray-600 text-sm leading-relaxed">{detail}</span>
+                      </motion.div>
+                    ))}
                   </div>
 
-                  {/* Dua Section */}
+                  {/* Dua Section - Compact Card */}
                   {step.dua && (
-                    <div className="bg-gradient-to-br from-primary/5 to-gold/10 rounded-xl p-4 mb-5 border border-gold/30">
-                      <h3 className="font-bold text-primary mb-3 flex items-center gap-2 text-sm">
-                        <span className="w-7 h-7 bg-gold/20 rounded-full flex items-center justify-center">📖</span>
-                        <span>{t.dua}</span>
-                      </h3>
+                    <div className="bg-gradient-to-br from-emerald-50 to-amber-50 rounded-2xl p-4 mb-4 border border-emerald-200/50">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="w-6 h-6 bg-emerald-600/10 rounded-lg flex items-center justify-center text-sm">📖</span>
+                        <h3 className="font-semibold text-emerald-800 text-sm">{t.dua}</h3>
+                      </div>
 
-                      {/* Arabic */}
-                      <div className="bg-white/80 rounded-lg p-4 mb-3 border border-gold/20">
-                        <p className="text-xl font-arabic text-right leading-loose text-dark">
+                      {/* Arabic Text */}
+                      <div className="bg-white rounded-xl p-3 mb-3 shadow-sm border border-emerald-100">
+                        <p className="text-lg font-arabic text-right leading-loose text-gray-800">
                           {step.dua.arabic}
                         </p>
                       </div>
 
-                      {/* Transliteration */}
-                      <div className="mb-2.5">
-                        <p className="text-xs text-primary/70 font-medium mb-1">{t.transliteration}:</p>
-                        <p className="text-dark/70 italic text-sm">
-                          {step.dua.transliteration}
-                        </p>
-                      </div>
-
-                      {/* Meaning */}
-                      <div>
-                        <p className="text-xs text-primary/70 font-medium mb-1">{t.meaning}:</p>
-                        <p className="text-dark/70 text-sm">
-                          {step.dua.meaning}
-                        </p>
+                      {/* Transliteration & Meaning */}
+                      <div className="space-y-2 text-sm">
+                        <div>
+                          <span className="text-emerald-700 font-medium text-xs">{t.transliteration}:</span>
+                          <p className="text-gray-600 italic mt-0.5">{step.dua.transliteration}</p>
+                        </div>
+                        <div>
+                          <span className="text-emerald-700 font-medium text-xs">{t.meaning}:</span>
+                          <p className="text-gray-600 mt-0.5">{step.dua.meaning}</p>
+                        </div>
                       </div>
                     </div>
                   )}
 
-                  {/* Tips */}
+                  {/* Tips - Compact */}
                   {step.tips && (
-                    <div className="bg-gold/10 rounded-xl p-4 border border-gold/30">
-                      <h3 className="font-bold text-primary mb-2 flex items-center gap-2 text-sm">
-                        <span className="w-7 h-7 bg-gold/30 rounded-full flex items-center justify-center">💡</span>
-                        <span>{t.tips}</span>
-                      </h3>
-                      <p className="text-dark/70 text-sm leading-relaxed">
-                        {step.tips}
-                      </p>
+                    <div className="bg-amber-50 rounded-2xl p-4 border border-amber-200/50">
+                      <div className="flex items-start gap-2.5">
+                        <span className="w-6 h-6 bg-amber-400/30 rounded-lg flex items-center justify-center text-sm flex-shrink-0">💡</span>
+                        <div>
+                          <h3 className="font-semibold text-amber-800 text-sm mb-1">{t.tips}</h3>
+                          <p className="text-gray-600 text-sm leading-relaxed">{step.tips}</p>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </div>
 
-                {/* Footer Navigation */}
-                <div className="border-t border-gold/20 p-4 flex items-center justify-between gap-3 flex-shrink-0 bg-cream">
+                {/* Footer Navigation - Clean */}
+                <div className="px-5 py-4 bg-white border-t border-gray-100 flex items-center justify-between gap-3">
                   <button
                     onClick={onPrevious}
                     disabled={!canGoPrevious}
                     className={`
-                      flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium transition-all text-sm
+                      flex items-center gap-1.5 px-4 py-2.5 rounded-xl font-medium transition-all text-sm
                       ${!canGoPrevious
-                        ? 'bg-dark/5 text-dark/30 cursor-not-allowed'
-                        : 'bg-primary/10 text-primary hover:bg-primary/20 border border-primary/20'}
+                        ? 'bg-gray-100 text-gray-300 cursor-not-allowed'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200 active:scale-95'}
                     `}
                   >
                     <span>←</span>
@@ -235,10 +262,10 @@ export default function StepPopup({
                     onClick={onNext}
                     disabled={!canGoNext}
                     className={`
-                      flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium transition-all text-sm
+                      flex items-center gap-1.5 px-5 py-2.5 rounded-xl font-medium transition-all text-sm
                       ${!canGoNext
-                        ? 'bg-gold/30 text-dark/40 cursor-not-allowed'
-                        : 'bg-gold text-dark hover:bg-gold-dark shadow-sm'}
+                        ? 'bg-amber-100 text-amber-300 cursor-not-allowed'
+                        : 'bg-gradient-to-r from-amber-400 to-amber-500 text-white hover:from-amber-500 hover:to-amber-600 shadow-md shadow-amber-200 active:scale-95'}
                     `}
                   >
                     <span>{t.next}</span>
