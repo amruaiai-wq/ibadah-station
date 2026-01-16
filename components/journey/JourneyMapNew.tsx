@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 
@@ -25,6 +25,7 @@ interface JourneyMapNewProps {
   journeyColor?: string;
   onStepClick: (step: Step, index: number) => void;
   locale: string;
+  externalCurrentStep?: number;
 }
 
 export default function JourneyMapNew({
@@ -33,11 +34,29 @@ export default function JourneyMapNew({
   journeyColor = 'emerald',
   onStepClick,
   locale,
+  externalCurrentStep,
 }: JourneyMapNewProps) {
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
   const [currentStep, setCurrentStep] = useState(0);
   const [showSummary, setShowSummary] = useState<number | null>(null);
   const pathRef = useRef<HTMLDivElement>(null);
+
+  // Sync with external current step (from popup navigation)
+  useEffect(() => {
+    if (externalCurrentStep !== undefined && externalCurrentStep >= 0) {
+      // Mark all steps before externalCurrentStep as completed
+      setCompletedSteps(prev => {
+        const newCompleted: number[] = [...prev];
+        for (let i = 0; i < externalCurrentStep; i++) {
+          if (!newCompleted.includes(i)) {
+            newCompleted.push(i);
+          }
+        }
+        return Array.from(new Set(newCompleted));
+      });
+      setCurrentStep(externalCurrentStep);
+    }
+  }, [externalCurrentStep]);
 
   const texts = {
     th: {
@@ -49,6 +68,7 @@ export default function JourneyMapNew({
       markComplete: 'เสร็จสิ้น ไปต่อ',
       progress: 'ความก้าวหน้า',
       congratulations: '🎉 ยินดีด้วย! คุณเรียนจบแล้ว!',
+      restart: 'เริ่มใหม่',
     },
     en: {
       stepLabel: 'Step',
@@ -59,6 +79,7 @@ export default function JourneyMapNew({
       markComplete: 'Complete & Continue',
       progress: 'Progress',
       congratulations: '🎉 Congratulations! You completed the journey!',
+      restart: 'Start Over',
     }
   };
   const t = texts[locale as keyof typeof texts] || texts.th;
@@ -115,15 +136,31 @@ export default function JourneyMapNew({
 
   const progressPercentage = (completedSteps.length / steps.length) * 100;
 
+  const handleRestart = () => {
+    setCompletedSteps([]);
+    setCurrentStep(0);
+    setShowSummary(null);
+  };
+
   return (
     <div className="relative">
       {/* Progress Bar */}
       <div className="mb-8 bg-white rounded-2xl p-6 shadow-lg">
         <div className="flex items-center justify-between mb-3">
           <span className="font-semibold text-gray-700">{t.progress}</span>
-          <span className={`font-bold ${colors.text}`}>
-            {completedSteps.length}/{steps.length} ({Math.round(progressPercentage)}%)
-          </span>
+          <div className="flex items-center gap-3">
+            {completedSteps.length > 0 && (
+              <button
+                onClick={handleRestart}
+                className="text-xs text-gray-500 hover:text-gray-700 underline transition-colors"
+              >
+                {t.restart}
+              </button>
+            )}
+            <span className={`font-bold ${colors.text}`}>
+              {completedSteps.length}/{steps.length} ({Math.round(progressPercentage)}%)
+            </span>
+          </div>
         </div>
         <div className="h-4 bg-gray-100 rounded-full overflow-hidden">
           <motion.div

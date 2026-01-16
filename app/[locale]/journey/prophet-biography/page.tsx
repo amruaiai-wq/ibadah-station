@@ -23,9 +23,9 @@ interface Step {
   };
 }
 
-export default function JahannamPage() {
+export default function ProphetBiographyPage() {
   const { locale } = useParams<{ locale: string }>();
-  const t = useTranslations('jahannam');
+  const t = useTranslations('prophetBiography');
   const tCommon = useTranslations('common');
 
   const [selectedStep, setSelectedStep] = useState<Step | null>(null);
@@ -59,7 +59,7 @@ export default function JahannamPage() {
   return (
     <div className="min-h-screen bg-cream">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-red-700 via-red-800 to-red-950 text-white py-16 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-amber-600 via-amber-700 to-amber-900 text-white py-16 relative overflow-hidden">
         {/* Animated Pattern */}
         <motion.div
           className="absolute inset-0 opacity-10"
@@ -91,7 +91,7 @@ export default function JahannamPage() {
               animate={{ scale: 1, rotate: 0 }}
               transition={{ type: 'spring', duration: 1 }}
             >
-              🔥
+              ☪️
             </motion.span>
             <motion.h1
               className="text-4xl md:text-5xl font-bold mb-2"
@@ -101,7 +101,7 @@ export default function JahannamPage() {
               {t('title')}
             </motion.h1>
             <motion.p
-              className="text-3xl font-arabic text-orange-300 mb-4"
+              className="text-3xl font-arabic text-gold mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -125,12 +125,16 @@ export default function JahannamPage() {
               transition={{ delay: 0.6 }}
             >
               <div className="text-center">
-                <p className="text-3xl font-bold text-orange-300">{steps.length}</p>
-                <p className="text-white/60 text-sm">{locale === 'th' ? 'หัวข้อ' : 'Topics'}</p>
+                <p className="text-3xl font-bold text-gold">{steps.length}</p>
+                <p className="text-white/60 text-sm">{locale === 'th' ? 'เหตุการณ์' : 'Events'}</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-orange-300">7</p>
-                <p className="text-white/60 text-sm">{locale === 'th' ? 'ชั้น' : 'Levels'}</p>
+                <p className="text-3xl font-bold text-gold">63</p>
+                <p className="text-white/60 text-sm">{locale === 'th' ? 'ปี' : 'Years'}</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl font-bold text-gold">570-632</p>
+                <p className="text-white/60 text-sm">{locale === 'th' ? 'ค.ศ.' : 'CE'}</p>
               </div>
             </motion.div>
           </div>
@@ -149,8 +153,8 @@ export default function JahannamPage() {
         <div className="max-w-4xl mx-auto">
           <JourneyMapNew
             steps={steps}
-            journeyIcon="🔥"
-            journeyColor="red"
+            journeyIcon="☪️"
+            journeyColor="amber"
             onStepClick={handleStepClick}
             locale={locale}
             externalCurrentStep={isPopupOpen ? selectedIndex : undefined}
@@ -170,7 +174,7 @@ export default function JahannamPage() {
         currentIndex={selectedIndex}
         totalSteps={steps.length}
         locale={locale}
-        journeyType="jahannam"
+        journeyType="prophetBiography"
       />
     </div>
   );

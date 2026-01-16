@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import JourneyMapNew from '@/components/journey/JourneyMapNew';
 import StepPopup from '@/components/journey/StepPopup';
+import { useParams } from 'next/navigation';
 
 interface Step {
   id: number;
@@ -22,7 +23,8 @@ interface Step {
   };
 }
 
-export default function DailyDuasPage({ params: { locale } }: { params: { locale: string } }) {
+export default function DailyDuasPage() {
+  const { locale } = useParams<{ locale: string }>();
   const t = useTranslations('dailyDuas');
   const tCommon = useTranslations('common');
 
@@ -112,7 +114,7 @@ export default function DailyDuasPage({ params: { locale } }: { params: { locale
 
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          <JourneyMapNew steps={steps} journeyIcon="🤲" journeyColor="rose" onStepClick={handleStepClick} locale={locale} />
+          <JourneyMapNew steps={steps} journeyIcon="🤲" journeyColor="rose" onStepClick={handleStepClick} locale={locale} externalCurrentStep={isPopupOpen ? selectedIndex : undefined} />
         </div>
       </section>
 

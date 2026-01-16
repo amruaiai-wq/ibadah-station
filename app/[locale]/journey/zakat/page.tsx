@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import JourneyMapNew from '@/components/journey/JourneyMapNew';
 import StepPopup from '@/components/journey/StepPopup';
 import ZakatCalculator from '@/components/zakat/ZakatCalculator';
+import { useParams } from 'next/navigation';
 
 interface Step {
   id: number;
@@ -23,7 +24,8 @@ interface Step {
   };
 }
 
-export default function ZakatPage({ params: { locale } }: { params: { locale: string } }) {
+export default function ZakatPage() {
+  const { locale } = useParams<{ locale: string }>();
   const t = useTranslations('zakat');
   const tCommon = useTranslations('common');
 
@@ -140,7 +142,7 @@ export default function ZakatPage({ params: { locale } }: { params: { locale: st
           >
             {locale === 'th' ? '📚 เรียนรู้เกี่ยวกับซะกาต' : '📚 Learn About Zakat'}
           </motion.h2>
-          <JourneyMapNew steps={steps} journeyIcon="💎" journeyColor="violet" onStepClick={handleStepClick} locale={locale} />
+          <JourneyMapNew steps={steps} journeyIcon="💎" journeyColor="violet" onStepClick={handleStepClick} locale={locale} externalCurrentStep={isPopupOpen ? selectedIndex : undefined} />
         </div>
       </section>
 

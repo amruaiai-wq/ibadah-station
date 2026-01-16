@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import JourneyMapNew from '@/components/journey/JourneyMapNew';
 import StepPopup from '@/components/journey/StepPopup';
+import { useParams } from 'next/navigation';
 
 interface Step {
   id: number;
@@ -22,7 +23,8 @@ interface Step {
   };
 }
 
-export default function WaterTypesPage({ params: { locale } }: { params: { locale: string } }) {
+export default function WaterTypesPage() {
+  const { locale } = useParams<{ locale: string }>();
   const t = useTranslations('waterTypes');
   const tCommon = useTranslations('common');
 
@@ -151,6 +153,7 @@ export default function WaterTypesPage({ params: { locale } }: { params: { local
             journeyColor="cyan"
             onStepClick={handleStepClick}
             locale={locale}
+            externalCurrentStep={isPopupOpen ? selectedIndex : undefined}
           />
         </div>
       </section>

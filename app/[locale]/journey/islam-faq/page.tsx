@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import JourneyMapNew from '@/components/journey/JourneyMapNew';
 import StepPopup from '@/components/journey/StepPopup';
+import { useParams } from 'next/navigation';
 
 interface Step {
   id: number;
@@ -22,7 +23,8 @@ interface Step {
   };
 }
 
-export default function IslamFAQPage({ params: { locale } }: { params: { locale: string } }) {
+export default function IslamFAQPage() {
+  const { locale } = useParams<{ locale: string }>();
   const t = useTranslations('islamFaq');
   const tCommon = useTranslations('common');
 
@@ -147,6 +149,7 @@ export default function IslamFAQPage({ params: { locale } }: { params: { locale:
             journeyColor="blue"
             onStepClick={handleStepClick}
             locale={locale}
+            externalCurrentStep={isPopupOpen ? selectedIndex : undefined}
           />
         </div>
       </section>

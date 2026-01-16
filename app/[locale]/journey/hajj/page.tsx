@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import JourneyMapNew from '@/components/journey/JourneyMapNew';
 import StepPopup from '@/components/journey/StepPopup';
+import { useParams } from 'next/navigation';
 
 interface Step {
   id: number;
@@ -22,7 +23,8 @@ interface Step {
   };
 }
 
-export default function HajjPage({ params: { locale } }: { params: { locale: string } }) {
+export default function HajjPage() {
+  const { locale } = useParams<{ locale: string }>();
   const t = useTranslations('hajj');
   const tCommon = useTranslations('common');
 
@@ -155,6 +157,7 @@ export default function HajjPage({ params: { locale } }: { params: { locale: str
             journeyColor="stone"
             onStepClick={handleStepClick}
             locale={locale}
+            externalCurrentStep={isPopupOpen ? selectedIndex : undefined}
           />
         </div>
       </section>
