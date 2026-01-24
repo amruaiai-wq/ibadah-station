@@ -3438,5 +3438,191 @@
       "message": "You have learned about the major battles in Islamic history",
       "dua": "O Allah, grant us understanding of our history and guide us. Ameen"
     }
+  },
+  "notifications": {
+    "title": "LINE Notification Settings",
+    "subtitle": "Receive prayer time, adhkar, daily wisdom, and Quran reading reminders",
+    "back": "Back",
+    "loginRequired": "Login Required",
+    "loginDescription": "Please login to set up LINE notifications",
+    "loginButton": "Login",
+    "line": {
+      "title": "Connect LINE",
+      "description": "Connect your LINE account to receive notifications",
+      "connected": "Connected",
+      "notConnected": "Not connected",
+      "connectedAs": "Connected as",
+      "connectedSince": "Connected since",
+      "connectButton": "Connect LINE",
+      "disconnectButton": "Disconnect",
+      "step1": "1. Add Friend LINE Official Account",
+      "step2": "2. Send message \"link\"",
+      "step3": "3. Click the link to connect your account",
+      "scanQr": "Scan QR Code to Add Friend",
+      "orSearch": "or search ID"
+    },
+    "preferences": {
+      "title": "Notification Settings",
+      "prayerTimes": "Prayer Time Notifications",
+      "fajr": "Fajr",
+      "dhuhr": "Dhuhr",
+      "asr": "Asr",
+      "maghrib": "Maghrib",
+      "isha": "Isha",
+      "reminderBefore": "Reminder before prayer time",
+      "minutes": "minutes",
+      "otherNotifications": "Other Notifications",
+      "morningAdhkar": "Morning Adhkar (06:00)",
+      "eveningAdhkar": "Evening Adhkar (17:00)",
+      "dailyWisdom": "Daily Wisdom (08:00)",
+      "quranReminder": "Quran Reminder (20:00)",
+      "location": "Location for prayer time calculation",
+      "currentLocation": "Current location",
+      "useMyLocation": "Use my location",
+      "detecting": "Detecting location..."
+    },
+    "status": {
+      "loading": "Loading...",
+      "saving": "Saving...",
+      "saved": "Saved!",
+      "error": "An error occurred",
+      "disconnecting": "Disconnecting...",
+      "connectLineFirst": "Please connect LINE first to set up notifications"
+    },
+    "buttons": {
+      "save": "Save"
+    }
+  },
+  "comparativeFiqh": {
+    "title": "Comparative Fiqh",
+    "titleArabic": "الفِقْه المُقَارِن",
+    "description": "Compare the opinions of the four major schools of Islamic jurisprudence",
+    "source": "Based on Bidayat al-Mujtahid by Ibn Rushd (Averroes)",
+    "categories": [
+      {
+        "id": "tahara",
+        "title": "Book of Purification",
+        "titleArabic": "كِتَابُ الطَّهَارَة",
+        "icon": "💧",
+        "topics": [
+          {
+            "id": "wudu-fard",
+            "title": "Obligatory Acts of Wudu",
+            "titleArabic": "فُرُوضُ الوُضُوء",
+            "opinions": {
+              "hanafi": "6 obligatory acts: (1) Washing the face, (2) Washing hands to elbows, (3) Wiping 1/4 of head, (4) Washing feet to ankles. Intention is recommended but not obligatory.",
+              "maliki": "7 obligatory acts including intention (niyyah), rubbing (dalk), and continuous performance (muwalat). Wiping entire head is required.",
+              "shafii": "6 obligatory acts: (1) Intention, (2) Washing face, (3) Washing hands to elbows, (4) Wiping part of head, (5) Washing feet, (6) Proper sequence (tartib).",
+              "hanbali": "6 obligatory acts similar to Shafi'i, plus continuous performance (muwalat). Wiping entire head is required."
+            },
+            "evidence": "Disagreement stems from different interpretations of Surah Al-Ma'idah 5:6 and various hadiths about the Prophet's wudu."
+          },
+          {
+            "id": "wudu-nullifiers",
+            "title": "What Nullifies Wudu",
+            "titleArabic": "نَوَاقِضُ الوُضُوء",
+            "opinions": {
+              "hanafi": "Anything that exits from the two passages, bleeding/pus from body, vomiting a mouthful, sleeping while lying down, losing consciousness, laughing loudly in prayer.",
+              "maliki": "Discharge from passages, deep sleep, loss of consciousness, touching genitals directly, touching a person of opposite gender with desire.",
+              "shafii": "Discharge from passages, sleep in any position except sitting firmly, loss of consciousness, skin-to-skin contact with non-mahram of opposite gender, touching one's private parts.",
+              "hanbali": "Similar to Shafi'i, plus eating camel meat, washing a deceased person, and apostasy. Touching with desire nullifies, not mere touch."
+            },
+            "evidence": "Various hadiths about wudu nullification lead to different conclusions. The hadith about touching women (lamastum) is interpreted literally by some, metaphorically by others."
+          },
+          {
+            "id": "ghusl-obligatory",
+            "title": "Obligatory Acts of Ghusl",
+            "titleArabic": "فُرُوضُ الغُسْل",
+            "opinions": {
+              "hanafi": "3 obligatory acts: (1) Rinsing the mouth, (2) Sniffing water into the nose, (3) Washing the entire body including hair.",
+              "maliki": "5 obligatory acts: (1) Intention, (2) Continuous performance, (3) Rubbing the body, (4) Rinsing mouth, (5) Rinsing nose. Running fingers through hair is required.",
+              "shafii": "2 obligatory acts: (1) Intention, (2) Washing the entire body. Rinsing mouth and nose are sunnah, not obligatory.",
+              "hanbali": "3 obligatory acts: (1) Intention, (2) Rinsing mouth, (3) Rinsing nose, (4) Washing entire body. Similar to Hanafi view."
+            },
+            "evidence": "The Prophet ﷺ said: 'Under every hair is janabah, so wet every hair and wash every part of the skin.' The disagreement is about what constitutes obligatory vs. recommended acts."
+          },
+          {
+            "id": "tayammum-conditions",
+            "title": "Conditions for Tayammum",
+            "titleArabic": "شُرُوطُ التَّيَمُّم",
+            "opinions": {
+              "hanafi": "Permitted when water is unavailable, or when using water would cause harm. Can use any pure earth or stone. Time of prayer need not have entered.",
+              "maliki": "Permitted only after searching for water. Must use pure earth (turab). Should be performed close to prayer time. One tayammum for each obligatory prayer.",
+              "shafii": "Permitted when water is unavailable after searching, or when water use causes harm. Must use pure earth with dust. Prayer time must have entered.",
+              "hanbali": "Similar conditions to Shafi'i. Must use earth that has dust (turab). One tayammum can be used for multiple prayers until nullified."
+            },
+            "evidence": "Based on Surah An-Nisa 4:43 and Al-Ma'idah 5:6. The term 'sa'id tayyib' (pure earth) is interpreted differently - some require dust/soil, others allow any earth material."
+          },
+          {
+            "id": "water-types",
+            "title": "Types of Water for Purification",
+            "titleArabic": "أَنْوَاعُ المِيَاه",
+            "opinions": {
+              "hanafi": "Water is either pure (tahur) or impure (najis). Pure water becomes impure only when its color, taste, or smell changes due to impurity. Large quantities (qullatayn) don't become impure easily.",
+              "maliki": "Two types: mutlaq (absolute/natural) and muqayyad (altered). Only mutlaq water purifies. Small amount becomes impure by any contact with impurity.",
+              "shafii": "Three categories: (1) Tahur - purifies, (2) Tahir - pure but doesn't purify (like used wudu water), (3) Najis - impure. Qullatayn (about 216 liters) is the threshold.",
+              "hanbali": "Similar to Shafi'i with qullatayn threshold. Used water (ma' musta'mal) is pure but cannot be used again for purification. Changes in color/taste/smell indicate impurity."
+            },
+            "evidence": "The hadith 'Water is pure; nothing makes it impure' is qualified by other hadiths about qullatayn and changes in water properties."
+          },
+          {
+            "id": "najasah-types",
+            "title": "Types of Impurities (Najasah)",
+            "titleArabic": "أَنْوَاعُ النَّجَاسَة",
+            "opinions": {
+              "hanafi": "Two types: heavy (ghalizah) and light (khafifah). Heavy: urine, feces, blood, wine, pig. Light: horse urine, bird droppings. Different amounts are excused for each.",
+              "maliki": "Impurities include: blood, urine, feces, vomit, wine, pig, dead animals. Dog saliva is not considered impure (controversial view).",
+              "shafii": "All bodily discharges except semen are impure. Dog and pig are entirely impure (including their hair). Wine is impure. Dead animals (except sea creatures and locusts) are impure.",
+              "hanbali": "Similar to Shafi'i. Dog and pig are impure. The impurity of dogs requires washing seven times, one with earth. Semen is pure."
+            },
+            "evidence": "Various hadiths about purification and impurities. The hadith about washing containers licked by dogs seven times is central to discussions about dog impurity."
+          }
+        ]
+      },
+      {
+        "id": "salah",
+        "title": "Book of Prayer",
+        "titleArabic": "كِتَابُ الصَّلَاة",
+        "icon": "🕌",
+        "topics": [
+          {
+            "id": "prayer-times",
+            "title": "Prayer Times",
+            "titleArabic": "أَوْقَاتُ الصَّلَاة",
+            "opinions": {
+              "hanafi": "Asr begins when an object's shadow equals its length plus its shadow at noon. Isha extends until halfway through the night. Fajr time is more strict.",
+              "maliki": "Similar to Hanafi for Asr. Two times for each prayer: preferred (ikhtiyari) and permissible (daruri). Isha's preferred time ends at 1/3 of night.",
+              "shafii": "Two opinions for Asr: one shadow length or two. Maghrib has a very short time window. Isha extends until dawn but disliked after midnight.",
+              "hanbali": "Asr begins at one shadow length. Isha's time extends until midnight (preferred) or until Fajr (permissible in necessity). Most strict on prayer times."
+            },
+            "evidence": "Based on the hadith of Jibril teaching prayer times over two days, showing the beginning and end of each prayer time."
+          },
+          {
+            "id": "prayer-arkaan",
+            "title": "Pillars (Arkaan) of Prayer",
+            "titleArabic": "أَرْكَانُ الصَّلَاة",
+            "opinions": {
+              "hanafi": "6 pillars (fara'id): Takbir, Standing, Recitation, Ruku, Sujud, Final sitting. Tashahhud is wajib not fard. Tranquility (tuma'ninah) is wajib.",
+              "maliki": "14 pillars including: Intention, Takbir, Standing, Fatihah, Ruku, Rising from Ruku, Sujud, Rising from Sujud, Final sitting, Salam, Tranquility, Sequence.",
+              "shafii": "13 pillars including all of Maliki's plus: Salawat on Prophet ﷺ in final tashahhud, and moderate pace in all pillars.",
+              "hanbali": "14 pillars similar to Shafi'i. Both first and final tashahhud are pillars. Saying 'Rabbana wa lakal hamd' after rising from ruku is a pillar."
+            },
+            "evidence": "The hadith 'Pray as you have seen me pray' establishes the model, but scholars differ on which acts are pillars vs. obligations vs. recommended acts."
+          },
+          {
+            "id": "prayer-qiblah",
+            "title": "Facing the Qiblah",
+            "titleArabic": "اسْتِقْبَالُ القِبْلَة",
+            "opinions": {
+              "hanafi": "Those far from Makkah must face the general direction; exact precision not required. One who prays facing wrong direction due to genuine effort need not repeat prayer.",
+              "maliki": "Must face the exact direction when possible. In Madinah and nearby areas, must face the Ka'bah directly. Those far away face the general direction.",
+              "shafii": "Must face the Ka'bah itself if possible, otherwise its direction. If one discovers they faced wrong direction, prayer is invalid and must be repeated.",
+              "hanbali": "Those who can see the Ka'bah must face it exactly. Others must make best effort for direction. Prayer facing wrong direction due to error is valid."
+            },
+            "evidence": "Surah Al-Baqarah 2:144 commands facing the Sacred Mosque. The scope of 'facing' - the Ka'bah itself or its direction - is debated."
+          }
+        ]
+      }
+    ]
   }
 }

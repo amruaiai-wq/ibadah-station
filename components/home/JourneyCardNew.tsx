@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 interface JourneyCardNewProps {
-  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah' | 'jahannam' | 'jannah' | 'day-of-judgment' | 'islam-faq' | 'prophet-biography' | 'islamic-battles';
+  type: 'salah' | 'umrah' | 'hajj' | 'zakat' | 'sawm' | 'adhkar' | 'water-types' | 'najis-types' | 'post-prayer-adhkar' | 'morning-evening-adhkar' | 'daily-duas' | 'daily-sunnah' | 'jahannam' | 'jannah' | 'day-of-judgment' | 'islam-faq' | 'prophet-biography' | 'islamic-battles' | 'comparative-fiqh';
   locale: string;
   progress?: number;
   disabled?: boolean;
@@ -137,6 +137,13 @@ const journeyData = {
     shadowColor: 'shadow-red-500/30',
     th: { title: 'สงครามในอิสลาม', titleArabic: 'الغَزَوَات', description: 'เรียนรู้ประวัติศาสตร์สงครามสำคัญในอิสลาม', steps: 12 },
     en: { title: 'Islamic Battles', titleArabic: 'الغَزَوَات', description: 'Learn about the major battles in Islamic history', steps: 12 },
+  },
+  'comparative-fiqh': {
+    icon: '⚖️',
+    gradient: 'from-indigo-600 to-purple-800',
+    shadowColor: 'shadow-indigo-500/30',
+    th: { title: 'ฟิกฮ์เปรียบเทียบ', titleArabic: 'الفِقْه المُقَارِن', description: 'เปรียบเทียบทัศนะของ 4 มัซฮับในประเด็นฟิกฮ์', steps: 9 },
+    en: { title: 'Comparative Fiqh', titleArabic: 'الفِقْه المُقَارِن', description: 'Compare opinions of the 4 major schools', steps: 9 },
   },
 };
 
