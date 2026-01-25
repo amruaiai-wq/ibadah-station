@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface Opinion {
@@ -113,6 +113,21 @@ const madhhabInfoEn: Record<string, MadhhabInfo> = {
 export default function FiqhComparisonTable({ categories, locale }: FiqhComparisonTableProps) {
   const [expandedCategory, setExpandedCategory] = useState<string | null>(categories[0]?.id || null);
   const [expandedTopic, setExpandedTopic] = useState<string | null>(null);
+  const topicRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+  const handleTopicClick = (topicId: string) => {
+    const isExpanding = expandedTopic !== topicId;
+    setExpandedTopic(isExpanding ? topicId : null);
+
+    if (isExpanding) {
+      setTimeout(() => {
+        topicRefs.current[topicId]?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }, 100);
+    }
+  };
 
   const info = locale === 'th' ? madhhabInfo : madhhabInfoEn;
   const madhhabKeys = ['hanafi', 'maliki', 'shafii', 'hanbali'] as const;
@@ -196,14 +211,15 @@ export default function FiqhComparisonTable({ categories, locale }: FiqhComparis
                   {category.topics.map((topic, topicIndex) => (
                     <motion.div
                       key={topic.id}
-                      className="border border-gray-200 rounded-xl overflow-hidden"
+                      ref={(el) => { topicRefs.current[topic.id] = el; }}
+                      className="border border-gray-200 rounded-xl overflow-hidden scroll-mt-4"
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: topicIndex * 0.05 }}
                     >
                       {/* Topic Header */}
                       <button
-                        onClick={() => setExpandedTopic(expandedTopic === topic.id ? null : topic.id)}
+                        onClick={() => handleTopicClick(topic.id)}
                         className="w-full px-4 py-3 bg-gray-50 flex items-center justify-between hover:bg-gray-100 transition-colors"
                       >
                         <div className="text-left">
