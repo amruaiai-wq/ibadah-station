@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { use } from 'react';
+import { useParams } from 'next/navigation';
 
 interface Quiz {
   id: string;
@@ -50,8 +50,9 @@ const difficultyNames: Record<string, Record<string, string>> = {
   hard: { th: 'ยาก', en: 'Hard' },
 };
 
-export default function QuizListPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = use(params);
+export default function QuizListPage() {
+  const params = useParams();
+  const locale = params.locale as string;
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');

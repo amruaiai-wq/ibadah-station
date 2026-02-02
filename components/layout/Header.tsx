@@ -46,19 +46,10 @@ export default function Header({ locale }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-3">
-            <Image
-              src="/logo.jpg"
-              alt="Ibadah Station Logo"
-              width={44}
-              height={44}
-              className="rounded-full"
-            />
-            <div className="hidden sm:block">
-              <span className="font-bold text-xl text-white">ibadah</span>
-              <span className="font-bold text-xl text-gold">station</span>
-              <span className="text-white/60 text-sm">.com</span>
-            </div>
+          <Link href={`/${locale}`} className="flex items-center">
+            <span className="font-bold text-xl text-white">ibadah</span>
+            <span className="font-bold text-xl text-gold">station</span>
+            <span className="text-white/60 text-sm">.com</span>
           </Link>
 
           {/* Desktop Navigation */}

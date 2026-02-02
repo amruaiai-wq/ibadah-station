@@ -60,3 +60,73 @@ export interface DailyStats {
   unique_visitors: number;
   top_pages: { path: string; views: number }[];
 }
+
+// LINE Notification Types
+export interface UserLineConnection {
+  id: string;
+  user_id: string;
+  line_user_id: string;
+  display_name?: string;
+  picture_url?: string;
+  is_active: boolean;
+  connected_at: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface UserNotificationPreferences {
+  id: string;
+  user_id: string;
+  prayer_fajr: boolean;
+  prayer_dhuhr: boolean;
+  prayer_asr: boolean;
+  prayer_maghrib: boolean;
+  prayer_isha: boolean;
+  prayer_reminder_minutes: number;
+  adhkar_morning: boolean;
+  adhkar_evening: boolean;
+  daily_wisdom: boolean;
+  quran_reminder: boolean;
+  latitude: number;
+  longitude: number;
+  timezone: string;
+  location_name: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface NotificationLog {
+  id: string;
+  user_id?: string;
+  line_user_id: string;
+  notification_type: string;
+  message_content?: string;
+  status: 'pending' | 'sent' | 'failed';
+  error_message?: string;
+  sent_at?: string;
+  created_at: string;
+}
+
+export interface PrayerTimesCache {
+  id: string;
+  user_id: string;
+  date: string;
+  fajr: string;
+  sunrise: string;
+  dhuhr: string;
+  asr: string;
+  maghrib: string;
+  isha: string;
+  latitude: number;
+  longitude: number;
+  created_at: string;
+}
+
+export interface LineLinkToken {
+  id: string;
+  user_id: string;
+  token: string;
+  expires_at: string;
+  used: boolean;
+  created_at: string;
+}
