@@ -1,0 +1,21 @@
+name: Scheduled Notifications
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # ทุกชั่วโมง
+  workflow_dispatch:      # รันมือได้
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call scheduled notifications API
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "${{ secrets.SITE_URL }}/api/cron/scheduled-notifications")
+          echo "Response status: $response"
+          if [ "$response" != "200" ]; then
+            echo "Error: API returned $response"
+            exit 1
+          fi
