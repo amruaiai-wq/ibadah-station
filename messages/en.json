@@ -3624,5 +3624,78 @@
         ]
       }
     ]
+  },
+  "feedback": {
+    "reportButton": "Report Error",
+    "modalTitle": "Report Error or Feedback",
+    "modalSubtitle": "Help us improve the content accuracy and completeness",
+    "categoryLabel": "Error Type",
+    "selectCategory": "Select report type",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Brief summary of the error",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Describe the error or your feedback, e.g., incorrect Arabic text, wrong translation, missing content, etc.",
+    "suggestionLabel": "Correct Text (if any)",
+    "suggestionPlaceholder": "Write the correct text as you think it should be",
+    "emailLabel": "Your Email",
+    "emailPlaceholder": "For follow-up (optional)",
+    "optional": "optional",
+    "optionalForFollowUp": "for follow-up",
+    "infoNote": "Your information will be sent to administrators for review and correction. Thank you for helping us improve the content!",
+    "cancel": "Cancel",
+    "submit": "Submit Report",
+    "submitting": "Submitting...",
+    "successMessage": "Report submitted successfully! Thank you for helping us improve.",
+    "errorMessage": "An error occurred. Please try again.",
+    "admin": {
+      "title": "Manage Feedback Reports",
+      "stats": {
+        "total": "Total",
+        "pending": "Pending",
+        "reviewing": "Reviewing",
+        "resolved": "Resolved",
+        "dismissed": "Dismissed"
+      },
+      "filters": {
+        "all": "All",
+        "status": "Status",
+        "pageType": "Page Type",
+        "category": "Category"
+      },
+      "table": {
+        "subject": "Subject",
+        "category": "Category",
+        "page": "Page",
+        "status": "Status",
+        "date": "Date",
+        "actions": "Actions"
+      },
+      "details": {
+        "title": "Report Details",
+        "reportedBy": "Reported By",
+        "anonymous": "Anonymous",
+        "email": "Email",
+        "pageType": "Page Type",
+        "pagePath": "Page Link",
+        "contentId": "Content ID",
+        "excerpt": "Problematic Content",
+        "description": "Description",
+        "suggestion": "Suggested Correction",
+        "adminNote": "Admin Note",
+        "adminNotePlaceholder": "Write internal notes here",
+        "changeStatus": "Change Status",
+        "save": "Save",
+        "delete": "Delete Report",
+        "confirmDelete": "Confirm deletion of this report?"
+      },
+      "pageTypes": {
+        "journey": "Journey Page",
+        "article": "Article",
+        "quiz": "Quiz",
+        "wisdom": "Daily Wisdom",
+        "qna": "Q&A",
+        "other": "Other"
+      }
+    }
   }
 }

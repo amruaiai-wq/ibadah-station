@@ -52,6 +52,7 @@ export default function AdminLayout({
     { href: '/admin/wisdom', label: 'ข้อคิดประจำวัน', icon: '✨' },
     { href: '/admin/articles', label: 'บทความ', icon: '📝' },
     { href: '/admin/quiz', label: 'ควิซ', icon: '❓' },
+    { href: '/admin/feedback', label: 'รายงานข้อมูลผิดพลาด ไม่ถูกต้อง', icon: '⚠️' },
   ];
 
   // Login form

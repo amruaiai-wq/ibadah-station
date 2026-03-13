@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import JourneyMapNew from '@/components/journey/JourneyMapNew';
 import StepPopup from '@/components/journey/StepPopup';
+import FeedbackButton from '@/components/feedback/FeedbackButton';
 import { useParams } from 'next/navigation';
 
 interface Step {
@@ -175,6 +176,14 @@ export default function SalahPage() {
         totalSteps={steps.length}
         locale={locale}
         journeyType="salah"
+      />
+
+      {/* Feedback Button */}
+      <FeedbackButton
+        pageType="journey"
+        pagePath={`/${locale}/journey/salah`}
+        pageTitle={t('title')}
+        variant="floating"
       />
     </div>
   );
