@@ -128,7 +128,11 @@ export async function PATCH(
     }
 
     // Prepare update data
-    const updateData: any = {
+    const updateData: UpdateFeedbackInput & {
+      updated_at: string;
+      resolved_by?: string;
+      resolved_at?: string;
+    } = {
       ...body,
       updated_at: new Date().toISOString(),
     };

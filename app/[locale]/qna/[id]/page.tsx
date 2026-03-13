@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import AnswerCard from '@/components/qna/AnswerCard';
@@ -143,9 +144,11 @@ export default function QuestionDetailPage({
               {question.user && (
                 <div className="flex items-center gap-2">
                   {question.user.avatar_url ? (
-                    <img
+                    <Image
                       src={question.user.avatar_url}
                       alt={question.user.display_name || ''}
+                      width={24}
+                      height={24}
                       className="w-6 h-6 rounded-full"
                     />
                   ) : (

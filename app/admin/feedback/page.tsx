@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import type { ContentFeedback, FeedbackCategory, FeedbackStatus, PageType } from '@/lib/feedback-types';
@@ -10,7 +10,6 @@ export default function AdminFeedbackPage() {
   const [feedbacks, setFeedbacks] = useState<ContentFeedback[]>([]);
   const [categories, setCategories] = useState<FeedbackCategory[]>([]);
   const [loading, setLoading] = useState(true);
-  const [total, setTotal] = useState(0);
 
   // Filters
   const [statusFilter, setStatusFilter] = useState<FeedbackStatus | 'all'>('all');
@@ -40,12 +39,7 @@ export default function AdminFeedbackPage() {
       .catch(err => console.error('Error fetching categories:', err));
   }, []);
 
-  // Fetch feedbacks
-  useEffect(() => {
-    fetchFeedbacks();
-  }, [statusFilter, pageTypeFilter, categoryFilter, searchQuery]);
-
-  const fetchFeedbacks = async () => {
+  const fetchFeedbacks = useCallback(async () => {
     setLoading(true);
     try {
       const params = new URLSearchParams();
@@ -58,7 +52,6 @@ export default function AdminFeedbackPage() {
       const data = await response.json();
 
       setFeedbacks(data.data || []);
-      setTotal(data.total || 0);
 
       // Calculate stats
       const allFeedbacks = data.data || [];
@@ -74,7 +67,12 @@ export default function AdminFeedbackPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [statusFilter, pageTypeFilter, categoryFilter, searchQuery]);
+
+  // Fetch feedbacks
+  useEffect(() => {
+    fetchFeedbacks();
+  }, [fetchFeedbacks]);
 
   const handleUpdateFeedback = async () => {
     if (!selectedFeedback) return;
@@ -166,7 +164,7 @@ export default function AdminFeedbackPage() {
             {/* Status Filter */}
             <select
               value={statusFilter}
-              onChange={(e) => setStatusFilter(e.target.value as any)}
+              onChange={(e) => setStatusFilter(e.target.value as FeedbackStatus | 'all')}
               className="px-4 py-2 border rounded-lg"
             >
               <option value="all">{t('filters.all')} {t('filters.status')}</option>
@@ -179,7 +177,7 @@ export default function AdminFeedbackPage() {
             {/* Page Type Filter */}
             <select
               value={pageTypeFilter}
-              onChange={(e) => setPageTypeFilter(e.target.value as any)}
+              onChange={(e) => setPageTypeFilter(e.target.value as PageType | 'all')}
               className="px-4 py-2 border rounded-lg"
             >
               <option value="all">{t('filters.all')} {t('filters.pageType')}</option>
