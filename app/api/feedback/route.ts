@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
-import type { CreateFeedbackInput, ContentFeedback, FeedbackFilters } from '@/lib/feedback-types';
+import type { CreateFeedbackInput, ContentFeedback, FeedbackFilters, FeedbackStatus, PageType } from '@/lib/feedback-types';
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -135,8 +135,8 @@ export async function GET(request: NextRequest) {
 
     // Parse filters
     const filters: FeedbackFilters = {
-      status: searchParams.get('status') as any,
-      page_type: searchParams.get('page_type') as any,
+      status: (searchParams.get('status') as FeedbackStatus) || undefined,
+      page_type: (searchParams.get('page_type') as PageType) || undefined,
       category_slug: searchParams.get('category_slug') || undefined,
       search: searchParams.get('search') || undefined,
       limit: parseInt(searchParams.get('limit') || '50'),

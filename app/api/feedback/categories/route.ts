@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import type { FeedbackCategory } from '@/lib/feedback-types';
 
@@ -10,7 +10,7 @@ const supabase = createClient(
 // ======================================
 // GET /api/feedback/categories - Get all feedback categories
 // ======================================
-export async function GET(_request: NextRequest) {
+export async function GET() {
   try {
     const { data, error } = await supabase
       .from('feedback_categories')
