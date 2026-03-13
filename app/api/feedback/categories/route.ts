@@ -10,7 +10,7 @@ const supabase = createClient(
 // ======================================
 // GET /api/feedback/categories - Get all feedback categories
 // ======================================
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     const { data, error } = await supabase
       .from('feedback_categories')
