@@ -19,7 +19,14 @@
       "Bash(git diff:*)",
       "Bash(curl:*)",
       "Bash(git restore:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(dir /B \"c:\\\\Users\\\\HP EliteBook 840 G8\\\\Desktop\\\\projects\\\\ibadah-station\")",
+      "Bash(findstr:*)",
+      "Bash(find 'c:\\\\Users\\\\HP EliteBook 840 G8\\\\Desktop\\\\projects\\\\ibadah-station/components' -type f \\\\\\(-name *.tsx -o -name *.ts -o -name *.json \\\\\\))",
+      "Bash(find 'c:\\\\Users\\\\HP EliteBook 840 G8\\\\Desktop\\\\projects\\\\ibadah-station/lib' -type f \\\\\\(-name *.tsx -o -name *.ts -o -name *.json \\\\\\))",
+      "Bash(find 'c:\\\\Users\\\\HP EliteBook 840 G8\\\\Desktop\\\\projects\\\\ibadah-station' -type f -name *.json \\\\\\(-path */data/* -o -path */config/* \\\\\\))",
+      "Bash(xargs grep:*)",
+      "Bash(find 'c:\\\\Users\\\\HP EliteBook 840 G8\\\\Desktop\\\\projects\\\\ibadah-station' -type f \\\\\\(-name *.json \\\\\\))"
     ]
   }
 }
