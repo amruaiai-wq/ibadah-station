@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth-context';
 
@@ -70,9 +71,11 @@ export default function UserMenu({ locale, translations: t }: UserMenuProps) {
         className="flex items-center gap-2 p-1 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
       >
         {avatarUrl ? (
-          <img
+          <Image
             src={avatarUrl}
             alt={displayName}
+            width={36}
+            height={36}
             className="w-9 h-9 rounded-full object-cover border-2 border-gold"
           />
         ) : (
